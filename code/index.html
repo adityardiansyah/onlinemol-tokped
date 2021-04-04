@@ -53,7 +53,12 @@
         .slick-next{
             right: 25px;
         }
-        
+        #owl-two .nav-button{
+            top: 16px !important;
+        }
+        .owl-carousel .owl-nav.disabled{
+            display: block;
+        }
         
     </style>
 </head>
@@ -271,8 +276,7 @@
                                                     <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab"
                                                         href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
                                                         aria-selected="false">
-                                                        <object data="../assets/WEB/ICON/ICON WEB22.svg"
-                                                            type=""></object>
+                                                        <img src="../assets/WEB/ICON/ICON WEB22.svg" width="14px" alt="">
                                                     </a>
                                                 </li>
                                             </ul>
@@ -390,7 +394,7 @@
                         <div class="row mt-4">
                             <div class="col-12">
                                 <div class="frame-category">
-                                    <div class="owl-carousel owl-theme">
+                                    <div id="owl-one" class="owl-carousel owl-theme">
                                         <div class="item">
                                             <a href="" class="category-mini">
                                                 <div class="category-mini-icon">
@@ -1006,7 +1010,7 @@
             <div class="row">
                 <div class="col-md-4 mt-2">
                     <a href="">
-                        <div class="rounded-10" style="background: #DBCD42;">
+                        <div class="rounded-10">
                             <img src="../assets/WEB/IMAGE/ta.png" class="img-fluid" alt="">
                             <!-- <div class="row">
                                 <div class="col-md-7">
@@ -1027,7 +1031,7 @@
                 </div>
                 <div class="col-md-4 mt-2">
                     <a href="">
-                        <div class="rounded-10" style="background: #A7926C;">
+                        <div class="rounded-10">
                             <img src="../assets/WEB/IMAGE/aaa.png" class="img-fluid" alt="">
                             <!-- <div class="row">
                                 <div class="col-md-7">
@@ -1048,7 +1052,7 @@
                 </div>
                 <div class="col-md-4 mt-2">
                     <a href="">
-                        <div class="rounded-10" style="background: #858B79;">
+                        <div class="rounded-10">
                             <img src="../assets/WEB/IMAGE/aaaa.png" class="img-fluid" alt="">
                             <!-- <div class="row">
                                 <div class="col-md-7">
@@ -1437,7 +1441,7 @@
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="frame-tab-home">
-                        <div class="owl-carousel owl-theme">
+                        <div id="owl-two" class="owl-carousel owl-theme">
                             <div class="item">
                                 <button class="tab-home" onclick="tab(event,'You')" id="defaultOpen"
                                     style="background-color: #CB218E;">
@@ -1474,6 +1478,30 @@
                                     style="background-color: #2FA449;">
                                     <span class="tab-home-title">
                                         Helm Motor
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="tab-home" onclick="tab(event,'Tangga')"
+                                    style="background-color: #18d1bf;">
+                                    <span class="tab-home-title">
+                                        Peralatan Rumah Tangga
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="tab-home" onclick="tab(event,'Tangga')"
+                                    style="background-color: #18d1bf;">
+                                    <span class="tab-home-title">
+                                        Peralatan Rumah Tangga
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="tab-home" onclick="tab(event,'Tangga')"
+                                    style="background-color: #18d1bf;">
+                                    <span class="tab-home-title">
+                                        Peralatan Rumah Tangga
                                     </span>
                                 </button>
                             </div>
@@ -4040,8 +4068,8 @@
         centerPadding: '60px',
         slidesToShow: 1,
         slidesToScroll: 1,
-        //autoplay: true,
-        //autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
             breakpoint: 768,

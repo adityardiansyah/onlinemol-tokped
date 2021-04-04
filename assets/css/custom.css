@@ -27,6 +27,8 @@ body{
     padding-left: calc(((100% - 1208px) - 16px) / 2);
     padding-right: calc(((100% - 1208px) - 16px) / 2);
 }
+
+
 .carousel-item {
     -webkit-box-pack: center;
     justify-content: center;
@@ -49,10 +51,52 @@ body{
     list-style: none;
     justify-content: left;
 }
+.owl-carousel .nav-button {
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 1px #000;
+    position: absolute;
+    top: 0 !important;
+    /* display: none; */
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+    left: -35px;
+}
+
+.owl-carousel .owl-next {
+    right: -35px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    /* color: #ffffff; */
+    background: #fff;
+    border-radius: 20px;
+}
+.owl-stage-outer:hover .owl-nav{
+    display: flex;
+}
+
+.owl-carousel .prev-carousel:hover {
+    background-position: 0px -53px;
+}
+
+.owl-carousel .next-carousel:hover {
+    background-position: -24px -53px;
+}
 
 /* Element Small */
 .thumb-90{
     height: 90px;
+    max-height: 140px;
     overflow: hidden;
 }
 .f-10{
@@ -161,7 +205,7 @@ body{
     border-radius: 16px;
     border: 1px solid rgb(229, 231, 233);
     background-color: rgb(255, 255, 255);
-    -webkit-box-align: center;
+    -webkit-box-align: center;  
     align-items: center;
     padding: 6px 12px;
     cursor: pointer;
@@ -368,8 +412,10 @@ hr{
 .tab-home{
     outline: 0px;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
+    -webkit-box-align: center;  
+    align-items: center;
     width: 216px;
     height: 64px;
     padding: 6px 8px;
@@ -443,3 +489,4 @@ hr{
         padding:0;
     }
 }
+
