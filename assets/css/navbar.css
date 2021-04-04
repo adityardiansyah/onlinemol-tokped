@@ -1,0 +1,174 @@
+a {
+  color: #888888;
+}
+
+a:hover {
+  color: #03AC0E;
+}
+
+.top-bar {
+  background: #F3F4F5;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-bar-item {
+  margin: 0 1rem;
+}
+
+.top-bar-item.right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-bar {
+    margin: 1rem 0 0 0;
+  padding: .5rem;
+}
+
+.nav-bar-title h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #339049;
+}
+
+.category-search-icon {
+  background: #EDEDED;
+  cursor: pointer;
+}
+
+.category-search-icon:hover {
+  background: #CACACA;
+}
+
+.search-recommendations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-recommendations a {
+  padding: 10px;
+  font-size: .9rem;
+}
+
+.nav-bar-misc {
+  text-align: center;
+}
+
+.nav-bar-misc i {
+  font-size: 1.2rem;
+  padding: .2rem;
+}
+
+.nav-bar-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar-profile span {
+  margin: .3rem 0 0 0;
+  padding: 0 0 0 10px;
+}
+
+.btn-store {
+  background: #E4E4E4;
+}
+
+.btn-profile {
+  background: #80AEC6;
+}
+
+.body {
+  padding: 2rem;
+}
+
+.top-profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-profile-card span {
+  padding: 0 0 0 10px;
+}
+
+.profile-card-seperator {
+  margin: 1rem 0;
+  border-top: .1px solid grey;
+}
+
+.btn-collapse {
+  color: #000;
+  font-weight: bold;
+}
+
+.inbox-content a, .purchased-content a, .profile-content a {
+  padding: 5px 0 0 2vw;
+  color: #3CBE55;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.footer {
+  border-top: 1px solid grey;
+  height: 70vh;
+}
+
+.footer-onlinemol-bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-onlinemol {
+  font-size: .9rem;
+}
+
+.footer-onlinemol a {
+  color: #888888;
+}
+
+.footer-onlinemol a:hover {
+  color: #03AC0E;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  padding-right: .7rem;
+}
+
+.social-icon .facebook {
+  color: #3B5998;
+}
+
+.social-icon .twitter {
+  color: #23ACED;
+}
+
+.social-icon .whatsapp {
+  color: #3CBE55;
+}
+
+.social-icon .instagram {
+  color: #D93174;
+}
+
+.mall-image {
+  max-height: 30vw;
+  max-width: 30vw;
+}
