@@ -92,6 +92,53 @@ body{
 .owl-carousel .next-carousel:hover {
     background-position: -24px -53px;
 }
+.slider {
+    width: 100%;
+    margin: auto;
+}
+
+.slick-slide {
+margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+}
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+
+.slick-active {
+opacity: .5;
+}
+
+.slick-current {
+opacity: 1;
+}
+.slick-prev{
+    left: 25px;
+    z-index: 2;
+}
+.slick-next{
+    right: 25px;
+}
+#owl-two .nav-button{
+    top: 16px !important;
+}
+.owl-carousel .owl-nav.disabled{
+    display: block!important;
+}
+#owl-wish .nav-button{
+    top: 64px !important;
+}
 
 /* Element Small */
 .thumb-90{
@@ -108,8 +155,17 @@ body{
 .f-12{
     font-size: 12pt;
 }
+.f-13{
+    font-size: 13pt;
+}
+.f-14{
+    font-size: 14pt;
+}
 .p-14{
     padding: 14px!important;
+}
+.ml-2{
+    margin-left: 0.5em;
 }
 .ml-3{
     margin-left: 1.5em;
@@ -121,10 +177,104 @@ body{
     line-height: 43px;
 }
 .fc-text{
-    color: #7e7e7e;
+    color: #7e7e7e!important;
+}
+.fc-price{
+    font-weight: 600;
+}
+.border-right{
+    border-right: 1px solid #f1f1f1;
+}
+.lh-25{
+    line-height: 25px;
+}
+.lh-30{
+    line-height: 30px;
+}
+.w-30{
+    width: 23px;
+}
+.w-35{
+    width: 35px;
+}
+.w-20{
+    width: 20px!important;
+}
+.w-60{
+    width: 60px;
+}
+.bg-grey{
+    background: #dcdcdc;
+    color: #000;
+}
+.fc-orange{
+    color: #EF3719;
+}
+.f-normal{
+    font-weight: normal!important;
+}
+.bl-5{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(243, 244, 245);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.bh-20{
+    border: 1px solid rgb(191, 201, 217);
+    width: 1px;
+    background-color: rgb(191, 201, 217);
+    margin: 0px 16px;
+    height: 25px;
 }
 
+
 /* PARENT */
+.btn-white{
+    background: #fff;
+    color: #000;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding:12px 10px;
+}
+.btn-white:hover{
+    background: #fff;
+    color:#3CBE55;
+    border:1px solid #3CBE55;
+}
+.select-none-border{
+    border: 0;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.div-input-stock{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+.input-stock{
+    user-select: auto;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    display: inline-block;
+    max-width: 90px;
+    min-width: 25px;
+    width: 55px;
+    text-align: center;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 0px 0px 3px;
+    appearance: none;
+    box-sizing: border-box;
+    color: rgba(49, 53, 59, 0.68);
+}
+.main-section{
+    margin-top:30px; 
+    margin-bottom:100px;
+}
 .btn-switch{
     display: inline-block;
     position: relative;
@@ -237,13 +387,32 @@ body{
     color: rgba(49, 53, 59, 0.68);
     vertical-align: middle;
 }
-.frame-category{
+.frame-category .frame-whishlist{
     position: relative;
     flex: 1 1 100%;
     display: block;
     width: 100%;
     transition: all 2s ease 0s;
     min-width: 0px;
+}
+.wish-mini{
+    display: inline-block;
+    width: 320px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-align: center;  
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+}
+/* .wish-mini-icon{
+    width: 64px;
+    height: 64px;
+} */
+.owl-carousel .owl-stage-outer{
+    height: 100%;
+    padding: 4px 0 4px 0;
 }
 .item-product{
     display: flex;
@@ -350,6 +519,23 @@ body{
 }
 
 /*CUSTOM CSS ORI */
+.form-check .form-check-input{
+    margin-left: -1.39rem;
+}
+.form-check-label{
+    margin-left: 8px;
+}
+.form-check-input[type=checkbox]{
+    border-radius: 4px;
+}
+.form-check-input[type=checkbox]:checked{
+    background: #00b74a;
+    border-color: #00b74a;
+}
+.form-check-input[type=checkbox]:checked:focus{
+    background: #00b74a;
+    border-color: #00b74a;
+}
 .nav-fill .nav-item{
     border-bottom: 1px solid #f1f1f1;
 }
@@ -402,6 +588,12 @@ hr{
     background-color: #EDEDED;
     color: #707070;
 }
+.btn-success{
+    box-shadow: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
 .tab-content{
     color: #868686;
 }

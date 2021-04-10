@@ -35,7 +35,55 @@ $(document).ready(function(){
             }
         }
     })
+    $('#owl-wish').owlCarousel({
+        rtl:false,
+        nav:true,
+        navText: ["<div class='nav-button owl-prev'><img src='../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../assets/WEB/ICON/ICON WEB14.svg'></div>"],
+        dots: false,
+        autoWidth:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:10
+            }
+        }
+    })
+    
     $('.owl-nav').removeClass('disabled');
+
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
 })
 
 function tab(evt, choice) {
