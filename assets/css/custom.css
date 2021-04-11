@@ -191,6 +191,15 @@ opacity: 1;
 .lh-30{
     line-height: 30px;
 }
+.lh-90{
+    line-height: 90px;
+}
+.w-10{
+    width: 10px;
+}
+.w-15{
+    width: 15px;
+}
 .w-30{
     width: 23px;
 }
@@ -230,6 +239,17 @@ opacity: 1;
 
 
 /* PARENT */
+.icon-wish{
+    position: absolute;
+    border: 1px solid #d9d9d9;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    width: 28px;
+    height: auto;
+    right: 0;
+    z-index: 1;
+    margin: 4px;
+}
 .btn-white{
     background: #fff;
     color: #000;
@@ -416,7 +436,7 @@ opacity: 1;
 }
 .item-product{
     display: flex;
-    position: static;
+    position: relative;
     overflow: visible;
     flex-flow: column nowrap;
     height: 100%;
@@ -519,6 +539,9 @@ opacity: 1;
 }
 
 /*CUSTOM CSS ORI */
+.footer{
+    border-top: 1px solid #f1f1f1!important;
+}
 .form-check .form-check-input{
     margin-left: -1.39rem;
 }
