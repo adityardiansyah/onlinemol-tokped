@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onlinemol</title>
-    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/mdb.min.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
@@ -14,6 +14,83 @@
     <link rel="stylesheet" href="../assets/plugins/slick/slick/slick.css">
     <link rel="stylesheet" href="../assets/plugins/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/bbbootstrap/libraries/main/xzoom.css" media="all" /> -->
+    <!-- <link rel="stylesheet" href="../assets/plugins/product/xzoom.css"> -->
+
+    <style>
+        .container{
+            max-width: 1210px;
+        }
+        .item-photo{
+            transition: transform 0.5s ease-out;
+        }
+        .preview-pic{
+            overflow: hidden;
+            cursor: zoom-in;
+        }
+        .preview {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            @media screen and (max-width: 996px) {
+                .preview {
+                margin-bottom: 20px; } }
+
+            .preview-pic {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1; }
+
+            .preview-thumbnail.nav-tabs {
+            border: none;
+            margin-top: 15px; }
+            .preview-thumbnail.nav-tabs li {
+                width: 18%;
+                margin-right: 2.5%; }
+                .preview-thumbnail.nav-tabs li img {
+                max-width: 100%;
+                display: block; }
+                .preview-thumbnail.nav-tabs li a {
+                padding: 0;
+                margin: 0; }
+                .preview-thumbnail.nav-tabs li:last-of-type {
+                margin-right: 0; }
+
+            .tab-content {
+            overflow: hidden; }
+            .tab-content img {
+                width: 100%;
+                -webkit-animation-name: opacity;
+                        animation-name: opacity;
+                -webkit-animation-duration: .3s;
+                        animation-duration: .3s; }
+            @-webkit-keyframes opacity {
+            0% {
+            opacity: 0;
+            -webkit-transform: scale(3);
+                transform: scale(3); }
+            100% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+                transform: scale(1); } }
+
+            @keyframes opacity {
+            0% {
+            opacity: 0;
+            -webkit-transform: scale(3);
+                transform: scale(3); }
+            100% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+                transform: scale(1); } }
+    </style>
 </head>
 
 <body>
@@ -113,8 +190,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    
+                <div class="col-md-4">
+                    <div class="preview">
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-2" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-3" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-4" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-5" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						</ul>
+					</div>
                 </div>
                 <div class="col-md-5">
                     <h4><b>Tiffany Shoulderbag - Green</b></h4>
@@ -140,8 +232,83 @@
                         <div class="tab-content p-3" id="ex2-content">
                             <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel"
                                 aria-labelledby="ex2-tab-1">
-                                <div>
-                                    
+                                <div class="f-11 text-dark">
+                                    <p class="m-0">Kondisi : <b>Baru</b></p>
+                                    <p class="m-0">Berat : <b>142 Gram</b></p>
+                                    <p class="m-0">Kategori : <a href="" class="text-link">Tas Selempang W…</a></p>
+                                    <p class="">Etalase : <a href="" class="text-link">Semua Etalase</a></p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+                                    </p>
+                                    <p id="selengkapnya">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, quia eum nihil similique aut officiis quis nostrum earum reprehenderit? Exercitationem ipsa obcaecati velit nesciunt ducimus aspernatur doloribus architecto quae?
+                                    </p>
+                                    <a href="" onclick="selengkapnya('selengkapnya')" id="btn-selengkapnya" class="text-link p-0">Lihat Selengkapnya</a>
+                                    <a href="" onclick="selengkapnya('tutup')" id="btn-tutup" class="text-link p-0">Lihat Lebih Sedikit</a>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-start">
+                                    <div>
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg" class="w-60 rounded-full rounded-border" alt="">
+                                    </div>
+                                    <div class="my-auto ml-3 w-100">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="text-dark my-auto">
+                                                <img src="../assets/WEB/ICON/ICON WEB17.svg" class="w-30" alt=""> <b class="ml-1">Store.id</b>
+                                                <p class="m-0 fc-text">Online 29 menit lalu</p>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-outline-success">
+                                                    Follow
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <div class="d-flex f-10">
+                                                    <img src="../assets/WEB/ICON/ICON WEB94.svg" class="w-15" alt="">
+                                                    <b class="text-dark ml-2">4.9</b> <span class="ml-2">rating..</span>
+                                                    <div class="bh-20"></div>
+                                                    <img src="../assets/WEB/ICON/ICON WEB26.svg" class="w-15" alt="">
+                                                    <img src="../assets/WEB/ICON/ICON WEB88.svg" class="ml-2 w-15" alt="">
+                                                    <b class="text-dark ml-2">20 jam</b> <span class="ml-2">pesanan..</span>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="text-dark">
+                                    <b>Pengiriman</b>
+                                    <p class="m-0">
+                                        <img src="../assets/WEB/ICON/ICON WEB73.svg" class="w-15" alt=""> Dikirim dari <b>Kota Yogyakarta</b>
+                                    </p>
+                                    <p>
+                                        <img src="../assets/WEB/ICON/ICON WEB95.svg" class="w-15" alt=""> Ongkir multi <b>Rp 13.000</b>, tiba 6-10 hari ke <b>Kab. Tangerang</b>
+                                    </p>
+                                </div>
+                                <hr>
+                                <span class="badge badge-light text-link-primary">Bayar di Tempat</span>
+                                <a href="" class="text-link">Cek Semua Kurir</a>
+                                <hr>
+                                <div class="text-dark">
+                                    <b>Penawaran Lainnya</b>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/WEB/ICON/ICON WEB55.svg" class="w-30 mt-0" alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <b>Harga Grosir</b><br>
+                                            <select name="" id="" class="select-none-border fc-text">
+                                                <option value="">Lebih mural, mulai dari Rp17.ooo min 20 pcs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <a href="" class="fc-text">Ada masala dengan produk ini?</a>
+                                    <a href="" class="text-dark"><img src="../assets/WEB/ICON/ICON WEB72.svg" class="w-15" alt=""> Laporkan</a>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
@@ -176,31 +343,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card border-0">
                         <div class="shadows">
                             <div class="card-body">
-                                <button class="btn-white w-100 d-flex justify-content-between">
-                                    <img src="../assets/WEB/ICON/ICON WEB41.svg" class="w-30" alt="">
-                                    <b>Makin hemat pakai promo</b>
-                                    <img src="../assets/WEB/ICON/ICON WEB14.svg" class="w-30" alt="">
-                                </button>
-
-                                <div class="mt-3">
-                                    <b>Ringkasan belanja</b>
-                                    <div class="d-flex justify-content-between lh-30 f-11 fc-text">
-                                        <span>Total Harga (2 barang)</span>
-                                        <span>Rp430.000</span>
+                                <b>Atur jumlah dan catatan</b>
+                                <br>
+                                <div class="mt-2">
+                                    <a href="">
+                                        <img src="../assets/WEB/ICON/ICON WEB98.svg" alt="" class="w-30">
+                                    </a>
+                                    <div class="div-input-stock">
+                                        <input type="text" class="input-stock" value="1">
                                     </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <b>Total Harga</b>
-                                        <b class="f-14">Rp430.000</b>
+                                    <a href="">
+                                        <img src="../assets/WEB/ICON/ICON WEB99.svg" class="w-30" alt="">
+                                    </a>
+                                    <span>Stok <b>358</b></span>
+                                    <p class="fc-text">Beli > 20, lebih hemat!</p>
+                                    <a href="" class="text-link"><img src="../assets/WEB/ICON/ICON WEB90.svg" class="w-15" alt=""> Tambah Catatan</a>
+                                    <div class="d-flex justify-content-between mt-3 lh-30 f-11 fc-text">
+                                        <span>Subtotal</span>
+                                        <b class="f-14 text-dark">Rp430.000</b>
                                     </div>
-                                    <hr>
-                                    <button class="btn btn-success p-3 btn-block f-12">
-                                        Beli (2)
-                                    </button>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <button class="btn btn-outline-success p-2">
+                                            <span class="fa fa-plus"></span>Beli Langsung
+                                        </button>
+                                        <button class="btn btn-success p-2">
+                                            <span class="fa fa-plus"></span>Keranjang
+                                        </button>
+                                    </div>
+                                    <div class="d-flex mt-3 f-10">
+                                        <a href="" class="text-dark"><img src="../assets/WEB/ICON/ICON WEB68.svg" class="w-15" alt=""> <b>Chat</b></a>
+                                        <div class="bh-20"></div>
+                                        <a href="" class="text-dark"><span class="fa fa-heart"></span> <b>Wishlist</b></a>
+                                        <div class="bh-20"></div>
+                                        <a href="" class="text-dark"><span class="fa fa-share"></span> <b>Share</b></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -310,10 +490,49 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/plugins/owl.carousel/dist/owl.carousel.js"></script>
     <script src="../assets/plugins/slick/slick/slick.js"></script>
-    <script src="../assets/js/custom.js"></script>
+    <!-- <script src="../assets/js/custom.js"></script> -->
+    <!-- <script src="../assets/plugins/product/xzoom.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/xzoom.min.js"></script> -->
     <script>
+        $(".tab-pane")
+        // tile mouse actions
+        .on("mouseover", function() {
+            $(this)
+            .children(".item-photo")
+            .css({ transform: "scale(" + $(this).attr("data-scale") + ")" });
+        })
+        .on("mouseout", function() {
+            $(this)
+            .children(".item-photo")
+            .css({ transform: "scale(1)" });
+        })
+        .on("mousemove", function(e) {
+            $(this)
+            .children(".item-photo")
+            .css({
+                "transform-origin":
+                ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+                "% " +
+                ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+                "%"
+            });
+        });
 
-
+        $('a').click( function(e) {e.preventDefault();return false; } );
+        $('#btn-tutup').hide();
+        $('#selengkapnya').hide();
+        function selengkapnya(val){
+            if(val === 'selengkapnya'){
+                $('#selengkapnya').show();
+                $('#btn-selengkapnya').hide();
+                $('#btn-tutup').show();
+            }else{
+                $('#selengkapnya').hide();
+                $('#btn-selengkapnya').show();
+                $('#btn-tutup').hide();
+                
+            }
+        }
     </script>
 </body>
 
