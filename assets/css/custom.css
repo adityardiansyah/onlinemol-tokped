@@ -146,6 +146,9 @@ opacity: 1;
     max-height: 140px;
     overflow: hidden;
 }
+.f-9{
+    font-size: 9pt;
+}
 .f-10{
     font-size: 10pt;
 }
@@ -239,6 +242,7 @@ opacity: 1;
 
 
 /* PARENT */
+
 .icon-wish{
     position: absolute;
     border: 1px solid #d9d9d9;
@@ -261,6 +265,13 @@ opacity: 1;
     background: #fff;
     color:#3CBE55;
     border:1px solid #3CBE55;
+}
+.btn-white-active{
+    background: #E2F5E6;
+    color:#3CBE55;
+    border:1px solid #3CBE55;
+    border-radius: 4px;
+    padding:12px 10px;
 }
 .select-none-border{
     border: 0;
@@ -546,8 +557,22 @@ opacity: 1;
     position: absolute;
     margin-top: 12px;
 }
+.font-rating{
+    font-size: 35pt;
+    font-weight: bold;
+}
+.font-rating small{
+    font-size: 11pt;
+}
 
 /*CUSTOM CSS ORI */
+.breadcrumb-item+.breadcrumb-item:before{
+    background : url('../WEB/ICON/ICON WEB91.svg');
+    content: "-";
+}
+.breadcrumb{
+    background-color: transparent!important;
+}
 .badge-light{
     background-color: #E2F5E6!important;
 }
@@ -580,11 +605,17 @@ opacity: 1;
 .rounded-10{
     border-radius: 10px;
 }
+.rounded-18{
+    border-radius: 18px!important;
+}
 .rounded-full{
     border-radius: 100px;
 }
 .rounded-border{
     border: 1px solid #dadada;
+}
+.p-6-20{
+    padding: 6px 20px;
 }
 .container-fluid{
     width: 94%!important;
