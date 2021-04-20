@@ -239,6 +239,9 @@ opacity: 1;
     margin: 0px 16px;
     height: 25px;
 }
+.w-max{
+    width: max-content;
+}
 
 
 /* PARENT */
@@ -253,6 +256,31 @@ opacity: 1;
     right: 0;
     z-index: 1;
     margin: 4px;
+}
+.btn-icon{
+    color: rgba(49, 53, 59, 0.68);
+    font-size: 0.857143rem;
+    height: 32px;
+    line-height: 18px;
+    width: auto;
+    border-radius: 8px;
+    font-weight: 700;
+    outline: none;
+    padding: 0px 10px;
+    transition: background 0.8s ease 0s;
+    cursor: pointer;
+    display: inline-block;
+    background: radial-gradient(circle, transparent 1%, transparent 1%) center center / 15000% transparent;
+    border: 1px solid rgb(229, 231, 233);
+    text-indent: initial;
+    position: relative;
+    min-width: 56px;
+    margin-right: 12px;
+}
+.btn-icon:hover{
+    background: #fff;
+    color:#3CBE55;
+    border:1px solid #3CBE55;
 }
 .btn-white{
     background: #fff;
@@ -387,7 +415,7 @@ opacity: 1;
     padding-left: 8px;
 }
 .text-link:hover{
-    color: rgb(5, 109, 12);
+    text-decoration: none;
 }
 .category-mini{
     display: inline-block;
@@ -566,6 +594,9 @@ opacity: 1;
 }
 
 /*CUSTOM CSS ORI */
+.bg-light{
+    background-color: #F3F4F5!important;
+}
 .breadcrumb-item+.breadcrumb-item:before{
     background : url('../WEB/ICON/ICON WEB91.svg');
     content: "-";

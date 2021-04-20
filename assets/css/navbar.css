@@ -1,9 +1,11 @@
 a {
   color: #888888;
+  text-decoration: none;
 }
 
 a:hover {
   color: #03AC0E;
+  text-decoration: none;
 }
 
 .top-bar {
