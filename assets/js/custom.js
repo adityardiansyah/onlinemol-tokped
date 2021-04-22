@@ -56,7 +56,7 @@ $(document).ready(function(){
     
     $('.owl-nav').removeClass('disabled');
 
-    $('.center').slick({
+    $('.centers').slick({
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,

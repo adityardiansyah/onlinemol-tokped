@@ -13,7 +13,7 @@ body{
     position: relative;
     display: block;
     width: 100%;
-    margin: 0px auto;
+    margin: 130px auto 0 auto;
 }
 .body-slider{
     position: relative;
@@ -21,7 +21,7 @@ body{
     width: 100%;
     margin: 0px 0px 40px;
     transition: background 0.5s ease 0s;
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
 }
 #sliders{
     padding-left: calc(((100% - 1208px) - 16px) / 2);
@@ -232,6 +232,12 @@ opacity: 1;
     margin-top: 16px;
     margin-bottom: 16px;
 }
+.bh-16{
+    content: "";
+    width: 1px;
+    height: 16px;
+    background: rgb(196, 196, 196);
+}
 .bh-20{
     border: 1px solid rgb(191, 201, 217);
     width: 1px;
@@ -245,7 +251,39 @@ opacity: 1;
 
 
 /* PARENT */
-
+.thumb-ulasan{
+    position: relative;
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    margin: 0px 0px 0px 11px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    overflow: hidden;
+}
+.thumb-ulasan .sub-thumb{
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    background-image: none;
+}
+.thumb-last::after{
+    content: "+8";
+    position: absolute;
+    inset: 0px;
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    line-height: 98px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
 .icon-wish{
     position: absolute;
     border: 1px solid #d9d9d9;
@@ -331,7 +369,7 @@ opacity: 1;
     color: rgba(49, 53, 59, 0.68);
 }
 .main-section{
-    margin-top:30px; 
+    margin-top:170px; 
     margin-bottom:100px;
 }
 .btn-switch{
@@ -592,8 +630,32 @@ opacity: 1;
 .font-rating small{
     font-size: 11pt;
 }
+.sticky-detail{
+    position: sticky;
+    top: 175px;
+}
 
 /*CUSTOM CSS ORI */
+.paginate-first{
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+    transform: scaleX(-1);
+    margin-left: 0px;
+}
+.page-item.active .page-link{
+    border-bottom: 2px solid #00b74a;
+    background: transparent;
+    color: #00b74a;
+    box-shadow: none;
+}
+.page-item:hover .page-link{
+    background-color: transparent;
+}
 .bg-light{
     background-color: #F3F4F5!important;
 }
