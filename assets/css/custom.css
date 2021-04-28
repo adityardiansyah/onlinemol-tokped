@@ -224,6 +224,9 @@ opacity: 1;
 .w-60{
     width: 60px;
 }
+.h-35{
+    height: 35px;
+}
 .bg-grey{
     background: #dcdcdc;
     color: #000;
@@ -260,6 +263,43 @@ opacity: 1;
 
 
 /* PARENT */
+.nav-tabs .nav-link:hover{
+    background-color: #fff!important;
+}
+.nav-scroll{
+    transform: translateY(130px);
+    opacity: 1;
+    height: 44px;
+    /* overflow: hidden; */
+    width: 100%;
+    padding: 0px 12px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: all 0.3s ease-in 0s;
+    box-shadow: rgb(49 53 59 / 12%) 0px 2px 2px 0px;
+    position: static;
+}
+.title-navbar-scroll{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 348px;
+    min-width: 348px;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 18px;
+}
+.title-navbar-scroll span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(49, 53, 59, 0.96);
+}
+.preview-thumbnail.nav-tabs li a.active{
+    border: 2px solid #00b74a;
+    border-radius: 4px;
+    padding: 3px!important;
+}
 .thumb-ulasan{
     position: relative;
     display: inline-block;
@@ -295,11 +335,12 @@ opacity: 1;
 }
 .icon-wish{
     position: absolute;
+    display: flex;
     border: 1px solid #d9d9d9;
     background-color: #ebebeb;
     border-radius: 30px;
     width: 28px;
-    height: auto;
+    height: 28px;
     right: 0;
     z-index: 1;
     margin: 4px;
@@ -645,12 +686,15 @@ opacity: 1;
 }
 
 /*CUSTOM CSS ORI */
+.btn-light:hover{   
+    background-color: #fff!important;
+}
 .btn-success{
     background-color: #03AC0E!important;
 }
 .btn:hover{
     box-shadow: none;
-    background-color: #029e0d!important;
+    /* background-color: #029e0d!important; */
 }
 .paginate-first{
     text-decoration: none;
@@ -778,9 +822,23 @@ hr{
 .tab-content{
     color: #868686;
 }
+
+input:focus, textarea:focus{
+    box-shadow: none!important;
+    outline: 0 none!important;
+    border:1px solid #3CBE55!important;
+    outline-color: #03AC0E!important;
+    outline-style: none;
+}
 .form-control:focus {
-    outline: none !important;
-    border-color: #3CBE55;
+    outline: 0 none!important;
+    outline-color: #03AC0E!important;
+    border-color: #3CBE55!important;
+    box-sizing: border-box;
+    border-width: 1.25px 1.25px 0px;
+    border-image: initial;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
 }
 .tab-home{
     outline: 0px;

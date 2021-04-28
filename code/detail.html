@@ -18,16 +18,19 @@
     <!-- <link rel="stylesheet" href="../assets/plugins/product/xzoom.css"> -->
 
     <style>
-        .container{
+        .container {
             max-width: 1210px;
         }
-        .item-photo{
+
+        .item-photo {
             transition: transform 0.5s ease-out;
         }
-        .preview-pic{
+
+        .preview-pic {
             overflow: hidden;
             cursor: zoom-in;
         }
+
         .preview {
             display: -webkit-box;
             display: -webkit-flex;
@@ -36,62 +39,88 @@
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
             -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                    flex-direction: column; }
-            @media screen and (max-width: 996px) {
-                .preview {
-                margin-bottom: 20px; } }
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
 
-            .preview-pic {
+        @media screen and (max-width: 996px) {
+            .preview {
+                margin-bottom: 20px;
+            }
+        }
+
+        .preview-pic {
             -webkit-box-flex: 1;
             -webkit-flex-grow: 1;
-                -ms-flex-positive: 1;
-                    flex-grow: 1; }
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
 
-            .preview-thumbnail.nav-tabs {
+        .preview-thumbnail.nav-tabs {
             border: none;
-            margin-top: 15px; }
-            .preview-thumbnail.nav-tabs li {
-                width: 18%;
-                margin-right: 2.5%; }
-                .preview-thumbnail.nav-tabs li img {
-                max-width: 100%;
-                display: block; }
-                .preview-thumbnail.nav-tabs li a {
-                display: block;
-                position: relative;
-                padding: 0;
-                margin: 0; }
-                .preview-thumbnail.nav-tabs li:last-of-type {
-                margin-right: 0; }
+            margin-top: 15px;
+        }
 
-            .tab-content {
-            overflow: hidden; }
-            .tab-content img {
-                width: 100%;
-                -webkit-animation-name: opacity;
-                        animation-name: opacity;
-                -webkit-animation-duration: .3s;
-                        animation-duration: .3s; }
-            @-webkit-keyframes opacity {
-            0% {
-            opacity: 0;
-            -webkit-transform: scale(3);
-                transform: scale(3); }
-            100% {
-            opacity: 1;
-            -webkit-transform: scale(1);
-                transform: scale(1); } }
+        .preview-thumbnail.nav-tabs li {
+            width: 18%;
+            margin-right: 2.5%;
+        }
 
-            @keyframes opacity {
+        .preview-thumbnail.nav-tabs li img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .preview-thumbnail.nav-tabs li a {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        .preview-thumbnail.nav-tabs li:last-of-type {
+            margin-right: 0;
+        }
+
+        .tab-content {
+            overflow: hidden;
+        }
+
+        .tab-content img {
+            width: 100%;
+            -webkit-animation-name: opacity;
+            animation-name: opacity;
+            -webkit-animation-duration: .3s;
+            animation-duration: .3s;
+        }
+
+        @-webkit-keyframes opacity {
             0% {
-            opacity: 0;
-            -webkit-transform: scale(3);
-                transform: scale(3); }
+                opacity: 0;
+                -webkit-transform: scale(3);
+                transform: scale(3);
+            }
+
             100% {
-            opacity: 1;
-            -webkit-transform: scale(1);
-                transform: scale(1); } }
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes opacity {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(3);
+                transform: scale(3);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 
@@ -131,7 +160,8 @@
                             <input type="text" class="form-control rounded" placeholder="Cari barang di sini" />
                             <span class="input-group-text category-search-icon">
                                 <!-- <object data="../assets/WEB/ICON/ICON WEB03.svg"style="width: 22px;" type=""></object> -->
-                                <img src="../assets/WEB/ICON/ICON WEB03.svg" style="width: 22px;" class="img-fluid" alt="">
+                                <img src="../assets/WEB/ICON/ICON WEB03.svg" style="width: 22px;" class="img-fluid"
+                                    alt="">
                             </span>
                         </div>
                         <div class="search-recommendations f-10 fc-text">
@@ -179,7 +209,41 @@
             </div>
         </nav>
     </div>
-    
+    <div class="nav-scroll">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex">
+                    <div class="title-navbar-scroll mx-auto">
+                        <span>Metropolis Meja Kerja Dengan Penyimpanan White (TACO)</span>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="rounded-10 nav nav-tabs nav-fill" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link p-3 active" id="ex2-tab-1" data-mdb-toggle="tab"
+                                href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1"
+                                aria-selected="true">Info Produk</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link p-3" id="ex2-tab-2" data-mdb-toggle="tab"
+                                href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2"
+                                aria-selected="false">Ulasan</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link p-3" id="ex2-tab-3" data-mdb-toggle="tab"
+                                href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
+                                aria-selected="false">Diskusi</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link p-3" id="ex2-tab-3" data-mdb-toggle="tab"
+                                href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
+                                aria-selected="false">Rekomendasi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="main-section">
         <div class="container">
             <div class="row">
@@ -199,26 +263,37 @@
                         <div class="col-md-5">
                             <div class="preview">
                                 <div class="preview-pic tab-content">
-                                  <div class="tab-pane active" id="pic-1" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/200/126" /></div>
-                                  <div class="tab-pane" id="pic-2" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
-                                  <div class="tab-pane" id="pic-3" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/200/126" /></div>
-                                  <div class="tab-pane" id="pic-4" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/400/252" /></div>
-                                  <div class="tab-pane" id="pic-5" data-scale="1.6"><img class="item-photo" src="http://placekitten.com/200/126" /></div>
+                                    <div class="tab-pane active" id="pic-1" data-scale="1.6"><img class="item-photo"
+                                            src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
+                                    <div class="tab-pane" id="pic-2" data-scale="1.6"><img class="item-photo"
+                                            src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></div>
+                                    <div class="tab-pane" id="pic-3" data-scale="1.6"><img class="item-photo"
+                                            src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
+                                    <div class="tab-pane" id="pic-4" data-scale="1.6"><img class="item-photo"
+                                            src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></div>
+                                    <div class="tab-pane" id="pic-5" data-scale="1.6"><img class="item-photo"
+                                            src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
                                 </div>
                                 <ul class="preview-thumbnail nav nav-tabs">
-                                  <li class="active"><a data-target="#pic-1" data-mdb-toggle="tab" href="#pic-1" role="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                                  <li><a data-target="#pic-2" data-toggle="tab"  data-mdb-toggle="tab" href="#pic-2" role="tab"><img src="http://placekitten.com/400/252" /></a></li>
-                                  <li><a data-target="#pic-3" data-toggle="tab"  data-mdb-toggle="tab" href="#pic-3" role="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                                  <li><a data-target="#pic-4" data-toggle="tab"  data-mdb-toggle="tab" href="#pic-4" role="tab"><img src="http://placekitten.com/400/252" /></a></li>
-                                  <li><a data-target="#pic-5" data-toggle="tab"  data-mdb-toggle="tab" href="#pic-5" role="tab"><img src="http://placekitten.com/200/126" /></a></li>
+                                    <li class="active"><a class="active" data-target="#pic-1" data-mdb-toggle="tab" href="#pic-1"
+                                            role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
+                                    <li><a data-target="#pic-2" data-toggle="tab" data-mdb-toggle="tab" href="#pic-2"
+                                            role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
+                                    <li><a data-target="#pic-3" data-toggle="tab" data-mdb-toggle="tab" href="#pic-3"
+                                            role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
+                                    <li><a data-target="#pic-4" data-toggle="tab" data-mdb-toggle="tab" href="#pic-4"
+                                            role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
+                                    <li><a data-target="#pic-5" data-toggle="tab" data-mdb-toggle="tab" href="#pic-5"
+                                            role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <h4><b>Tiffany Shoulderbag - Green</b></h4>
                             <div class="d-flex">
-                                <b>Terjual</b> <span class="ms-1"> 252</span> . 
-                                <img src="../assets/WEB/ICON/bintang.svg" class="w-15 ms-3" > <b class="ms-1">4.7</b> (66 ulasan) .
+                                <b>Terjual</b> <span class="ms-1"> 252</span> .
+                                <img src="../assets/WEB/ICON/bintang.svg" class="w-15 ms-3"> <b class="ms-1">4.7</b> (66
+                                ulasan) .
                                 <b class="ms-3">Diskusi </b>(6)
                             </div>
                             <h3 class="lh-90"><b>Rp145.000</b></h3>
@@ -230,9 +305,8 @@
                                             aria-selected="true">Detail</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab"
-                                            href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2"
-                                            aria-selected="false">Info Penting</a>
+                                        <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2"
+                                            role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Info Penting</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content p-3" id="ex2-content">
@@ -241,26 +315,37 @@
                                         <div class="f-11 text-dark">
                                             <p class="m-0">Kondisi : <b>Baru</b></p>
                                             <p class="m-0">Berat : <b>142 Gram</b></p>
-                                            <p class="m-0">Kategori : <a href="" class="text-link">Tas Selempang W…</a></p>
+                                            <p class="m-0">Kategori : <a href="" class="text-link">Tas Selempang W…</a>
+                                            </p>
                                             <p class="">Etalase : <a href="" class="text-link">Semua Etalase</a></p>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo…
                                             </p>
                                             <p id="selengkapnya">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius, quia eum nihil similique aut officiis quis nostrum earum reprehenderit? Exercitationem ipsa obcaecati velit nesciunt ducimus aspernatur doloribus architecto quae?
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius,
+                                                quia eum nihil similique aut officiis quis nostrum earum reprehenderit?
+                                                Exercitationem ipsa obcaecati velit nesciunt ducimus aspernatur
+                                                doloribus architecto quae?
                                             </p>
-                                            <a href="" onclick="selengkapnya('selengkapnya')" id="btn-selengkapnya" class="text-link p-0">Lihat Selengkapnya</a>
-                                            <a href="" onclick="selengkapnya('tutup')" id="btn-tutup" class="text-link p-0">Lihat Lebih Sedikit</a>
+                                            <a href="" onclick="selengkapnya('selengkapnya')" id="btn-selengkapnya"
+                                                class="text-link p-0">Lihat Selengkapnya</a>
+                                            <a href="" onclick="selengkapnya('tutup')" id="btn-tutup"
+                                                class="text-link p-0">Lihat Lebih Sedikit</a>
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-start">
                                             <div>
-                                                <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg" class="w-60 rounded-full rounded-border" alt="">
+                                                <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg"
+                                                    class="w-60 rounded-full rounded-border" alt="">
                                             </div>
                                             <div class="my-auto ml-3 w-100">
                                                 <div class="d-flex justify-content-between">
                                                     <div class="text-dark my-auto">
-                                                        <img src="../assets/WEB/ICON/ICON WEB17.svg" class="w-30" alt=""> <b class="ml-1">Store.id</b>
+                                                        <img src="../assets/WEB/ICON/ICON WEB17.svg" class="w-30"
+                                                            alt=""> <b class="ml-1">Store.id</b>
                                                         <p class="m-0 fc-text">Online 29 menit lalu</p>
                                                     </div>
                                                     <div>
@@ -272,25 +357,32 @@
                                                 <div class="d-flex justify-content-between">
                                                     <div>
                                                         <div class="d-flex f-10">
-                                                            <img src="../assets/WEB/ICON/ICON WEB94.svg" class="w-15" alt="">
-                                                            <b class="text-dark ml-2">4.9</b> <span class="ml-2">rating..</span>
+                                                            <img src="../assets/WEB/ICON/ICON WEB94.svg" class="w-15"
+                                                                alt="">
+                                                            <b class="text-dark ml-2">4.9</b> <span
+                                                                class="ml-2">rating..</span>
                                                             <div class="bh-20"></div>
-                                                            <img src="../assets/WEB/ICON/ICON WEB26.svg" class="w-15" alt="">
-                                                            <img src="../assets/WEB/ICON/ICON WEB88.svg" class="ml-2 w-15" alt="">
-                                                            <b class="text-dark ml-2">20 jam</b> <span class="ml-2">pesanan..</span>
+                                                            <img src="../assets/WEB/ICON/ICON WEB26.svg" class="w-15"
+                                                                alt="">
+                                                            <img src="../assets/WEB/ICON/ICON WEB88.svg"
+                                                                class="ml-2 w-15" alt="">
+                                                            <b class="text-dark ml-2">20 jam</b> <span
+                                                                class="ml-2">pesanan..</span>
                                                         </div>
                                                     </div>
-                                                </div>                                        
+                                                </div>
                                             </div>
                                         </div>
                                         <hr>
                                         <div class="text-dark">
                                             <b>Pengiriman</b>
                                             <p class="m-0">
-                                                <img src="../assets/WEB/ICON/ICON WEB73.svg" class="w-15" alt=""> Dikirim dari <b>Kota Yogyakarta</b>
+                                                <img src="../assets/WEB/ICON/ICON WEB73.svg" class="w-15" alt="">
+                                                Dikirim dari <b>Kota Yogyakarta</b>
                                             </p>
                                             <p>
-                                                <img src="../assets/WEB/ICON/ICON WEB95.svg" class="w-15" alt=""> Ongkir multi <b>Rp 13.000</b>, tiba 6-10 hari ke <b>Kab. Tangerang</b>
+                                                <img src="../assets/WEB/ICON/ICON WEB95.svg" class="w-15" alt=""> Ongkir
+                                                multi <b>Rp 13.000</b>, tiba 6-10 hari ke <b>Kab. Tangerang</b>
                                             </p>
                                         </div>
                                         <hr>
@@ -301,12 +393,14 @@
                                             <b>Penawaran Lainnya</b>
                                             <div class="d-flex">
                                                 <div>
-                                                    <img src="../assets/WEB/ICON/ICON WEB55.svg" class="w-30 mt-0" alt="">
+                                                    <img src="../assets/WEB/ICON/ICON WEB55.svg" class="w-30 mt-0"
+                                                        alt="">
                                                 </div>
                                                 <div class="ml-2">
                                                     <b>Harga Grosir</b><br>
                                                     <select name="" id="" class="select-none-border fc-text">
-                                                        <option value="">Lebih mural, mulai dari Rp17.ooo min 20 pcs</option>
+                                                        <option value="">Lebih mural, mulai dari Rp17.ooo min 20 pcs
+                                                        </option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -314,7 +408,8 @@
                                         <hr>
                                         <div class="d-flex justify-content-between">
                                             <a href="" class="fc-text">Ada masala dengan produk ini?</a>
-                                            <a href="" class="text-dark"><img src="../assets/WEB/ICON/ICON WEB72.svg" class="w-15" alt=""> Laporkan</a>
+                                            <a href="" class="text-dark"><img src="../assets/WEB/ICON/ICON WEB72.svg"
+                                                    class="w-15" alt=""> Laporkan</a>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel"
@@ -342,7 +437,7 @@
                                                     <label class="f-10 fw-bold" for=""></label>
                                                     <button class="btn btn-secondary">Beli</button>
                                                 </div>
-            
+
                                             </div>
                                         </div>
                                     </div>
@@ -360,90 +455,110 @@
                                         <div class="text-center">
                                             <span class="display-4 font-weight-bolder">3.1</span><br>
                                             <div>
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20" type=""></object>
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20" type=""></object>
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20" type=""></object>
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20" type=""></object>
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20" type=""></object>
+                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20"
+                                                    type=""></object>
+                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20"
+                                                    type=""></object>
+                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20"
+                                                    type=""></object>
+                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20"
+                                                    type=""></object>
+                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-20"
+                                                    type=""></object>
                                             </div>
                                             <small class="text-black-50">(100) Ulasan</small>
                                         </div>
                                         <div class="flex-grow-1">
                                             <div class="row align-items-center">
-                                            <div class="col-4 text-right">
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                5
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="progress rounded" style="height: 10px;">
-                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="col-4 text-right">
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    5
                                                 </div>
-                                            </div>
-                                            <div class="col-2">
-                                                55
-                                            </div>
+                                                <div class="col-6">
+                                                    <div class="progress rounded" style="height: 10px;">
+                                                        <div class="progress-bar bg-success rounded" role="progressbar"
+                                                            style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    55
+                                                </div>
                                             </div>
                                             <div class="row align-items-center">
-                                            <div class="col-4 text-right">
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                4
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="progress rounded" style="height: 10px;">
-                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="col-4 text-right">
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    4
                                                 </div>
-                                            </div>
-                                            <div class="col-2">
-                                                50
-                                            </div>
+                                                <div class="col-6">
+                                                    <div class="progress rounded" style="height: 10px;">
+                                                        <div class="progress-bar bg-success rounded" role="progressbar"
+                                                            style="width: 55%" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    50
+                                                </div>
                                             </div>
                                             <div class="row align-items-center">
-                                            <div class="col-4 text-right">
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                3
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="progress rounded" style="height: 10px;">
-                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="col-4 text-right">
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    3
                                                 </div>
-                                            </div>
-                                            <div class="col-2">
-                                                40
-                                            </div>
+                                                <div class="col-6">
+                                                    <div class="progress rounded" style="height: 10px;">
+                                                        <div class="progress-bar bg-success rounded" role="progressbar"
+                                                            style="width: 45%" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    40
+                                                </div>
                                             </div>
                                             <div class="row align-items-center">
-                                            <div class="col-4 text-right">
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                2
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="progress rounded" style="height: 10px;">
-                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 35%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="col-4 text-right">
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    2
                                                 </div>
-                                            </div>
-                                            <div class="col-2">
-                                                30
-                                            </div>
+                                                <div class="col-6">
+                                                    <div class="progress rounded" style="height: 10px;">
+                                                        <div class="progress-bar bg-success rounded" role="progressbar"
+                                                            style="width: 35%" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    30
+                                                </div>
                                             </div>
                                             <div class="row align-items-center">
-                                            <div class="col-4 text-right">
-                                                <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                1
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="progress rounded" style="height: 10px;">
-                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="col-4 text-right">
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    1
                                                 </div>
-                                            </div>
-                                            <div class="col-2">
-                                                20
-                                            </div>
+                                                <div class="col-6">
+                                                    <div class="progress rounded" style="height: 10px;">
+                                                        <div class="progress-bar bg-success rounded" role="progressbar"
+                                                            style="width: 25%" aria-valuenow="75" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    20
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-        
+
                             <div class="mt-4 d-flex justify-content-between">
                                 <span class="f-10">FOTO DARI PEMBELI (16)</span>
                                 <a href="" class="text-link">Lihat Semua</a>
@@ -453,43 +568,43 @@
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan">
                                     <picture class="sub-thumb">
                                         <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="" alt="">
                                     </picture>
-                                    
+
                                 </div>
                                 <div class="thumb-ulasan thumb-last m-0">
                                     <picture class="sub-thumb">
@@ -497,7 +612,7 @@
                                     </picture>
                                 </div>
                             </div>
-        
+
                             <div class="mt-4 d-flex justify-content-between">
                                 <span class="f-10">ULASAN PALING MEMBANTU</span>
                             </div>
@@ -511,18 +626,25 @@
                                             <span class="text-link">Rani</span><br>
                                             <div class="d-flex">
                                                 <div class="ml-2">
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
                                                 </div>
                                                 <span class="fc-text ml-2">1 bulan lalu</span>
                                             </div>
                                         </div>
                                     </div>
                                     <p class="mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo…
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo…
                                     </p>
                                     <hr>
                                     <div class="d-flex justify-content-between">
@@ -536,7 +658,7 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                             <div class="mt-4 d-flex justify-content-between">
                                 <span class="my-auto">Filter</span>
                                 <div>
@@ -547,38 +669,38 @@
                                         Dengan Foto (13)
                                     </button>
                                     <button class="btn-white p-6-20 rounded-18">
-                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto"  alt="">
+                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto" alt="">
                                         <span class="my-auto">
                                             5
                                         </span>
                                     </button>
                                     <button class="btn-white p-6-20 rounded-18">
-                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto"  alt="">
+                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto" alt="">
                                         <span class="my-auto">
                                             4
                                         </span>
                                     </button>
                                     <button class="btn-white p-6-20 rounded-18">
-                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto"  alt="">
+                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto" alt="">
                                         <span class="my-auto">
                                             3
                                         </span>
                                     </button>
                                     <button class="btn-white p-6-20 rounded-18">
-                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto"  alt="">
+                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto" alt="">
                                         <span class="my-auto">
                                             2
                                         </span>
                                     </button>
                                     <button class="btn-white p-6-20 rounded-18">
-                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto"  alt="">
+                                        <img src="../assets/WEB/ICON/bintang.svg" class="w-20 my-auto" alt="">
                                         <span class="my-auto">
                                             1
                                         </span>
                                     </button>
                                 </div>
                             </div>
-        
+
                             <div class="mt-4">
                                 <b class="f-10">SEMUA ULASAN (66)</b>
                                 <br>
@@ -596,21 +718,28 @@
                                         <div class="d-flex">
                                             <div class="ml-5 w-75">
                                                 <div>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
                                                 </div>
                                                 <p class="f-10">Barangnya bagus banget, tidak ada cacat.</p>
                                                 <a href="">
-                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2" alt="">
+                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2"
+                                                        alt="">
                                                 </a>
                                                 <div class="card rounded-18 bg-light border-0">
                                                     <div class="card-body">
                                                         <div class="d-flex">
                                                             <div>
-                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg" class="w-35" alt="">
+                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg"
+                                                                    class="w-35" alt="">
                                                             </div>
                                                             <div class="d-flex">
                                                                 <div class="ml-2">
@@ -628,7 +757,8 @@
                                                             </div>
                                                         </div>
                                                         <p class="pl-5 mb-0 mt-2 f-10">
-                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
+                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan
+                                                            ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -657,21 +787,28 @@
                                         <div class="d-flex">
                                             <div class="ml-5 w-75">
                                                 <div>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
                                                 </div>
                                                 <p class="f-10">Barangnya bagus banget, tidak ada cacat.</p>
                                                 <a href="">
-                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2" alt="">
+                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2"
+                                                        alt="">
                                                 </a>
                                                 <div class="card rounded-18 bg-light border-0">
                                                     <div class="card-body">
                                                         <div class="d-flex">
                                                             <div>
-                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg" class="w-35" alt="">
+                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg"
+                                                                    class="w-35" alt="">
                                                             </div>
                                                             <div class="d-flex">
                                                                 <div class="ml-2">
@@ -689,7 +826,8 @@
                                                             </div>
                                                         </div>
                                                         <p class="pl-5 mb-0 mt-2 f-10">
-                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
+                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan
+                                                            ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -718,21 +856,28 @@
                                         <div class="d-flex">
                                             <div class="ml-5 w-75">
                                                 <div>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
-                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15" type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
+                                                    <object data="../assets/WEB/ICON/bintang.svg" class="w-15"
+                                                        type=""></object>
                                                 </div>
                                                 <p class="f-10">Barangnya bagus banget, tidak ada cacat.</p>
                                                 <a href="">
-                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2" alt="">
+                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB71.jpg" class="w-60 m-2"
+                                                        alt="">
                                                 </a>
                                                 <div class="card rounded-18 bg-light border-0">
                                                     <div class="card-body">
                                                         <div class="d-flex">
                                                             <div>
-                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg" class="w-35" alt="">
+                                                                <img src="../assets/WEB/ICON/ICON WEB127.svg"
+                                                                    class="w-35" alt="">
                                                             </div>
                                                             <div class="d-flex">
                                                                 <div class="ml-2">
@@ -750,7 +895,8 @@
                                                             </div>
                                                         </div>
                                                         <p class="pl-5 mb-0 mt-2 f-10">
-                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
+                                                            Sip mantap gan, Semoga cocok dan produknya selalu memuaskan
+                                                            ya. Kami tunggu orderan berikutnya, <br><br> Terimakasih.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -767,30 +913,32 @@
                                 <hr>
                                 <div class="d-flex flex-row-reverse">
                                     <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-first" alt="">
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        </li>
-                                        <li class="page-item m-auto active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">4</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">5</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">6</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">7</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">...</a></li>
-                                        <li class="page-item m-auto"><a class="page-link" href="#">10</a></li>
-                                        <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <!-- <span aria-hidden="true">&raquo;</span> -->
-                                            <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-last" alt="">
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                        </li>
-                                    </ul>
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-first"
+                                                        alt="">
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item m-auto active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">7</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item m-auto"><a class="page-link" href="#">10</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <!-- <span aria-hidden="true">&raquo;</span> -->
+                                                    <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-last"
+                                                        alt="">
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </nav>
                                 </div>
                             </div>
@@ -821,11 +969,14 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
                                                 <div>
-                                                    <img src="../assets/WEB/ICON/ICON WEB131.svg" class="w-35 rounded-full" alt="">
+                                                    <img src="../assets/WEB/ICON/ICON WEB131.svg"
+                                                        class="w-35 rounded-full" alt="">
                                                 </div>
                                                 <div class="ml-3 d-flex flex-column">
-                                                    <span class="f-11"><b>Sarah</b> - <span class="fc-text f-10">08 Februari pukul 21:14</span></span>
-                                                    <span class="fc-text f-11 mt-2 w-max">Apakah produk masih ada?</span>
+                                                    <span class="f-11"><b>Sarah</b> - <span class="fc-text f-10">08
+                                                            Februari pukul 21:14</span></span>
+                                                    <span class="fc-text f-11 mt-2 w-max">Apakah produk masih
+                                                        ada?</span>
                                                 </div>
                                             </div>
                                             <div>
@@ -840,20 +991,38 @@
                                 <div class="card bg-light rounded-0">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between pl-5">
-                                            <div class="d-flex">
+                                            <div class="d-flex w-100">
                                                 <div>
-                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg" class="w-35 rounded-full" alt="">
+                                                    <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg"
+                                                        class="w-35 rounded-full" alt="">
                                                 </div>
-                                                <div class="ml-3 d-flex flex-column">
-                                                    <div class="item-badge">
-                                                        <span class="f-11"><b>Store.id</b> </span>
-                                                        <span class="success">
-                                                            Penjual
-                                                        </span>
-                                                        - <span class="fc-text f-10">08 Februari pukul 21:14</span></span>
+                                                <div class="ml-3 d-flex flex-column w-100">
+                                                    <div>
+                                                        <div class="item-badge">
+                                                            <span class="f-11"><b>Store.id</b> </span>
+                                                            <span class="success">
+                                                                Penjual
+                                                            </span>
+                                                            - <span class="fc-text f-10">08 Februari pukul
+                                                                21:14</span></span>
+                                                        </div>
+
+                                                        <span class="fc-text f-11 mt-2 w-max">Semua produk masih ready,
+                                                            silahkan di order.</span>
                                                     </div>
-                                                    
-                                                    <span class="fc-text f-11 mt-2 w-max">Semua produk masih ready, silahkan di order.</span>
+                                                    <form action="">
+                                                        <div class="mt-3 d-flex">
+                                                            <img src="../assets/WEB/IMAGE/IMAGE WEB64.jpg"
+                                                                class="w-35 rounded-full h-35" alt="">
+                                                            <textarea name="" class="form-control ml-2 f-10" id=""
+                                                                placeholder="Tulis disini..."></textarea>
+                                                        </div>
+                                                        <div class="d-flex flex-row-reverse mt-2">
+                                                            <button class="btn btn-success ml-2">Kirim</button>
+                                                            <button type="reset"
+                                                                class="btn btn-light shadow-0">Batal</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                             <div>
@@ -864,8 +1033,29 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="mt-4">
+                                    <form action="">
+                                        <textarea name="" class="form-control" id="" cols="30" rows="5"
+                                            placeholder="Apa yang ingin Anda tanyakan mengenai produk ini?"></textarea>
+                                        <div class="text-right">
+                                            <button class="btn btn-success mt-2">Kirim</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="card rounded-0 mt-4">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row-reverse">
+                                            <a href="" class="text-dark ml-4"><span class="fa fa-comment"></span> Chat
+                                                Penjual</a>
+                                            <div class="bh-16 ml-4"></div>
+                                            <span class="fc-text">Atau hubungi langsung penjual</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-        
+
                         </div>
                     </div>
                 </div>
@@ -888,7 +1078,8 @@
                                         </a>
                                         <span class="f-11">Stok <b>358</b></span>
                                         <p class="fc-text f-10">Beli > 20, lebih hemat!</p>
-                                        <a href="" class="text-link"><img src="../assets/WEB/ICON/ICON WEB90.svg" class="w-15" alt=""> Tambah Catatan</a>
+                                        <a href="" class="text-link"><img src="../assets/WEB/ICON/ICON WEB90.svg"
+                                                class="w-15" alt=""> Tambah Catatan</a>
                                         <div class="d-flex justify-content-between mt-3 lh-30 f-11 fc-text">
                                             <span>Subtotal</span>
                                             <b class="f-14 text-dark">Rp430.000</b>
@@ -900,11 +1091,14 @@
                                             <span class="fa fa-plus"></span>Beli Langsung
                                         </button>
                                         <div class="d-flex mt-3 f-9 justify-content-between">
-                                            <a href="" class="fc-text"><span class="fa fa-comment"></span> <b>Chat</b></a>
+                                            <a href="" class="fc-text"><span class="fa fa-comment"></span>
+                                                <b>Chat</b></a>
                                             <div class="bh-16"></div>
-                                            <a href="" class="fc-text"><span class="fa fa-heart"></span> <b>Wishlist</b></a>
+                                            <a href="" class="fc-text"><span class="fa fa-heart"></span>
+                                                <b>Wishlist</b></a>
                                             <div class="bh-16"></div>
-                                            <a href="" class="fc-text"><span class="fa fa-share"></span> <b>Share</b></a>
+                                            <a href="" class="fc-text"><span class="fa fa-share"></span>
+                                                <b>Share</b></a>
                                         </div>
                                     </div>
                                 </div>
@@ -913,102 +1107,889 @@
                     </div>
                 </div>
             </div>
+            <!-- Lainnya -->
+            <div class="mt-4 d-flex justify-content-between">
+                <b>Lainnya di toko ini</b>
+            </div>
+            <div class="row">
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>BOX SHAD SH34-BLACK</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 125.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <b>Produk sponsor terkait</b>
+            </div>
+            <div class="row">
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>BOX SHAD SH34-BLACK</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 125.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 d-flex justify-content-between">
+                <b>Fashion pilihan untukmu</b>
+            </div>
+            <div class="row">
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>BOX SHAD SH34-BLACK</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 125.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>BOX SHAD SH34-BLACK</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 125.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-md-2 mt-3">
+                    <a href="">
+                        <div class="h-100">
+                            <div class="rounded-10 item-product shadows">
+                                <div class="item-img">
+                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                </div>
+                                <div class="icon-wish">
+                                    <span class="fa fa-heart m-auto"></span>
+                                </div>
+                                <div class="p-2 item-desc">
+                                    <p>Smartwatch Dial Bulat Besar</p>
+                                    <div class="item-price">
+                                        <b class="fc-orange">Rp 145.000</b>
+                                    </div>
+                                    <div class="d-flex">
+                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                        <span class="f-10 ms-2">Bandung</span>
+                                    </div>
+                                    <div class="item-rating">
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                        <small>(1120)</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- footer -->
     <footer class="text-center text-lg-start footer">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row p-4">
-          <div class="col-8">
-            <div class="row">
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Onlinemol</h4>
-                <h6 class="footer-onlinemol"><a href="#">Tentang Onlinemol</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Karir</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Blog</a></h6>
-              </div>
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Beli</h4>
-                <h6 class="footer-onlinemol"><a href="#">Tagihan & Top Up</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Tukar Tambah Handphone</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Onlinemol COD</a></h6>
-              </div>
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Bantuan dan Panduan</h4>
-                <h6 class="footer-onlinemol"><a href="#">Onlinemol Care</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Syarat dan Ketentuan</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Kebijakan Privasi</a></h6>
-              </div>
-              <div class="col-4">
-                <!-- spacer -->
-              </div>
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Jual</h4>
-                <h6 class="footer-onlinemol"><a href="#">Pusat Edukasi Seller</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Mitra Toppers</a></h6>
-                <h6 class="footer-onlinemol"><a href="#">Daftar Official Store</a></h6>
-              </div>
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Keamanan</h4>
-                <img src="../assets/WEB/IMAGE/IMAGE WEB81.jpg" width="100px">
-              </div>
-              <div class="col-4">
-                <!-- spacer -->
-              </div>
-              <div class="col-4">
-                <!-- spacer -->
-              </div>
-              <div class="col-4">
-                <h4 class="footer-onlinemol-bold">Ikuti Kami</h4>
-                <span class="social-icon text-muted">
-                    <a href="">
-                        <img src="../assets/WEB/ICON/ICON WEB84.svg" width="34px" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/WEB/ICON/ICON WEB104.svg" width="34px" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/WEB/ICON/ICON WEB105.svg" width="34px" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/WEB/ICON/ICON WEB101.svg" width="34px" alt="">
-                    </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <img src="../assets/WEB/ICON/ICON WEB19.svg" class="mall-image">
-            <br>
-            <div class="row mt-3">
-                <div class="col-6">
-                    <img src="../assets/WEB/IMAGE/IMAGE WEB10.png" class="img-fluid" alt="">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row p-4">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Onlinemol</h4>
+                            <h6 class="footer-onlinemol"><a href="#">Tentang Onlinemol</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Karir</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Blog</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Beli</h4>
+                            <h6 class="footer-onlinemol"><a href="#">Tagihan & Top Up</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Tukar Tambah Handphone</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Onlinemol COD</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Bantuan dan Panduan</h4>
+                            <h6 class="footer-onlinemol"><a href="#">Onlinemol Care</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Syarat dan Ketentuan</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Kebijakan Privasi</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <!-- spacer -->
+                        </div>
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Jual</h4>
+                            <h6 class="footer-onlinemol"><a href="#">Pusat Edukasi Seller</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Mitra Toppers</a></h6>
+                            <h6 class="footer-onlinemol"><a href="#">Daftar Official Store</a></h6>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Keamanan</h4>
+                            <img src="../assets/WEB/IMAGE/IMAGE WEB81.jpg" width="100px">
+                        </div>
+                        <div class="col-4">
+                            <!-- spacer -->
+                        </div>
+                        <div class="col-4">
+                            <!-- spacer -->
+                        </div>
+                        <div class="col-4">
+                            <h4 class="footer-onlinemol-bold">Ikuti Kami</h4>
+                            <span class="social-icon text-muted">
+                                <a href="">
+                                    <img src="../assets/WEB/ICON/ICON WEB84.svg" width="34px" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/WEB/ICON/ICON WEB104.svg" width="34px" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/WEB/ICON/ICON WEB105.svg" width="34px" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/WEB/ICON/ICON WEB101.svg" width="34px" alt="">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-5">
-                    <img src="../assets/WEB/IMAGE/IMAGE WEB5.png" alt="" class="img-fluid">
+                <div class="col-4">
+                    <img src="../assets/WEB/ICON/ICON WEB19.svg" class="mall-image">
+                    <br>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <img src="../assets/WEB/IMAGE/IMAGE WEB10.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-5">
+                            <img src="../assets/WEB/IMAGE/IMAGE WEB5.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <p class="text-center mt-3 f-10 fc-text">
+                        @ 2009 - 2021, PT. Onlinemol
+                    </p>
+                    <div class="text-center">
+                        <div class="btn-switch">
+                            <button class="primary">
+                                Indonesia
+                            </button>
+                            <button class="off">
+                                English
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="text-center mt-3 f-10 fc-text">
-                @ 2009 - 2021, PT. Onlinemol
-            </p>
-            <div class="text-center">
-                <div class="btn-switch">
-                    <button class="primary">
-                        Indonesia
-                    </button>
-                    <button class="off">
-                        English 
-                    </button>
-                </div>
-            </div>
-          </div>
+            <!--Grid row-->
         </div>
-        <!--Grid row-->
-      </div>
-      <!-- Grid container -->
+        <!-- Grid container -->
     </footer>
 
     <script src="../assets/js/jquery/dist/jquery.js"></script>
@@ -1021,42 +2002,49 @@
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/xzoom.min.js"></script> -->
     <script>
         $(".tab-pane")
-        // tile mouse actions
-        .on("mouseover", function() {
-            $(this)
-            .children(".item-photo")
-            .css({ transform: "scale(" + $(this).attr("data-scale") + ")" });
-        })
-        .on("mouseout", function() {
-            $(this)
-            .children(".item-photo")
-            .css({ transform: "scale(1)" });
-        })
-        .on("mousemove", function(e) {
-            $(this)
-            .children(".item-photo")
-            .css({
-                "transform-origin":
-                ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
-                "% " +
-                ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
-                "%"
+            // tile mouse actions
+            .on("mouseover", function () {
+                $(this)
+                    .children(".item-photo")
+                    .css({
+                        transform: "scale(" + $(this).attr("data-scale") + ")"
+                    });
+            })
+            .on("mouseout", function () {
+                $(this)
+                    .children(".item-photo")
+                    .css({
+                        transform: "scale(1)"
+                    });
+            })
+            .on("mousemove", function (e) {
+                $(this)
+                    .children(".item-photo")
+                    .css({
+                        "transform-origin": ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+                            "% " +
+                            ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+                            "%"
+                    });
             });
-        });
 
-        $('a').click( function(e) {e.preventDefault();return false; } );
+        $('a').click(function (e) {
+            e.preventDefault();
+            return false;
+        });
         $('#btn-tutup').hide();
         $('#selengkapnya').hide();
-        function selengkapnya(val){
-            if(val === 'selengkapnya'){
+
+        function selengkapnya(val) {
+            if (val === 'selengkapnya') {
                 $('#selengkapnya').show();
                 $('#btn-selengkapnya').hide();
                 $('#btn-tutup').show();
-            }else{
+            } else {
                 $('#selengkapnya').hide();
                 $('#btn-selengkapnya').show();
                 $('#btn-tutup').hide();
-                
+
             }
         }
     </script>
