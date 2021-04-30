@@ -267,17 +267,19 @@ opacity: 1;
     background-color: #fff!important;
 }
 .nav-scroll{
-    transform: translateY(130px);
+    display: none;
+    /* transform: translateY(60px); */
     opacity: 1;
     height: 44px;
     /* overflow: hidden; */
     width: 100%;
-    padding: 0px 12px;
+    padding: 0px;
     background-color: rgb(255, 255, 255);
-    z-index: -1;
-    transition: all 0.3s ease-in 0s;
+    z-index: 99;
+    /* transition: all 0.3s ease-in 0s; */
     box-shadow: rgb(49 53 59 / 12%) 0px 2px 2px 0px;
-    position: static;
+    position: fixed;
+    top: 129px;
 }
 .title-navbar-scroll{
     display: flex;
@@ -682,7 +684,7 @@ opacity: 1;
 }
 .sticky-detail{
     position: sticky;
-    top: 175px;
+    top: 185px;
 }
 
 /*CUSTOM CSS ORI */

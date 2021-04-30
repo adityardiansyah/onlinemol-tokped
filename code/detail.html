@@ -220,23 +220,23 @@
                 <div class="col-md-5">
                     <ul class="rounded-10 nav nav-tabs nav-fill" id="ex1" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link p-3 active" id="ex2-tab-1" data-mdb-toggle="tab"
-                                href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1"
+                            <a class="nav-link p-3 active" id="btn_info_produk" data-mdb-toggle="tab"
+                                href="#tab_info_produk" role="tab" aria-controls="ex2-tabs-1"
                                 aria-selected="true">Info Produk</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link p-3" id="ex2-tab-2" data-mdb-toggle="tab"
-                                href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2"
+                                href="#tab_ulasan" role="tab" aria-controls="ex2-tabs-2"
                                 aria-selected="false">Ulasan</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link p-3" id="ex2-tab-3" data-mdb-toggle="tab"
-                                href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
+                                href="#tab_diskusi" role="tab" aria-controls="ex2-tabs-3"
                                 aria-selected="false">Diskusi</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link p-3" id="ex2-tab-3" data-mdb-toggle="tab"
-                                href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
+                                href="#tab_rekomendasi" role="tab" aria-controls="ex2-tabs-3"
                                 aria-selected="false">Rekomendasi</a>
                         </li>
                     </ul>
@@ -261,7 +261,7 @@
                 <div class="col-md-9">
                     <div class="row">
                         <div class="col-md-5">
-                            <div class="preview">
+                            <div class="preview sticky-detail">
                                 <div class="preview-pic tab-content">
                                     <div class="tab-pane active" id="pic-1" data-scale="1.6"><img class="item-photo"
                                             src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
@@ -288,7 +288,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7" id="tab_info_produk">
                             <h4><b>Tiffany Shoulderbag - Green</b></h4>
                             <div class="d-flex">
                                 <b>Terjual</b> <span class="ms-1"> 252</span> .
@@ -445,8 +445,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
+                    <div class="row mt-3">
+                        <div class="col-md-12" id="tab_ulasan">
                             <h5><b>ULASAN (66)</b></h5>
                             <b>Tiffany Shoulderbag - Green</b>
                             <div class="d-flex">
@@ -943,7 +943,7 @@
                                 </div>
                             </div>
 
-                            <div class="mt-4">
+                            <div class="mt-4" id="tab_diskusi">
                                 <b class="f-10">DISKUSI (20)</b>
                                 <p>Tiffany Shoulderbag - Green</p>
 
@@ -1108,790 +1108,792 @@
                 </div>
             </div>
             <!-- Lainnya -->
-            <div class="mt-4 d-flex justify-content-between">
-                <b>Lainnya di toko ini</b>
-            </div>
-            <div class="row">
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+            <div id="tab_rekomendasi">
+                <div class="mt-4 d-flex justify-content-between">
+                    <b>Lainnya di toko ini</b>
                 </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                <div class="row">
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>BOX SHAD SH34-BLACK</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 125.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>BOX SHAD SH34-BLACK</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+    
+                <div class="mt-4 d-flex justify-content-between">
+                    <b>Produk sponsor terkait</b>
                 </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 125.000</b>
+                <div class="row">
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>BOX SHAD SH34-BLACK</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 125.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div class="mt-4 d-flex justify-content-between">
+                    <b>Fashion pilihan untukmu</b>
                 </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                <div class="row">
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>BOX SHAD SH34-BLACK</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 125.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
+                                    </div>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
+                                    </div>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="mt-4 d-flex justify-content-between">
-                <b>Produk sponsor terkait</b>
-            </div>
-            <div class="row">
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                <div class="row">
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>BOX SHAD SH34-BLACK</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 125.000</b>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>BOX SHAD SH34-BLACK</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="mt-4 d-flex justify-content-between">
-                <b>Fashion pilihan untukmu</b>
-            </div>
-            <div class="row">
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Side Plit Anata Top Mocca M13696 R37S2</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 125.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>BOX SHAD SH34-BLACK</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 125.000</b>
+                        </a>
+                    </div>
+                    <div class="col-2 col-md-2 mt-3">
+                        <a href="">
+                            <div class="h-100">
+                                <div class="rounded-10 item-product shadows">
+                                    <div class="item-img">
+                                        <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
                                     </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
+                                    <div class="icon-wish">
+                                        <span class="fa fa-heart m-auto"></span>
                                     </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
+                                    <div class="p-2 item-desc">
+                                        <p>Smartwatch Dial Bulat Besar</p>
+                                        <div class="item-price">
+                                            <b class="fc-orange">Rp 145.000</b>
+                                        </div>
+                                        <div class="d-flex">
+                                            <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
+                                            <span class="f-10 ms-2">Bandung</span>
+                                        </div>
+                                        <div class="item-rating">
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
+                                            <small>(1120)</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>BOX SHAD SH34-BLACK</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Side Plit Anata Top Mocca M13696 R37S2</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 125.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB08.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB23.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Wiressless Bluetooth Earphone Stereo Earbuds</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB16.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-2 col-md-2 mt-3">
-                    <a href="">
-                        <div class="h-100">
-                            <div class="rounded-10 item-product shadows">
-                                <div class="item-img">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB26.jpg" alt="">
-                                </div>
-                                <div class="icon-wish">
-                                    <span class="fa fa-heart m-auto"></span>
-                                </div>
-                                <div class="p-2 item-desc">
-                                    <p>Smartwatch Dial Bulat Besar</p>
-                                    <div class="item-price">
-                                        <b class="fc-orange">Rp 145.000</b>
-                                    </div>
-                                    <div class="d-flex">
-                                        <object data="../assets/WEB/ICON/ICON WEB17.svg" class="w-15" type=""></object>
-                                        <span class="f-10 ms-2">Bandung</span>
-                                    </div>
-                                    <div class="item-rating">
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <object data="../assets/WEB/ICON/ICON WEB09.svg" type=""></object>
-                                        <small>(1120)</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2047,6 +2049,16 @@
 
             }
         }
+
+        $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 50) {
+            console.log('masuk');
+            $('.nav-scroll').slideDown(500);
+        } else {
+            $('.nav-scroll').slideUp(500);
+        }
+        });
     </script>
 </body>
 
