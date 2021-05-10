@@ -1867,33 +1867,35 @@
                 <div class="preview">
                     <div class="row">
                         <div class="col-md-8">
-                            <div class="preview-detail tab-content">
-                                <div class="tab-pane active" id="pop-1"><img class="item-photo detail-photo-product"
+                            <button class="btn-prev" id="prev-product"><span class="fa fa-arrow-left"></span></button>
+                            <button class="btn-next" id="next-product"><span class="fa fa-arrow-right"></span></button>
+                            <div class="preview-detail slide-product tab-content">
+                                <div class="tab-pane slide active" id="pop-1"><img class="item-photo detail-photo-product"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
-                                <div class="tab-pane" id="pop-2"><img class="item-photo detail-photo-product"
+                                <div class="tab-pane slide" id="pop-2"><img class="item-photo detail-photo-product"
                                         src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></div>
-                                <div class="tab-pane" id="pop-3"><img class="item-photo detail-photo-product"
+                                <div class="tab-pane slide" id="pop-3"><img class="item-photo detail-photo-product"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
-                                <div class="tab-pane" id="pop-4"><img class="item-photo detail-photo-product"
+                                <div class="tab-pane slide" id="pop-4"><img class="item-photo detail-photo-product"
                                         src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></div>
-                                <div class="tab-pane" id="pop-5"><img class="item-photo detail-photo-product"
+                                <div class="tab-pane slide" id="pop-5"><img class="item-photo detail-photo-product"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <b>Gambar Barang</b>
-                            <ul class="preview-thumbnail-detail nav nav-tabs tumb-preview-detail">
-                                <li class="active"><a class="active" data-target="#pop-1" data-mdb-toggle="tab" href="#pop-1"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                <li><a data-target="#pop-2" data-toggle="tab" data-mdb-toggle="tab" href="#pop-2"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
-                                <li><a data-target="#pop-3" data-toggle="tab" data-mdb-toggle="tab" href="#pop-3"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                <li><a data-target="#pop-4" data-toggle="tab" data-mdb-toggle="tab" href="#pop-4"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
-                                <li><a data-target="#pop-5" data-toggle="tab" data-mdb-toggle="tab" href="#pop-5"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                            </ul>
+                            <div class="preview-thumbnail-detail thumb-slider nav nav-tabs tumb-preview-detail">
+                                <a class="active" data-target="#pop-1" data-mdb-toggle="tab" href="#pop-1"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                                <a data-target="#pop-2" data-toggle="tab" data-mdb-toggle="tab" href="#pop-2"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a>
+                                <a data-target="#pop-3" data-toggle="tab" data-mdb-toggle="tab" href="#pop-3"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                                <a data-target="#pop-4" data-toggle="tab" data-mdb-toggle="tab" href="#pop-4"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a>
+                                <a data-target="#pop-5" data-toggle="tab" data-mdb-toggle="tab" href="#pop-5"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1912,8 +1914,10 @@
                 <div class="preview">
                     <div class="row">
                         <div class="col-md-10">
+                            <button class="btn-prev" id="prev-ulasan"><span class="fa fa-arrow-left"></span></button>
+                            <button class="btn-next" id="next-ulasan"><span class="fa fa-arrow-right"></span></button>
                             <div class="preview-detail tab-content">
-                                <div class="tab-pane active" id="ulasan-1">
+                                <div class="tab-pane slide-ulasan active" id="ulasan-1">
                                     <img class="item-photo detail-photo-ulasan"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" />
                                     <div class="text-left ml-4">
@@ -1936,7 +1940,7 @@
                                         <p class="f-11">ok barang berfungsi</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="ulasan-2">
+                                <div class="tab-pane slide-ulasan" id="ulasan-2">
                                     <img class="item-photo detail-photo-ulasan"
                                         src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" />
                                         <div class="text-left ml-4">
@@ -1959,7 +1963,7 @@
                                         <p class="f-11">ok barang berfungsi</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="ulasan-3">
+                                <div class="tab-pane slide-ulasan" id="ulasan-3">
                                     <img class="item-photo detail-photo-ulasan"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" />
                                     <div class="text-left ml-4">
@@ -1982,7 +1986,7 @@
                                         <p class="f-11">ok barang berfungsi</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="ulasan-4">
+                                <div class="tab-pane slide-ulasan" id="ulasan-4">
                                     <img class="item-photo detail-photo-ulasan"
                                         src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" />
                                     <div class="text-left ml-4">
@@ -2005,7 +2009,7 @@
                                         <p class="f-11">ok barang berfungsi</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="ulasan-5">
+                                <div class="tab-pane slide-ulasan" id="ulasan-5">
                                     <img class="item-photo detail-photo-ulasan"
                                         src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" />
                                     <div class="text-left ml-4">
@@ -2031,22 +2035,18 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <ul class="preview-thumbnail-ulasan nav nav-tabs">
-                                <li class="active"><a class="active" data-target="#ulasan-1" data-mdb-toggle="tab" href="#ulasan-1"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                <li><a data-target="#ulasan-2" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-2"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
-                                <li><a data-target="#ulasan-3" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-3"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                <li><a data-target="#ulasan-4" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-4"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a></li>
-                                <li><a data-target="#ulasan-5" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-5"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                        <li><a data-target="#ulasan-5" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-5"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                                        <li><a data-target="#ulasan-5" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-5"
-                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a></li>
-                            </ul>
+                            <div class="preview-thumbnail-ulasan thumb-slider-ulasan nav nav-tabs">
+                                <a class="active" data-target="#ulasan-1" data-mdb-toggle="tab" href="#ulasan-1"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                                <a data-target="#ulasan-2" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-2"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a>
+                                <a data-target="#ulasan-3" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-3"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                                <a data-target="#ulasan-4" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-4"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB30.jpg" /></a>
+                                <a data-target="#ulasan-5" data-toggle="tab" data-mdb-toggle="tab" href="#ulasan-5"
+                                        role="tab"><img src="../assets/WEB/IMAGE/IMAGE WEB35.jpg" /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2156,7 +2156,10 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/plugins/owl.carousel/dist/owl.carousel.js"></script>
     <script src="../assets/plugins/slick/slick/slick.js"></script>
+    <script src="../assets/js/slider.js"></script>
     <script>
+        
+            
         $('.close').click(function(){
             $('.modal').modal('hide');
         })
