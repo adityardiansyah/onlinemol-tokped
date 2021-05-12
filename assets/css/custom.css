@@ -191,7 +191,17 @@ body {
     max-height: 140px;
     overflow: hidden;
 }
+.ellipsis-350{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 350px;
+}
 
+.f-8 {
+    font-size: 8pt !important;
+}
 .f-9 {
     font-size: 9pt !important;
 }
@@ -215,6 +225,9 @@ body {
 .f-14 {
     font-size: 14pt;
 }
+.f-18 {
+    font-size: 18pt;
+}
 
 .p-14 {
     padding: 14px !important;
@@ -230,6 +243,10 @@ body {
 
 .p-btn {
     padding: 14px 38px;
+}
+
+.lh-2{
+    line-height: 2!important;
 }
 
 .lh-43 {
@@ -750,6 +767,20 @@ body {
     font-size: 0.714286rem;
     color: rgb(3, 172, 14);
     background-color: rgb(218, 245, 219);
+    line-height: 1.4;
+    letter-spacing: normal;
+    margin-bottom: 4px;
+    height: 20px;
+    padding: 3px 4px 2px;
+    margin-right: auto;
+}
+.item-badge .grey {
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.714286rem;
+    color: #9FA6B0;
+    background-color: #F3F4F5;
     line-height: 1.4;
     letter-spacing: normal;
     margin-bottom: 4px;
@@ -1292,6 +1323,11 @@ textarea:focus {
   background: #fff;
   border: .1rem solid #ebebeb;
 }
+.btn-border {
+  background: #fff;
+font-weight: bold;
+  border: 1px solid #ebebeb;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -1354,6 +1390,29 @@ input:checked + .slider-switch:before {
 
 .slider-switch.round:before {
   border-radius: 50%;
+}
+
+.card-alamat::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 6px;
+    height: 34px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #03AC0E;
+}
+.card-alamat.active{
+    border:1px solid #4FD15A;
+    background-color: #EBFFEF;
+}
+
+.check-alamat{
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
 }
 
 @media screen and (max-width: 996px) {

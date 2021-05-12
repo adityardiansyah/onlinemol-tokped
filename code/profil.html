@@ -51,7 +51,6 @@
                             <span class="input-group-text border-0 f-10">Kategori</span>
                             <input type="text" class="form-control rounded" placeholder="Cari barang di sini" />
                             <span class="input-group-text category-search-icon">
-                                <!-- <object data="../assets/WEB/ICON/ICON WEB03.svg"style="width: 22px;" type=""></object> -->
                                 <img src="../assets/WEB/ICON/ICON WEB03.svg" style="width: 22px;" class="img-fluid"
                                     alt="">
                             </span>
@@ -218,11 +217,11 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <b class="panel-title d-flex f-11" data-toggle="collapse"
-                                                data-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">Pembelian</b>
+                                                data-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">Pembelian</b>
                                         </div>
 
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
                                             data-parent="#accordion">
                                             <div class="panel-body">
                                                 <ul class="panel-sidebar f-10">
@@ -240,11 +239,11 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <b class="panel-title d-flex f-11" data-toggle="collapse"
-                                                data-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">Profil Saya</b>
+                                                data-target="#collapseThree" aria-expanded="true"
+                                                aria-controls="collapseThree">Profil Saya</b>
                                         </div>
 
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        <div id="collapseThree" class="collapse show" aria-labelledby="headingOne"
                                             data-parent="#accordion">
                                             <div class="panel-body">
                                                 <ul class="panel-sidebar f-10">
@@ -394,7 +393,82 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab-alamat-content" role="tabpanel">
-                                Alamat
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <form action="">
+                                                <div class="input-group border rounded">
+                                                    <input type="text" class="form-control rounded border-0 f-10" placeholder="Cari alamat atau nama penerima" />
+                                                    <span class="input-group-text category-search-icon border-0">
+                                                        <img src="../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                                            alt="">
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="btn btn-success" onclick="tambahAlamat()">
+                                            Tambah Alamat Baru
+                                        </button>
+                                    </div>
+                                    <div class="card mt-3 card-alamat active">
+                                        <div class="shadows">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="d-flex">
+                                                            <b class="text-dark">Rumah</b>
+                                                            <div class="item-badge ml-2">
+                                                                <span class="grey f-8">
+                                                                    Utama
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-dark mt-1">
+                                                            <h6 class="font-weight-bold m-0">LIDYA PRAMESTI</h6>
+                                                            <p class="m-0 mt-1 f-10">6238736746126</p>
+                                                            <p class="ellipsis-350 f-10 mt-1">DSN. BARAN 2 RT:001 RW:006 DESA:PANJEREJO KECAMATAN:REJOTANGAN Kabupaten Tulungagung</p>
+                                                        </div>
+                                                        <a href="#" class="text-link f-10" onclick="ubahAlamat()">Ubah Alamat</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fa fa-check f-18 text-success check-alamat"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3 card-alamat">
+                                        <div class="shadows">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="d-flex">
+                                                            <b class="text-dark">Rumah</b>
+                                                        </div>
+                                                        <div class="text-dark mt-1">
+                                                            <h6 class="font-weight-bold m-0">LIDYA PRAMESTI</h6>
+                                                            <p class="m-0 mt-1 f-10">6238736746126</p>
+                                                            <p class="ellipsis-350 f-10 mt-1">DSN. BARAN 2 RT:001 RW:006 DESA:PANJEREJO KECAMATAN:REJOTANGAN Kabupaten Tulungagung</p>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <a href="#" class="text-link f-10" onclick="ubahAlamat()">Ubah Alamat</a>
+                                                            <div class="bh-16 ml-2 mt-1"></div>
+                                                            <a href="javascript:;" class="text-link f-10" onclick="pilihAlamat()">Jadikan Alamat & Pilih</a>
+                                                            <div class="bh-16 ml-2 mt-1"></div>
+                                                            <a href="javascript:;" class="text-link f-10" onclick="hapusAlamat()">Hapus</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button class="btn btn-success check-alamat">
+                                                            Pilih
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="tab-pembayaran-content" role="tabpanel">
                                 Pembayaran
@@ -422,10 +496,202 @@
         </div>
     </section>
 
+    <div class="modal fade bd-example-modal-md" id="modal_tambah_alamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Tambah Alamat Baru</h5>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Label Alamat</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis label alamat" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Nama Penerima</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis nama penerima" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">No. Ponsel</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis Nomor Ponsel" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Kota atau Kecamatan</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis kota/kecamatan" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Kode Pos</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="5 digit kode pos" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Alamat</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis alamat" id="" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">5 karakter lagi diperlukan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn shadow-0 btn-border" data-mdb-dismiss="modal">Batal</button>
+                        <button class="btn btn-success">Tambah</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md" id="modal_ubah_alamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Ubah Alamat</h5>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Label Alamat</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis label alamat" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Nama Penerima</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis nama penerima" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">No. Ponsel</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis Nomor Ponsel" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Kota atau Kecamatan</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis kota/kecamatan" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Kode Pos</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="5 digit kode pos" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Alamat</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis alamat" id="" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">5 karakter lagi diperlukan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn shadow-0 btn-border" data-mdb-dismiss="modal">Batal</button>
+                        <button class="btn btn-success">Ubah</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md" id="modal_pilih_alamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Jadikan Alamat Utama</h5>
+            <div class="modal-body">
+                <div class="p-3">
+                    <p>Apakah Anda yakin ingin menjadikan "Rumah" sebagai alamat utama? Anda hanya dapat memilih satu alamat utama.</p>
+                    <div class="d-flex justify-content-between"">
+                        <button class="btn btn-outline-success btn-block mr-1" data-mdb-dismiss="modal">Batal</button>
+                        <button class="btn btn-success btn-block m-0 ml-1">Jadikan Alamat Utama</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md" id="modal_hapus_alamat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Hapus Alamat</h5>
+            <div class="modal-body">
+                <div class="p-3">
+                    <p>Apakah Anda yakin untuk menghapus "Rumah"? Anda tidak dapat mengembalikan alamat yang sudah dihapus.</p>
+                    <div class="d-flex justify-content-between"">
+                        <button class="btn btn-outline-success btn-block mr-1" data-mdb-dismiss="modal">Batal</button>
+                        <button class="btn btn-success btn-block m-0 ml-1">Hapus</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>  
+
     <script src="../assets/js/jquery/dist/jquery.js"></script>
     <script src="../assets/js/mdb.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 
+    <script>
+        $('a[data-mdb-toggle="tab"]').on('show.bs.tab', function(e) {
+            localStorage.setItem('activeTab', $(e.target).attr('href'));
+        });
+        var activeTab = localStorage.getItem('activeTab');
+        if(activeTab){
+            $('#tab-scroll li a[href="' + activeTab + '"]').tab('show');
+        }
+
+        function tambahAlamat(){
+            $('#modal_tambah_alamat').modal('show');
+        }
+
+        function ubahAlamat(){
+            $('#modal_ubah_alamat').modal('show');
+        }
+
+        function pilihAlamat(){
+            $('#modal_pilih_alamat').modal('show');
+        }
+        function hapusAlamat(){
+            $('#modal_hapus_alamat').modal('show');
+        }
+    </script>
 </body>
 
 </html>
