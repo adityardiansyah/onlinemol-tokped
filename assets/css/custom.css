@@ -304,6 +304,9 @@ body {
 .h-35 {
     height: 35px;
 }
+.list-style-none{
+    list-style: none;
+}
 
 .bg-grey {
     background: #dcdcdc;
@@ -1413,6 +1416,15 @@ input:checked + .slider-switch:before {
     top: 50%;
     right: 24px;
     transform: translateY(-50%);
+}
+.list-menu a{
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 12px 0px;
+    color: #000;
+}
+.list-menu .active{
+    color: #03AC0E;
 }
 
 @media screen and (max-width: 996px) {
