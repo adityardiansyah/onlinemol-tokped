@@ -350,6 +350,18 @@ body {
 
 
 /* PARENT */
+.bg-active-update{
+    background-color: #e9e9e9;
+}
+.pointer{
+    cursor: pointer;
+}
+.tab-label{
+    border: 1px solid #03AC0E;
+    background-color: #fff;
+    border-radius: 16px;
+    color: #03AC0E;
+}
 .btn-next,
 .btn-prev {
     border: 0;
