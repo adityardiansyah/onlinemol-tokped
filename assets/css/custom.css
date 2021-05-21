@@ -298,7 +298,7 @@ body {
 }
 
 .w-60 {
-    width: 60px;
+    width: 60px!important;
 }
 
 .h-35 {

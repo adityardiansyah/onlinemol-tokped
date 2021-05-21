@@ -281,10 +281,6 @@
                                         href="#tab-pembayaran-content" role="tab">Pembayaran</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-beli" data-mdb-toggle="tab" href="#tab-beli-content"
-                                        role="tab">Beli Langsung</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="tab-bank" data-mdb-toggle="tab" href="#tab-bank-content"
                                         role="tab">Rekening Bank</a>
                                 </li>
@@ -482,7 +478,11 @@
                                                     Atur pembayaran Anda untuk meningkatkan keamanan dan kemudahan berbelanja Anda di Onlinemol.
                                                 </p>
                                                 <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
-                                                    <a class="nav-link active" data-toggle="pill" href="#kartu_kredit" role="tab" aria-controls="kartu_kredit" aria-selected="true">Kartu Kredit / Debit</a>
+                                                    <a class="nav-link active" data-toggle="pill" href="#kartu_kredit" role="tab" aria-controls="kartu_kredit" aria-selected="true">
+                                                        <div class="d-flex justify-content-between">
+                                                            <span>Kartu Kredit / Debit</span> <span>0 / 4 tersimpan</span>
+                                                        </div>
+                                                    </a>
                                                     <a class="nav-link" data-toggle="pill" href="#kredivo" role="tab" aria-controls="kredivo" aria-selected="false">Kredivo Express</a>
                                                     <a class="nav-link" data-toggle="pill" href="#debit" role="tab" aria-controls="debit" aria-selected="false">Debit Instan</a>
                                                 </div>
@@ -492,11 +492,11 @@
                                             <div class="tab-content" id="v-pills-tabContent">
                                                 <div class="tab-pane fade show active" id="kartu_kredit" role="tabpanel" aria-labelledby="kartu_kredit-tab">
                                                     <div class="card rounded-0">
-                                                        <div class="d-flex p-3 justify-content-between border-bottom">
+                                                        <div class="d-flex p-3 justify-content-between border-bottom f-11">
                                                             <span>Kartu Kredit / Debit</span>
                                                             <a href="" class="text-link">Pengaturan Verifikasi</a>
                                                         </div>
-                                                        <div class="text-center p-4">
+                                                        <div class="text-center p-4 f-10">
                                                             <p>Untuk kemudahan pembayaran kartu kredit / debit, simpan informasi kartu kredit / debit Anda.</p>
                                                             <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
                                                         </div>
@@ -531,17 +531,186 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab-beli-content" role="tabpanel">
-                                Beli Langsung
-                            </div>
                             <div class="tab-pane fade" id="tab-bank-content" role="tabpanel">
-                                Rekening Bank
+                                <div class="text-center">
+                                    <img src="../assets/WEB/ICON/ICON WEB75.svg" class="w-25" alt="">
+                                    <br>
+                                    <b class="text-dark">Belum ada rekening bank tersimpan</b>
+                                    <br>
+                                    <small>Yuk, tambah rekening bank kamu biar lebih mudah saat tarik Saldo Online Mol</small>
+                                    <br>
+                                    <button class="btn btn-success mt-3" onclick="tambahRekening()">
+                                        Tambah Rekening
+                                    </button>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="tab-notifikasi-content" role="tabpanel">
-                                Notifikasi
+                                <div class="card-body">
+                                    <div class="alert alert-light f-10" style="background-color: #f1f1f1;" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        Notifikasi SMS sifatnya penting karena memberimu kabar soal keamanan akun dan status transaksi. Hati-hati saat terima SMS spam yang mengatasnamakan Tokopedia, ya. Jika kamu menerima SMS tersebut, pelajari selengkapnya disini.
+                                    </div>
+                                    <h3 class="text-dark m-0"><strong>Notifikasi</strong></h3>
+                                    <p class="f-9 m-0">Atur notifikasi yang ingin kamu terima disini</p>
+
+                                    <div class="p-2 d-flex justify-content-between mt-3 bg-light rounded">
+                                        <b class="text-dark pl-2">Transaksi</b>
+                                        <b class="pr-2">Email</b>
+                                    </div>
+
+                                    <div class="mt-4 text-dark">
+                                        <div class="pt-3 pb-3">
+                                            <img src="../assets/WEB/ICON/ICON WEB39.svg" class="w-35" alt="">
+                                            <b class="ml-2">Transaksi Pembelian</b>
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Menunggu Pembayaran</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Menunggu Konfirmasi</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Diproses</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Dikirim</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Tiba</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pengingat</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+
+                                        <div class="mt-4 pt-3 pb-3">
+                                            <img src="../assets/WEB/ICON/ICON WEB44.svg" class="w-30" alt="">
+                                            <b class="ml-2">Promo</b>
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Newsletter Online Mol</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="tab-keamanan-content" role="tabpanel">
-                                Keamanan
+                                <div class="">
+                                    <div class="row m-0 no-gutters">
+                                        <div class="col-md-5 border-right">
+                                            <div class="p-4">
+                                                <h5>Hai Aditya, <br>
+                                                Atur <strong>Keamanan Akun</strong> Anda disini
+                                                </h5>
+                                            </div>
+                                            <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link border-bottom active" data-toggle="pill" href="#aktifitas_login" role="tab" aria-controls="aktifitas_login" aria-selected="true">
+                                                    <div class="d-flex justify-content-between pl-4 pr-4">
+                                                        <span>Akrivitas Login</span> <img src="../assets/WEB/ICON/arrow-right.svg" class="w-30" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="aktifitas_login" role="tabpanel" aria-labelledby="aktifitas_login-tab">
+                                                    <div class="p-4">
+                                                        <h5 class="text-center text-dark"><b>Aktifitas Login</b></h5>
+                                                        <div class="alert alert-light f-10 d-flex mt-3 rounded-0" style="background-color: #f2f2f2;" role="alert">
+                                                            <img src="../assets/WEB/ICON/ICON WEB82.svg" class="w-30 mr-2" alt=""> <span class="f-9">Bila terdapat aktivitas tidak dikenal, segera klik "Keluar" dan ubah kata sandi.</span>
+                                                        </div>
+                                                        <p>Aktivitas login saat ini</p>
+                                                        <div>
+                                                            <div class="d-flex pt-3 pb-3">
+                                                                <img src="../assets/WEB/ICON/ICON WEB83.svg" class="w-60" alt="">
+                                                                <div class="w-100 ml-2">
+                                                                    <b class="text-dark">Chrome di Windows 10</b> <br>
+                                                                    <small>139.228.40.167</small>
+                                                                    <div class="item-badge">
+                                                                        <span class="success">Sedang Aktif</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-card-seperator"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="d-flex pt-3 pb-3">
+                                                                <img src="../assets/WEB/ICON/ICON WEB60.svg" class="w-60" alt="">
+                                                                <div class="w-100 ml-2">
+                                                                    <b class="text-dark">Realme X</b> <br>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <small>139.228.40.167</small>
+                                                                        <small><a href="">Keluar</a></small>
+                                                                    </div>
+                                                                    <div class="item-badge">
+                                                                        <span class="success">Sedang Aktif</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-card-seperator"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="tab-google-content" role="tabpanel">
                                 Google Authenticator
@@ -720,7 +889,49 @@
             </div>
             </div>
         </div>
-    </div>  
+    </div> 
+    
+    <div class="modal fade bd-example-modal-lg" id="modal_tambah_rekening" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Tambah Rekening Bank</h5>
+            <p class="text-center f-10">Rekening bank yang telah ditambahkan bisa kamu gunakan untuk penarikan Saldo Onlinemol</p>
+            <div class="modal-body">
+                <form class="p-3" action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Nama Bank</label>
+                                <select name="" class="form-control" id="">
+                                    <option value="">Pilih nama bank</option>
+                                    <option value="">BNI</option>
+                                    <option value="">BCA</option>
+                                    <option value="">BRI</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Nomor Rekening</label>
+                                <input type="text" class="form-control f-10 lh-2" placeholder="Tulis label alamat" id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-success mt-4">Periksa</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <p>Dengan melanjutkan, kamu menyetujui Syarat & Ketentuan yang berlaku.</p>
+                        <button class="btn btn-success">Simpan</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../assets/js/jquery/dist/jquery.js"></script>
     <script src="../assets/js/mdb.min.js"></script>
@@ -748,6 +959,9 @@
         }
         function hapusAlamat(){
             $('#modal_hapus_alamat').modal('show');
+        }
+        function tambahRekening(){
+            $('#modal_tambah_rekening').modal('show');
         }
     </script>
 </body>
