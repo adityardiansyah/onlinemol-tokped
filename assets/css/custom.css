@@ -385,9 +385,15 @@ body {
 
 
 /* PARENT */
-.send-chat{
-    
+.btn-primary{
+    background-color: #00b74a!important;
 }
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    border-radius: 40px!important;
+    padding: 4px;
+    background-color: #00b74a!important;
+}
+
 .chat-right-product{
     background-color: #fff;
     border-radius: 14px 0px 14px 14px;
@@ -460,6 +466,11 @@ body {
     background-color: #fff;
     border-radius: 16px;
     color: #03AC0E;
+}
+.tab-label.active{
+    background-color: #7de69269;
+    color: #3CBE55;
+    border:0;
 }
 .btn-next,
 .btn-prev {
@@ -1061,6 +1072,10 @@ body {
     border-bottom: 1px solid #f1f1f1;
 }
 
+.custom-select option{
+    padding: 8px;
+}
+
 .rounded {
     border-radius: 6px;
 }
@@ -1183,6 +1198,7 @@ textarea:focus {
     border-image: initial;
     border-bottom-style: initial;
     border-bottom-color: initial;
+    box-shadow: none;
 }
 
 .tab-home {
