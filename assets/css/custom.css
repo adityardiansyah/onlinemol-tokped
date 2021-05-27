@@ -314,6 +314,9 @@ body {
 .w-30 {
     width: 23px !important;
 }
+.w-32{
+    width: 32px;
+}
 
 .w-35 {
     width: 35px !important;
@@ -385,6 +388,31 @@ body {
 
 
 /* PARENT */
+.line-register{
+    text-align: center;
+    display: flex;
+    white-space: nowrap;    
+}
+.line-register::after{
+    content: '';
+    -webkit-flex: 1 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    border-bottom: 1px solid
+    rgba(0,0,0,0.12);
+    margin: auto 0 auto 18px;
+    padding-right: 10px;
+}
+.line-register::before{
+    content: '';
+    -webkit-flex: 1 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    border-bottom: 1px solid
+    rgba(0,0,0,0.12);
+    margin: auto 18px auto 0;
+    padding-right: 10px;
+}
 .btn-primary{
     background-color: #00b74a!important;
 }
