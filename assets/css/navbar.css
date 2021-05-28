@@ -88,6 +88,10 @@ a:hover {
   border-radius: 4px;
 }
 
+.nav-bar-misc a i:hover>.dropdown-menu{
+  display: block;
+}
+
 .nav-bar-profile {
   display: -webkit-box;
   display: -ms-flexbox;
