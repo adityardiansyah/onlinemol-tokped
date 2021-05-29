@@ -25,7 +25,6 @@ body {
 
 .container {
     max-width: 1188px;
-    min-width: 1188px;
 }
 
 /* NAVBAR */
@@ -429,6 +428,7 @@ body {
     color:#fff;
     border-radius: 50px;
     font-size: 7pt;
+    z-index: 10;
 }
 .icon-notification-sub{
     position: absolute;
@@ -464,6 +464,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     position: fixed;
+    display: none;
     inset: 110px 0px 0px;
     z-index: 10;
     will-change: opacity;
@@ -1779,5 +1780,25 @@ input:checked + .slider-switch:before {
 @media (min-width: 1280px) {
     .container-fluid {
         width: 96% !important;
+    }
+}
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 96% !important;
+    }
+    .main-section{
+        margin-top: 80px;
+    }
+    .container {
+        width: 96%!important;
+    }
+    .content-dropdown-custom-right{
+        left: -160px;
+    }
+    .content-dropdown-custom{
+        left: -96px;
+    }
+    .bg-content-dropdown{
+        inset: 58px 0px 0px;
     }
 }

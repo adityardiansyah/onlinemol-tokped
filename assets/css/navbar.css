@@ -191,3 +191,20 @@ a:hover {
   max-height: 30vw;
   max-width: 30vw;
 }
+
+@media (max-width: 768px) {
+    .top-bar{
+      display: none;
+    }
+
+    .nav-bar-title{
+      display: none;
+    }
+
+    .search-recommendations{
+      display: none;
+    }
+    .drop-caption{
+      display: none;
+    }
+}
