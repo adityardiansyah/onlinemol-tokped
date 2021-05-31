@@ -480,175 +480,63 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="align-items-center d-flex justify-content-between">
-                        <b class="text-darkf-13 f-14">Daftar Transaksi</b>
-                    </div>
-                    <div class="alert alert-light text-dark mt-3 rounded-10" style="background-color: #EBF6F6;" role="alert">
-                        <b>Info Seputar Belanja</b><br>
-                        <p class="m-0 f-10">Perpanjangan waktu proses pesanan. <a href="" class="text-success fw-bold">Info Selengkapnya</a></p>    
-                    </div>
-
                     <div class="card mt-2">
                         <div class="card-body p-3">
-                            <div class="text-center">
-                                <div class="d-flex align-items-center f-10">
-                                    <div class="input-group border rounded">
-                                        <input type="text" class="form-control rounded border-0 f-10" placeholder="Cari transaksimu disini..." />
-                                        <span class="input-group-text category-search-icon border-0">
-                                            <img src="../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
-                                                alt="">
-                                        </span>
-                                    </div>
-                                    <div class="dropdown ml-2 f-10">
-                                        <button
-                                            class="form-control dropdown-toggle f-10 p-2"
-                                            type="button"
-                                            id="dropdownMenu2"
-                                            data-mdb-toggle="dropdown"
-                                            aria-expanded="false"
-                                        >
-                                            Semua Produk
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                            <li><button class="dropdown-item" type="button">Belanja</button></li>
-                                            <li><button class="dropdown-item" type="button">Top-up & Tagihan</button></li>
-                                            <li><button class="dropdown-item" type="button">Travel & Entertaiment</button></li>
-                                            <li><button class="dropdown-item" type="button">Keuangan</button></li>
-                                            <li><button class="dropdown-item" type="button">Halal Corner</button></li>
-                                            <li><button class="dropdown-item" type="button">Langsung Laku</button></li>
-                                        </ul>
-                                    </div>
-                                    <input type="text" class="daterange form-control ml-2 f-10 p-2" name="daterange" value="" />
+                            <div class="align-items-center d-flex justify-content-between">
+                                <b class="text-darkf-13 f-11">Menunggu Pembayaran (1)</b>
+                                <div class="f-11">
+                                    <b>Menunjukkan (1-1)</b>
+                                    <a href=""><b>Sebelumnya</b></a>
+                                    <a href=""><b>Selanjutnya</b></a>
                                 </div>
-                                <div class="d-flex align-items-center f-10 mt-2">
-                                    <div class="d-flex align-items-center f-10">
-                                        <b>Status</b>
-                                        <a class="p-2 ml-2 tab-label" data-mdb-toggle="tab" href="#tab-semua" role="tab">Semua</a>
-                                        <a class="p-2 ml-2 tab-label" data-mdb-toggle="tab" href="#tab-berlangsung" role="tab">Berlangsung</a>
-                                        <a class="p-2 ml-2 tab-label" data-mdb-toggle="tab" href="#tab-berhasil" role="tab">Berhasil</a>
-                                        <a class="p-2 ml-2 tab-label" data-mdb-toggle="tab" href="#tab-tidak-berhasil" role="tab">Tidak Berhasil</a>
-                                        <a class="p-2 ml-2 tab-label" data-mdb-toggle="tab" href="#tab-tiket" role="tab">E-Tiket & E-voucher Aktif</a>
-                                        <a class="p-2 ml-2 text-link" href="javascript:;" id="reset_filter">Reset Filter</a>
+                            </div>
+
+                            <div class="card mt-3">
+                                <div class="shadows">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <img src="../assets/WEB/ICON/ICON WEB11.svg" class="w-40 mr-1" alt="">
+                                            <div class="ml-3">
+                                                <div>
+                                                    <b>Belanja</b>
+                                                    <a href="" class="pl-2 border-left text-success">Invoice </a>
+                                                </div>
+                                                <div class="f-11">
+                                                    <span class="fc-text">Total: </span> <b class="fc-orange">Rp 100.000</b> 
+                                                    <span class="fc-text">Tanggal Pembelian </span><b>31 May 2021</b>
+                                                </div>
+                                                <div class="pl-3 pr-3 pt-2 pb-2 rounded-10 bg-grey f-10 mt-2 fc-text d-flex align-content-center">
+                                                    <img src="../assets/WEB/ICON/ICON WEB82.svg" class="w-20 mr-2" alt="">  Bayar sebelum 1 June 2021, 10:20 WIB
+                                                </div>
+                                                <div class="f-11 mt-2 fc-text">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Metode Pembayaran</td>
+                                                            <td>:</td>
+                                                            <td><b>BCA Virtual Account</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nomor Virtual Account</td>
+                                                            <td>:</td>
+                                                            <td><b>87576476426366747</b></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto flex-fill pl-5">
+                                                <div class="text-right">
+                                                    <a href="" class="text-success">Batalkan Transaksi</a>
+                                                </div>
+                                                <div class="text-center mt-3">
+                                                    <img src="../assets/WEB/ICON/ICON WEB43.svg" class="w-25" alt="">
+                                                </div>
+                                                <button class="btn-white btn-block mt-3 p-2" onclick="detailPembayaran()">Cara Pembayaran</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="card mt-3">
-                                <div class="shadows">
-                                    <div class="card-body">
-                                        <div class="d-flex f-10 align-items-center">
-                                            <img src="../assets/WEB/ICON/ICON WEB11.svg" class="w-30" alt="">
-                                            <b class="ml-2">Belanja</b>
-                                            <span class="ml-2">29 Mei 2021</span>
-                                            <div class="item-badge ml-2">
-                                                <span class="success f-8">Selesai</span>
-                                            </div>
-                                            <span class="ml-2 fc-text">INV/20210518/MPL/1251423703</span>
-                                        </div>
-
-                                        <div class="d-flex mt-2 f-10">
-                                            <img src="../assets/WEB/ICON/ICON WEB17.svg" class="w-20" alt="">
-                                            <b class="ml-2">Grosir ATK Jakarta</b>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-1">
-                                            <div class="d-flex">
-                                                <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" class="h-60" alt="">
-                                                <div class="">
-                                                    <a href="" class="parent-ellipsis text-dark f-11"><b class="ellipsis-350">BOX Givi 27710</b></a>
-                                                    <small class="fc-text f-9">1 barang x Rp122.400</small> <br>
-                                                    <a href=""><small class="f-9">+3 barang lainnya</small></a>
-                                                </div>
-                                            </div>
-                                            <div class="pl-4 pt-3 pb-3 pr-4 border-left mr-5">
-                                                <small>Total Belanja</small><br>
-                                                <b>Rp. 122.400</b>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-end mt-3 f-10">
-                                            <a href="javascript:;" onclick="lihatDetailTransaksi()" class="text-link f-10">
-                                                Lihat Detail Transaksi
-                                            </a>
-                                            <button class="btn btn-success ml-4">
-                                                Beri Ulasan
-                                            </button>
-                                            <button class="bg-white  border rounded-10 ml-4">
-                                                <img src="../assets/WEB/ICON/ICON WEB51.svg" class="w-35" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-3">
-                                <div class="shadows">
-                                    <div class="card-body">
-                                        <div class="d-flex f-10 align-items-center">
-                                            <img src="../assets/WEB/ICON/ICON WEB11.svg" class="w-30" alt="">
-                                            <b class="ml-2">Belanja</b>
-                                            <span class="ml-2">29 Mei 2021</span>
-                                            <div class="item-badge ml-2">
-                                                <span class="success f-8">Selesai</span>
-                                            </div>
-                                            <span class="ml-2 fc-text">INV/20210518/MPL/1251423703</span>
-                                        </div>
-
-                                        <div class="d-flex mt-2 f-10">
-                                            <img src="../assets/WEB/ICON/ICON WEB17.svg" class="w-20" alt="">
-                                            <b class="ml-2">Grosir ATK Jakarta</b>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-1">
-                                            <div class="d-flex">
-                                                <img src="../assets/WEB/IMAGE/IMAGE WEB28.jpg" class="h-60" alt="">
-                                                <div class="">
-                                                    <a href="" class="parent-ellipsis text-dark f-11"><b class="ellipsis-350">BOX Givi 27710</b></a>
-                                                    <small class="fc-text f-9">1 barang x Rp122.400</small> <br>
-                                                    <a href=""><small class="f-9">+3 barang lainnya</small></a>
-                                                </div>
-                                            </div>
-                                            <div class="pl-4 pt-3 pb-3 pr-4 border-left mr-5">
-                                                <small>Total Belanja</small><br>
-                                                <b>Rp. 122.400</b>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-end mt-3 f-10">
-                                            <a href="javascript:;" onclick="lihatDetailTransaksi()" class="text-link f-10">
-                                                Lihat Detail Transaksi
-                                            </a>
-                                            <button class="btn btn-success ml-4">
-                                                Beri Ulasan
-                                            </button>
-                                            <button class="bg-white  border rounded-10 ml-4">
-                                                <img src="../assets/WEB/ICON/ICON WEB51.svg" class="w-35" alt="">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-2">
-                                <div class="d-flex flex-row-reverse">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                    <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-first"
-                                                        alt="">
-                                                    <span class="sr-only">Previous</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item m-auto active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item m-auto"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item m-auto"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                    <!-- <span aria-hidden="true">&raquo;</span> -->
-                                                    <img src="../assets/WEB/ICON/arrow-right.svg" class="paginate-last"
-                                                        alt="">
-                                                    <span class="sr-only">Next</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -657,231 +545,169 @@
     </section>
 
 
-    <div class="modal fade bd-example-modal-lg" id="modal_detail_transaksi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="modal_detail_pembayaran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content rounded-10">
             <div class="modal-header border-0">
                 <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <h4 class="font-weight-bold text-center m-0">Detail Pesanan</h4>
+            <h4 class="font-weight-bold text-center m-0">Cara Pembayaran</h4>
             <div class="modal-body">
                 <div class="p-3 h-500 scroll-custom">
                     <div>
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <div>
-                                    <small class="fc-text f-9">Nomor Invoice</small> <br>
-                                    <a href="" class="text-success f-11 pr-1"><b>INV/20210518/MPL/1251423703</b></a>
-                                    <a href="" class="text-success border-left pl-2 f-11">Cetak</a>
-                                </div>
-                                <div class="mt-2">
-                                    <small class="fc-text f-9">Status</small> <br>
-                                    <b class="f-11">Pesanan Selesai</b>
-                                </div>
-                                <div class="mt-2">
-                                    <small class="fc-text f-9">Nama Toko</small> <br>
-                                    <a href="" class="f-11 text-success"><b>Grosir ATK Jakarta</b></a>
-                                </div>
-                                <div class="mt-2">
-                                    <small class="fc-text f-9">Tanggal Pembelian</small> <br>
-                                    <b class="f-11">18 Mei 2021, 16:16 WIB</b>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column">
-                                <button class="btn btn-success f-8 rounded-10">Tulis Review</button>
-                                <button class="btn-orange p-1 mt-1 f-10 rounded-10">Beli Lagi</button>
-                                <button class="btn-white p-1 mt-1 fw-bold f-10 rounded-10">Tanya Penjual</button>
-                                <span class="f-9 mt-2">Untuk bantuan silakan klik <a href="" class="text-success">disini</a></span>
-                            </div>
-                        </div>
+                        <h6>SEGERA LAKUKAN PEMBAYARAN SEBELUM:</h6>
+                        <b class="f-11">1 June 2021, 10:10 WIB</b>
                     </div>
-                    <hr style="height: 1.5px;">
-                    <div>
-                        <div class="row f-9">
-                            <div class="col-7">
-                                <span>Daftar Produk</span>
+                    <div class="mt-3 f-10">
+                        <span>Transfer pembayaran ke nomor Virtual Account:</span>
+                        <div class="d-flex align-items-center mt-2">
+                            <div class="w-25 text-center">
+                                <img src="../assets/WEB/ICON/ICON WEB43.svg" class="w-50" alt="">
                             </div>
-                            <div class="col-5 p-0">
-                                <span>Harga Barang</span>
-                            </div>
-                        </div>
-                        <div class="row border-dash-bottom pb-3 pt-3 m-0">
-                            <div class="col-7">
-                                <div class="d-flex">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" class="w-40 h-40" alt="">
-                                    <div class="ml-2">
-                                        <a href="" class="text-success f-10">
-                                            <b class="uppercase">Tas Sekolah cocok untuk anak anak</b>
-                                        </a> <br>
-                                        <small class="fc-text f-8">1 Produk (50 gr) x Rp 48.600</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-5 border-left">
-                                <b class="fc-orange f-10">Rp. 140.000</b>
-                                <div class="text-right">
-                                    <button class="btn-orange rounded-10 f-10 pt-1 pb-1 pl-5 pr-5">Beli Lagi</button>
-                                </div>
+                            <div class="">
+                                <span>Nomor Virtual Account</span> <br>
+                                <b class="f-11">8757645647675765</b>
                             </div>
                         </div>
-                        <div class="row border-dash-bottom pb-3 pt-3 m-0">
-                            <div class="col-7">
-                                <div class="d-flex">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" class="w-40 h-40" alt="">
-                                    <div class="ml-2">
-                                        <a href="" class="text-success f-10">
-                                            <b class="uppercase">Tas Sekolah cocok untuk anak anak</b>
-                                        </a> <br>
-                                        <small class="fc-text f-8">1 Produk (50 gr) x Rp 48.600</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-5 border-left">
-                                <b class="fc-orange f-10">Rp. 140.000</b>
-                                <div class="text-right">
-                                    <button class="btn-orange rounded-10 f-10 pt-1 pb-1 pl-5 pr-5">Beli Lagi</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row border-dash-bottom pb-3 pt-3 m-0">
-                            <div class="col-7">
-                                <div class="d-flex">
-                                    <img src="../assets/WEB/IMAGE/IMAGE WEB29.jpg" class="w-40 h-40" alt="">
-                                    <div class="ml-2">
-                                        <a href="" class="text-success f-10">
-                                            <b class="uppercase">Tas Sekolah cocok untuk anak anak</b>
-                                        </a> <br>
-                                        <small class="fc-text f-8">1 Produk (50 gr) x Rp 48.600</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-5 border-left">
-                                <b class="fc-orange f-10">Rp. 140.000</b>
-                                <div class="text-right">
-                                    <button class="btn-orange rounded-10 f-10 pt-1 pb-1 pl-5 pr-5">Beli Lagi</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr style="height: 2px;">
-                    <div class="alert alert-light text-dark mt-3 rounded-10" style="background-color: #EBF6F6;" role="alert">
-                        <b>Bebas Ongkir</b><br>
-                        <p class="m-0 f-10">Pesanan kamu telah menggunakan potongan Bebas Ongkir dari Onlinemol.</p>    
-                    </div>
-    
-                    <div class="row mt-3 text-grey" >
-                        <div class="col-8">
-                            <div class="f-10">
-                                <div class="fw-600">Pengiriman</div>
-                                <div class="mt-2">AnterAja - Reguler (Estimasi tiba 19 - 22 May)</div>
-                                <div>No. Resi: 10001308575111</div>
-                                <div class="mt-2">Dikirim kepada <b>Dimas Widyatama</b></div>
-                                <div>Dusun. Lemah Putih, Rt.09 Rw.02, Jln. Glatik, Wringinanom, Gresik, Wringinanom Kab. Gresik, 61176</div>
-                                <div>Jawa Timur</div>
-                                <div>Telp: 078234653465328</div>
-                            </div>
-                        </div>
-                        <div class="col-4 border-left f-10">
-                            <div class="fw-600">Info Produk</div>
-                            <div class="mt-1"><b>Biaya Asuransi</b></div>
-                            <div>Rp 300</div>
+                        <div class="mt-2 f-10">
+                            <a href="" class="text-success "><u>Salin no.Rek</u></a>
                         </div>
                     </div>
                     <hr>
-                    <div>
-                        <div class="f-10">
-                            <div class="fw-600 text-grey">Pembayaran</div>
-                        </div>
-                        <div class="row f-10 text-grey">
-                            <div class="col-8">
-                                <div>
-                                    <div class="mt-2">Total Harga (3 Barang)</div>
-                                    <div>Total Ongkos Kirim (1kg)</div>
-                                    <div>Biaya Asuransi</div>
-                                    <div>Total Bayar</div>
-                                    <div>Metode Pembayaran</div>
-                                </div>
-                            </div>
-                            <div class="col-4 border-left f-10">
-                                <div><b>Rp 51.350</b></div>
-                                <div><b>Bebas Ongkir</b></div>
-                                <div><b>Rp 300</b></div>
-                                <div><b>Rp 51.650</b></div>
-                                <div><b>BNI Virtual Account</b></div>
-                            </div>
-                        </div>
+                    <div class="mt-4">
+                        <span class="f-10">Jumlah yang harus dibayar:</span>
+                        <br>
+                        <b class="fc-orange mt-2">Rp 100.000</b> <br>
+                        <a href="" class="text-success f-10 mt-2"><u>Salin Jumlah</u></a>
                     </div>
                     <hr>
-                    <div>
-                        <b class="text-grey f-10">Status Pemesanan</b>
-                        <div class="row text-grey mt-2">
-                            <div class="col-4 text-right">
-                                <div class="bg-grey-label rounded-10 text-right p-2 text-white f-10">
-                                    System-Automatic
-                                </div>
-                                <small class="f-9">Sabtu, 22 Mei 2021 10:45 <br> WIB</small>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-dark text-left" type="button" data-toggle="collapse" data-target="#step-1" aria-expanded="true" aria-controls="step-1">
+                                <b>ATM BCA</b>
+                                </button>
+                            </h2>
                             </div>
-                            <div class="col-8 border-bottom">
-                                <div class="f-9">
-                                    Transaksi selesai. <br>
-                                    Dana akan diteruskan ke penjual.  
-                                </div>
+
+                            <div id="step-1" class="collapse show f-10" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        Menu Utama pilih menu Transaksi Lainnya.
+                                    </li>
+                                    <li>
+                                        Pilih Menu Transfer.
+                                    </li>
+                                    <li>Pilih Menu Ke Rek BCA Virtual Account.</li>
+                                    <li>
+                                        Masukkan Nomor Virtual Account 71225 + no kontrak.
+                                    </li>
+                                    <li>
+                                        Muncul Konfirmasi pembayaran - Pilih YA.
+                                    </li>
+                                    <li>                                        
+                                        Masukkan Nominal Pembayaran - Pilih BENAR.
+                                    </li>
+                                </ol>
                             </div>
-                        </div>
-                        <div class="row text-grey mt-2">
-                            <div class="col-4 text-right">
-                                <div class="bg-grey-label rounded-10 text-right p-2 text-white f-10">
-                                    System-Automatic
-                                </div>
-                                <small class="f-9">Sabtu, 22 Mei 2021 10:45 <br> WIB</small>
-                            </div>
-                            <div class="col-8 border-bottom">
-                                <div class="f-9">
-                                    Transaksi selesai. <br>
-                                    Dana akan diteruskan ke penjual.  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row text-grey mt-2">
-                            <div class="col-4 text-right">
-                                <div class="bg-grey-label rounded-10 text-right p-2 text-white f-10">
-                                    System-Automatic
-                                </div>
-                                <small class="f-9">Sabtu, 22 Mei 2021 10:45 <br> WIB</small>
-                            </div>
-                            <div class="col-8 border-bottom">
-                                <div class="f-9">
-                                    Transaksi selesai. <br>
-                                    Dana akan diteruskan ke penjual.  
-                                </div>
                             </div>
                         </div>
-                        <div class="row text-grey mt-2">
-                            <div class="col-4 text-right">
-                                <div class="bg-green-label rounded-10 text-right p-2 text-white f-10">
-                                    Seller
-                                </div>
-                                <small class="f-9">Sabtu, 22 Mei 2021 10:45 <br> WIB</small>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-dark text-left" type="button" data-toggle="collapse" data-target="#step-2" aria-expanded="true" aria-controls="step-2">
+                                <b>m-BCA (BCA Mobile)</b>
+                                </button>
+                            </h2>
                             </div>
-                            <div class="col-8 border-bottom">
-                                <div class="f-9">
-                                    Transaksi selesai. <br>
-                                    Dana akan diteruskan ke penjual.  
-                                </div>
+
+                            <div id="step-2" class="collapse show f-10" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        Menu Utama pilih menu Transaksi Lainnya.
+                                    </li>
+                                    <li>
+                                        Pilih Menu Transfer.
+                                    </li>
+                                    <li>Pilih Menu Ke Rek BCA Virtual Account.</li>
+                                    <li>
+                                        Masukkan Nomor Virtual Account 71225 + no kontrak.
+                                    </li>
+                                    <li>
+                                        Muncul Konfirmasi pembayaran - Pilih YA.
+                                    </li>
+                                    <li>                                        
+                                        Masukkan Nominal Pembayaran - Pilih BENAR.
+                                    </li>
+                                </ol>
+                            </div>
                             </div>
                         </div>
-                        <div class="row text-grey mt-2">
-                            <div class="col-4 text-right">
-                                <div class="bg-grey-label rounded-10 text-right p-2 text-white f-10">
-                                    System-Automatic
-                                </div>
-                                <small class="f-9">Sabtu, 22 Mei 2021 10:45 <br> WIB</small>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-dark text-left" type="button" data-toggle="collapse" data-target="#step-3" aria-expanded="true" aria-controls="step-3">
+                                <b>Internet Banking BCA</b>
+                                </button>
+                            </h2>
                             </div>
-                            <div class="col-8 border-bottom">
-                                <div class="f-9">
-                                    Transaksi selesai. <br>
-                                    Dana akan diteruskan ke penjual.  
-                                </div>
+
+                            <div id="step-3" class="collapse show f-10" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        Menu Utama pilih menu Transaksi Lainnya.
+                                    </li>
+                                    <li>
+                                        Pilih Menu Transfer.
+                                    </li>
+                                    <li>Pilih Menu Ke Rek BCA Virtual Account.</li>
+                                    <li>
+                                        Masukkan Nomor Virtual Account 71225 + no kontrak.
+                                    </li>
+                                    <li>
+                                        Muncul Konfirmasi pembayaran - Pilih YA.
+                                    </li>
+                                    <li>                                        
+                                        Masukkan Nominal Pembayaran - Pilih BENAR.
+                                    </li>
+                                </ol>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-dark text-left" type="button" data-toggle="collapse" data-target="#step-4" aria-expanded="true" aria-controls="step-4">
+                                <b>Kantor BCA</b>
+                                </button>
+                            </h2>
+                            </div>
+
+                            <div id="step-4" class="collapse show f-10" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        Menu Utama pilih menu Transaksi Lainnya.
+                                    </li>
+                                    <li>
+                                        Pilih Menu Transfer.
+                                    </li>
+                                    <li>Pilih Menu Ke Rek BCA Virtual Account.</li>
+                                    <li>
+                                        Masukkan Nomor Virtual Account 71225 + no kontrak.
+                                    </li>
+                                    <li>
+                                        Muncul Konfirmasi pembayaran - Pilih YA.
+                                    </li>
+                                    <li>                                        
+                                        Masukkan Nominal Pembayaran - Pilih BENAR.
+                                    </li>
+                                </ol>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -900,8 +726,10 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
     <script>
-        function lihatDetailTransaksi(){
-            $('#modal_detail_transaksi').modal('show');
+        $('.collapse').collapse()
+
+        function detailPembayaran(){
+            $('#modal_detail_pembayaran').modal('show');
         }
         $('.daterange').daterangepicker();
         
