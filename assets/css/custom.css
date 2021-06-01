@@ -227,6 +227,18 @@ body {
     overflow: hidden;
     white-space: nowrap;
 }
+.ellipsis-2-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    font-size: 0.857143rem;
+    line-height: 1.5;
+    position: relative;
+    color: rgb(66, 181, 73);
+}
 .text-grey{
     color:#8d8d8d;
 }
@@ -236,6 +248,11 @@ body {
 .bg-green-label{
     background-color: #468847;
 }
+
+.f-7 {
+    font-size: 7pt !important;
+}
+
 .f-8 {
     font-size: 8pt !important;
 }
@@ -300,6 +317,9 @@ body {
 .h-350{
     height: 350px;
 }
+.h-150{
+    height: 150px;
+}
 
 .fc-text {
     color: #7e7e7e !important;
@@ -351,6 +371,12 @@ body {
     width: 20px !important;
 }
 
+.w-100-px {
+    width: 100px!important;
+}
+.w-80-px {
+    width: 80px!important;
+}
 .w-60 {
     width: 60px!important;
 }
@@ -1121,6 +1147,20 @@ body {
     margin-right: auto;
 }
 
+.item-badge .red {
+    background-color: #f71326;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #ffffff;
+    line-height: 1.4;
+    letter-spacing: normal;
+    margin-bottom: 4px;
+    height: 20px;
+    padding: 4px 10px;
+    margin-right: auto;
+}
+
 .item-badge .coret {
     font-size: 0.714286rem;
     color: rgba(49, 53, 59, 0.44);
@@ -1658,6 +1698,24 @@ textarea:focus {
 font-weight: bold;
   border: 1px solid #ebebeb;
 }
+.starrating > input {display: none;} 
+
+
+
+.starrating > label > i
+{
+    font-size: 17pt;
+color: #868686;
+
+/* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label i
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label i
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
 
 /* The switch - the box around the slider */
 .switch {
