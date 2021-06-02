@@ -1909,3 +1909,79 @@ input:checked + .slider-switch:before {
         margin: 50px auto 0 auto;
     }
 }
+
+
+
+
+/* SELLER CSS */
+.main-step{
+    position: relative;
+}
+.step-content{
+    padding-bottom: 25px;
+}
+.step-content > .el-content{
+    margin-left: 50px;
+    display: none;
+}
+.step-header{
+    margin-left: 50px;
+    min-height: 32px;
+    -moz-box-align: center;
+    align-items: center;
+}
+.progress-line{
+    position: relative;
+}
+.progress-line::after{
+    transition: all 0.3s ease-out 0s;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #E5E7E9;
+    left: 15px;
+    top: 0px;
+    z-index: 1;
+}
+.progress-line.last::after{
+    display: none;
+}
+
+.progress-line > .step-header > .step-label{
+    transition: all 0.3s ease-out 0s;
+    position: absolute;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #03AC0E;
+    left: 0px;
+    top: 0px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #03AC0E;
+    border-radius: 50%;
+    z-index: 2;
+    background:#FFFFFF;
+}
+
+.progress-line.disabled{
+    height: 62px;
+}
+.progress-line.active > .step-header > .step-label{
+    background: #03AC0E;
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF;
+}
+.progress-line.disabled > .step-header > .step-label{
+    background: #DBDEE2;
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF;
+}
+
+.progress-line > .step-content > .el-content.show{
+    display: block;
+}
