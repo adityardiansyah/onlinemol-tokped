@@ -625,6 +625,7 @@ body {
     display: inline-block;
     margin-left: 16px;
 }
+
 .scroll-custom{
     overflow-y: scroll;
 }
@@ -1887,5 +1888,24 @@ input:checked + .slider-switch:before {
     }
     .bg-content-dropdown{
         inset: 58px 0px 0px;
+    }
+    .nav-bar-misc > .pl-5{
+        padding-left: 0!important;
+    }
+    .scroll-custom-x{
+        overflow-x: scroll;
+    }
+
+    .justify-content-end{
+        justify-content: flex-start!important;
+    }
+    .el-kategori{
+        display: none;
+    }
+    .i-keranjang, #btn-login{
+        display: none;
+    }
+    #main-slider{
+        margin: 50px auto 0 auto;
     }
 }
