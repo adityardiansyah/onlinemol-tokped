@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../../assets/css/custom.css">
     <link rel="stylesheet" href="../../assets/css/navbar.css">
     <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+        .panel-title::after{
+            top: 12px;
+            right: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -168,7 +174,7 @@
     <div id="sidebar-left" class="scroll-custom is-open">
         <nav class="main-sidebar">
             <div id="expand" class="d-flex p-3 f-9 align-items-center text-center pointer border-bottom">
-                <img src="../../assets/WEB/ICON/ICON WEB24.svg" class="w-20 mr-2" alt="">
+                <img src="../../assets/WEB/ICON/ICON WEB24.svg" class="w-20 mr-2 icon-expand" alt="">
                 <b>Sembunyikan Menu</b>
             </div>
 
@@ -399,23 +405,49 @@
     <script>
 
         function hideElement(){
-            $('#expand b').hide();
-            $('.sidebar-menu').addClass('hide');
+            $('.sidebar-menu').addClass('minimize');
             $('.tab-menu').addClass('hide');
             $('.icon-gj').addClass('hide');
-            $('.link-menu').css("justify-content", "center");
             $('.panel-title').addClass('hidden-after');
+            $('.icon-expand').css("transform", "rotate(180deg)");
+            $('.main-sidebar').addClass('collapse-sidebar');
+        }
+
+        function showElement(){
+            $('.minimize').removeClass('minimize');
+            $('.collapse-sidebar').removeClass('collapse-sidebar');
+            $('.hide').removeClass('hide');
+            $('.not-open').removeClass('not-open');
+            $('.hidden-after').removeClass('hidden-after');
+            $('.icon-expand').css("transform", "rotate(360deg)"); 
         }
 
         $('#expand').click(function(){
-            let parent = $(this).parent().parent();
-            parent.removeClass('is-open');
-
-            let collapse = $(this).parent();
-            collapse.addClass('collapse-sidebar');
-
-            hideElement();
+            let check = $('#sidebar-left').hasClass('is-open');
+            if(check){
+                let parent = $(this).parent().parent();
+                parent.removeClass('is-open');
+                parent.addClass('not-open');
+    
+                hideElement();
+            }else{
+                $('.not-open').addClass('is-open');
+                showElement();
+            }
         });
+
+        $('#sidebar-content').hover(function(){
+            let check = $('#sidebar-left').hasClass('is-open');
+            if(!check){
+                showElement()
+            }
+            
+        },function(){
+            let check = $('#sidebar-left').hasClass('is-open');
+            if(!check){
+                hideElement();
+            }
+        })
     </script>
 </body>
 </html>

@@ -2042,10 +2042,6 @@ input:checked + .slider-switch:before {
     position: relative;
 }
 
-.sidebar-menu.hide > li > a b{
-    display: none;
-}
-
 .sidebar-menu li{
     position: relative;
 }
@@ -2106,4 +2102,16 @@ input:checked + .slider-switch:before {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     font-weight: 600;
+}
+
+.not-open .link-menu, .not-open #expand{
+    justify-content : center!important;
+}
+
+.collapse-sidebar .link-menu, .collapse-sidebar #expand{
+    justify-content : center!important;
+}
+
+.not-open #expand b, .not-open .hide, .minimize > li > a b, .collapse-sidebar #expand b{
+    display: none;
 }
