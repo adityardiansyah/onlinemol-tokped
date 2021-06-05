@@ -10,3 +10,5 @@ $('.tab-label').click(function(){
     $('.tab-label').removeClass('active');
     $(this).addClass('active');
 });
+
+$('[data-toggle="popover"]').popover();

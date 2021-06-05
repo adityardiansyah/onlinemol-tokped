@@ -279,8 +279,17 @@ body {
 .f-14 {
     font-size: 14pt;
 }
+.f-16 {
+    font-size: 16pt;
+}
 .f-18 {
     font-size: 18pt;
+}
+.f-22 {
+    font-size: 22pt;
+}
+.f-25 {
+    font-size: 25pt;
 }
 
 .p-14 {
@@ -2114,4 +2123,29 @@ input:checked + .slider-switch:before {
 
 .not-open #expand b, .not-open .hide, .minimize > li > a b, .collapse-sidebar #expand b{
     display: none;
+}
+
+.content-container{
+    min-width: 1136px;
+    border:0;
+}
+.card-container-seller{
+    padding: 42px 26px;
+    width: 100%;
+    min-width: calc(1366px - 230px);
+    min-height: 100vh;
+    background-color: #f3f4f5;
+}
+.main-container-seller{
+    margin-top: 96px;
+    padding-left: 230px;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+
+.tab-statistik .active{
+    border-bottom: 5px solid #03AC0E;
+}
+.nav-tabs .nav-link{
+    padding: 17px 29px 16px;
 }
