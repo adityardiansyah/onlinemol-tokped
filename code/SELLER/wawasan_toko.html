@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlinemol Seller</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <style>
+        .panel-title::after{
+            top: 12px;
+            right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-navbar">
+        <div class="top-bar f-11">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <div class="top-bar-item f-10">
+                            <i class="fas fa-mobile-alt"></i><a href="#"> Download Onlinemol Seller App</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right f-10">
+                            <a href="#" class="top-bar-item right">Hak Kekayaan Intelektual</a>
+                            <a href="#" class="top-bar-item right">Mitra Onlinemol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar shadow-nav">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-3 nav-bar-title">
+                        <a href="">
+                            <h3><b>Onlinemol</b> <i class="logo-seller">Seller</i></h3>
+                        </a>
+                    </div>
+                    <div class="col-7 nav-bar-search">
+                        <div class="input-group border rounded">
+                            <input type="text" class="form-control rounded border-0 f-10" placeholder="Coba ketikkan ..." />
+                            <span class="input-group-text category-search-icon border-0">
+                                <img src="../../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-2 nav-bar-misc">
+                        <div class="d-flex justify-content-between mt-1 pl-5">
+                            <div class="dropdown-custom">
+                                <div class="icon-notification">4</div>
+                                <i class="fas fa-bell btn-dropdown-custom"></i>
+                                <div class="content-dropdown-custom w-300-px f-10">
+                                    <div class="shadows">
+                                        <div class="d-flex justify-content-between p-3">
+                                            <b>Notifikasi</b>
+                                            <a href="" class="p-0 m-0 rounded-full"><img src="../../assets/WEB/ICON/ICON WEB103.svg" class="w-30" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="tabbable">
+                                            <!-- Tabs navs -->
+                                            <ul class="nav nav-tabs nav-fill" id="tab-scroll" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-mdb-toggle="tab" href="#nav-tab-transaksi"
+                                                        role="tab">Transaksi</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link d-flex" data-mdb-toggle="tab" href="#nav-tab-update"
+                                                        role="tab">Update (2) <div class="dot-red ml-2"></div></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="ex1-content">
+                                            <div class="tab-pane fade show active" id="nav-tab-transaksi" role="tabpanel">
+                                                <div class="h-300 scroll-custom">
+                                                    <div class="d-flex justify-content-between p-3">
+                                                        <b>Pembelian</b>
+                                                        <a href="" class="p-0 m-0 text-success">Lihat Semua</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="drop-link">Menunggu Pembayaran</a>
+                                                    </div>
+                                                    <div class="d-flex p-2 text-center">
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB26.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB28.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Pesanan Diproses</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB29.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Sedang Dikirim</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB27.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bl-5"></div>
+                                                    <div class="text-left pl-3">
+                                                        <b>Untuk Kamu</b>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-tab-update" role="tabpanel">
+                                                <div class="text-center">
+                                                    <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between p-3 f-9">
+                                        <a href="" class="text-success">Tandai semua dibaca</a>
+                                        <a href="" class="text-success">Lihat selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bh-16 mt-2"></div>
+                            <div class="dropdown-custom">
+                                <div class="btn-dropdown-custom f-10 parent-ellipsis">
+                                    <img src="../../assets/WEB/ICON/ICON WEB57.svg" class="w-30" alt="">
+                                    <span class="ellipsis-80 ml-1 drop-caption">Toko Online Indonesia</span>
+                                </div>
+                                <div class="content-dropdown-custom-right w-400-px f-10 p-3">
+                                    <div class="d-flex">
+                                        <img src="../../assets/WEB/ICON/ICON WEB106.svg" class="w-40" alt="">
+                                        <div class="text-left ml-1">
+                                            <b>Toko Online Indonesia</b> <br>
+                                            <span class="ellipsis-100 ml-1 f-8">Regular Merchant</span> <a href="" class="text-success">Upgrade menjadi power merchant</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="text-left">
+                                        <b>OnlineMol Seller</b>
+                                        <p class="f-8">
+                                            Pantau pesanan yang masuk dan cek perkembangan tokomu secara rutin di satu tempat.
+                                        </p>
+                                        <button class="btn btn-success btn-block">Cek Onlinemol Seller</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-content-dropdown"></div>
+    </div>
+    <div class="main-container-seller">
+        <div id="sidebar-left" class="scroll-custom is-open">
+            <nav class="main-sidebar">
+                <div id="expand" class="d-flex p-3 f-9 align-items-center text-center pointer border-bottom">
+                    <img src="../../assets/WEB/ICON/ICON WEB24.svg" class="w-20 mr-2 icon-expand" alt="">
+                    <b>Sembunyikan Menu</b>
+                </div>
+    
+                <div id="sidebar-content">
+                    <ul class="sidebar-header">
+                        <li>
+                            <div class="d-flex mb-3">
+                                <img src="../../assets/WEB/ICON/ICON WEB20.svg" class="w-40 rounded-full" alt="">
+                                <div class="ml-2 tab-menu">
+                                    <b class="ellipsis-80">Fashion Store</b>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-39.svg" class="w-30" alt="">
+                                        <div class="bh-16"></div>
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-40.svg" class="w-30" alt="">
+                                        <span class="f-10 fc-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-bottom tab-menu">
+                            <div class="card mb-3">
+                                <div class="d-flex justify-content-between f-9 p-2">
+                                    <b>Regular Merchant</b>
+                                    <a href="" class="text-success">Upgrade</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="f-9 border-bottom pt-2 pb-2 tab-menu">
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Saldo</div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Kredit OnAds <a href=""><img src="../../assets/SELLER/ICON/ICON SELLER-21.svg" class="w-30" alt=""></a></div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu active">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-70.svg" class="w-30" alt="">
+                                <b>Home</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-04.svg" class="w-30" alt="">
+                                <b>Chat</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-77.svg" class="w-30" alt="">
+                                <b>Diskusi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-84.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Produk</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Tambah Produk</a></li>
+                                                <li><a href="" class="d-flex">Produk Toko</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-63.svg" class="w-30" alt="">
+                                <b>Penjualan</b>
+                            </a>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseStatistik" aria-expanded="true"
+                                        aria-controls="collapseStatistik">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-75.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Statistik</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseStatistik" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Wawasan Toko</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Produk</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Operasional</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Pembeli</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-76.svg" class="w-30" alt="">
+                                <b>Iklan dan Promosi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-81.svg" class="w-30" alt="">
+                                <b>Dekorasi Toko</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseKata" aria-expanded="true"
+                                        aria-controls="collapseKata">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-94.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Kata Pembeli</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseKata" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Ulasan</a></li>
+                                                <li><a href="" class="d-flex">Pesanan Dikomplain</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseLayanan" aria-expanded="true"
+                                        aria-controls="collapseLayanan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-03.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Layanan Tambahan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseLayanan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Kemasan Produk</a></li>
+                                                <li><a href="" class="d-flex align-items-center justify-content-between">Bayar Tagihan <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 tab-menu" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-60.svg" class="w-30" alt="">
+                                    <b class="m-0">Pusat Edukasi Seller</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-59.svg" class="w-30" alt="">
+                                    <b class="m-0">Onlinemol Care</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapsePengaturan" aria-expanded="true"
+                                        aria-controls="collapsePengaturan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-19.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Pengaturan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapsePengaturan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Pegaturan Toko</a></li>
+                                                <li><a href="" class="d-flex">Pegaturan Admin</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div class="card-container-seller">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-5 d-flex align-items-center">
+                            <b class="f-16">Wawasan Toko</b>
+                            <a href="" class=" btn btn-choose-photo ml-3 f-10 d-md-flex align-items-center p-2"><img src="../../assets/SELLER/ICON/ICON SELLER-64.svg" class="w-20 mr-1" alt=""> Lihat Statistik LIVE</a>
+                        </div>
+                        <div class="col-md-7 d-flex align-items-center justify-content-end">
+                            <div class="row no-gutters w-100">
+                                <div class="col-md-6">
+                                    <input type="text" disabled class="daterange form-control f-10 p-2" name="daterange" value="" />
+                                </div>
+                                <div class="col-md-4 pl-2">
+                                    <div class="dropdown f-10">
+                                        <button class="form-control dropdown-toggle text-left f-10 p-2" type="button" id="dropdownMenu2"
+                                            data-toggle="dropdown" aria-expanded="false">
+                                            Download
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button">Data Halaman</button></li>
+                                            <li>
+                                                <button class="dropdown-item" type="button">Laporan Toko</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 pl-2">
+                                    <a href="" class="btn btn-choose-photo m-0" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pelajari Selengkapnya">
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-50.svg" class="w-20" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mt-5">
+                            <div>
+                                <b class="f-16">Ringkasan statistik</b>
+                                <p class="m-0 f-11 fc-text">Rutin pantau perkembangan toko untuk tingkatkan penjualanmu.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 pr-0 mt-2">
+                                    <div class="card h-100">
+                                        <div class="shadows h-100">
+                                            <div class="p-3">
+                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                    <span>Pendapatan Bersih Baru</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pesanan Baru"></span></a>
+                                                </div>
+                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                <div class="f-10">
+                                                    <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pr-0 mt-2">
+                                    <div class="card h-100">
+                                        <div class="shadows h-100">
+                                            <div class="p-3">
+                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                    <span>Produk Dilihat</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Siap Dikirim"></span></a>
+                                                </div>
+                                                <h4 class="mt-2"><b>0</b></h4>
+                                                <div class="f-10">
+                                                    <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pr-0 mt-2">
+                                    <div class="card h-100">
+                                        <div class="shadows h-100">
+                                            <div class="p-3">
+                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                    <span>Konversi</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pesanan Dikomplain"></span></a>
+                                                </div>
+                                                <h4 class="mt-2"><b>0%</b></h4>
+                                                <div class="f-10">
+                                                    <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pr-0 mt-2">
+                                    <div class="card h-100">
+                                        <div class="shadows h-100">
+                                            <div class="p-3">
+                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                    <span>Pesanan Baru</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Chat Baru"></span></a>
+                                                </div>
+                                                <h4 class="mt-2"><b>0</b></h4>
+                                                <div class="f-10">
+                                                    <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <b class="f-16">Jumlah Pendapatan</b>
+                            <p class="m-0 f-11 fc-text">Cek pendapatan toko untuk atur strategi penjualan.</p>
+                        </div>
+                        <div class="mt-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="shadows">
+                                            <div class="p-3">
+                                                <div class="row m-0 main-statistik">
+                                                    <div class="col-md-4 pl-0 mt-2 tab-statistik pointer" id="statistik-1">
+                                                        <div class="card active">
+                                                            <div class="shadows">
+                                                                <div class="p-3">
+                                                                    <div class="d-flex f-10 fc-text fw-bold">
+                                                                        <span>Pendapatan bersih baru</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                    </div>
+                                                                    <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                    <b>0%</b> <span class="fc-text f-11">dari kemarin</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pl-0 mt-2 tab-statistik pointer" id="statistik-2">
+                                                        <div class="card border-0">
+                                                            <div class="">
+                                                                <div class="p-3">
+                                                                    <div class="d-flex f-10 fc-text fw-bold">
+                                                                        <span>Produk dilihat</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Produk dilihat"></span></a>
+                                                                    </div>
+                                                                    <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                    <b>0%</b> <span class="fc-text f-11">dari kemarin</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 pl-0 mt-2 tab-statistik pointer" id="statistik-3">
+                                                        <div class="card border-0">
+                                                            <div class="">
+                                                                <div class="p-3">
+                                                                    <div class="d-flex f-10 fc-text fw-bold">
+                                                                        <span>Produk terjual</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Produk terjual"></span></a>
+                                                                    </div>
+                                                                    <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                    <b>0%</b> <span class="fc-text f-11">dari kemarin</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <canvas id="myChart"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="shadows">
+                                    <div class="p-3">
+                                        <div class="row m-0">
+                                            <div class="col-md-4 pl-0" id="">
+                                                <div class="">
+                                                    <div class="">
+                                                        <div class="p-3">
+                                                            <div class="d-flex f-10 fc-text fw-bold">
+                                                                <b>Estimasi pengeluaran</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                            </div>
+                                                            <h4 class="mt-2"><b>Rp0</b></h4>
+                                                            <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <canvas id="myChart2"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div>
+                        <b class="f-16">Produk dilihar dan konversi</b>
+                        <p class="m-0 f-11 fc-text">Pantau berapa kali produkmu dilihat.</p>
+                    </div>
+                    <div class="mt-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tren Produk dilihat</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myChart3"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tren Konversi produk</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myChart4"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div>
+                        <b class="f-16">Peforma Pesanan</b>
+                        <p class="m-0 f-11 fc-text">Perkembangan pesanan yang berhasil dibayar oleh pembeli</p>
+                    </div>
+                    <div class="mt-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tren Pesanan</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myPie1"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tipe Pembatalan</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myPie2"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div>
+                        <b class="f-16">Peforma Pesanan</b>
+                        <p class="m-0 f-11 fc-text">Perkembangan pesanan yang berhasil dibayar oleh pembeli</p>
+                    </div>
+                    <div class="mt-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tren Pesanan</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myChart5"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="shadows">
+                                        <div class="p-3">
+                                            <div class="row m-0">
+                                                <div class="col-md-12 pl-0" id="">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <div class="p-3">
+                                                                <div class="d-flex f-10 fc-text fw-bold">
+                                                                    <b>Tipe Pembatalan</b> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pendapatan bersih baru"></span></a>
+                                                                </div>
+                                                                <h4 class="mt-2"><b>Rp0</b></h4>
+                                                                <b>0%</b> <span class="fc-text f-11">dari 7 hari lalu</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="myChart6"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <div class="row">
+                        <div class="col-md-3 pr-0 mt-2">
+                            <div class="card h-100">
+                                <div class="shadows h-100">
+                                    <div class="p-3">
+                                        <div class="d-flex f-10 fc-text fw-bold">
+                                            <span>Rata-rata transaksi</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pesanan Baru"></span></a>
+                                        </div>
+                                        <h4 class="mt-2"><b>Rp0</b></h4>
+                                        <div class="f-10">
+                                            <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 pr-0 mt-2">
+                            <div class="card h-100">
+                                <div class="shadows h-100">
+                                    <div class="p-3">
+                                        <div class="d-flex f-10 fc-text fw-bold">
+                                            <span>Rata-rata jumlah barang</span> <a href=""><span class="fa fa-exclamation-circle ml-2" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Siap Dikirim"></span></a>
+                                        </div>
+                                        <h4 class="mt-2"><b>0</b></h4>
+                                        <div class="f-10">
+                                            <b>0%</b> <span class="fc-text">dari 7 hari lalu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $('.daterange').daterangepicker();
+
+        function chartSeller(val = [], type = ''){
+            const labels = [
+                '00.00',
+                '01.00',
+                '02.00',
+                '03.00',
+                '04.00',
+                '05.00',
+                '06.00',
+                '07.00',
+                '08.00',
+                '09.00',
+            ];
+            let data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Periode ini',
+                    backgroundColor: '#03AC0E',
+                    borderColor: '#03AC0E',
+                    data: val,
+                }]
+            };
+            const config = {
+                type: 'line',
+                data,
+                options: {}
+            };
+
+            const DATA_COUNT = 5;
+            const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+            const dataPie = {
+            labels: ['Bebas Ongkir 0%', 'Non-Bebas Ongkir 0%'],
+            datasets: [
+                {
+                label: 'Dataset 1',
+                data: [1,2],
+                backgroundColor: ['Green', 'Blue'],
+                }
+            ]
+            };
+
+            const configPie = {
+                type: 'pie',
+                data: dataPie,
+                options: {
+                    responsive: true,
+                    plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Pie Chart'
+                    }
+                    }
+                },
+            };
+            let pie = document.getElementById('myPie1').getContext('2d');
+            let pie2 = document.getElementById('myPie2').getContext('2d');
+
+            let ctx = document.getElementById('myChart').getContext('2d');
+            let ctx2 = document.getElementById('myChart2').getContext('2d');
+            let ctx3 = document.getElementById('myChart3').getContext('2d');
+            let ctx4 = document.getElementById('myChart4').getContext('2d');
+            let ctx5 = document.getElementById('myChart5').getContext('2d');
+            let ctx6 = document.getElementById('myChart6').getContext('2d');
+            getNewChart(ctx, config);
+            getNewChart(ctx2, config);
+            getNewChart(ctx3, config);
+            getNewChart(ctx4, config);
+            getNewChart(ctx5, config);
+            getNewChart(ctx6, config);
+            getNewChart(pie, configPie);
+            getNewChart(pie2, configPie);
+        }
+
+        function getNewChart(canvas, config){
+            return new Chart(canvas, config);
+        }
+
+        function getDataStatistik(val = [], update = 'update'){
+            if(val === 'statistik-1'){
+                chartSeller([1, 4, 6,3,7,3,8], 'update');
+            }else if(val === 'statistik-2'){
+                chartSeller([1, 2, 6,3,7,3,8], 'update');
+            }else if(val === 'statistik-3'){
+                chartSeller([1, 2, 2,3,7,3,8], 'update');
+            }else{
+                chartSeller([1, 4, 6,3,7,3,8], '');
+            }
+        }
+
+        $('.tab-statistik').click(function(){
+            $(this).closest('.main-statistik').find('.card').each(function(){
+                $(this).find('.shadows').removeClass('shadows');
+                $(this).addClass('border-0');
+                $(this).removeClass('active');
+            });
+
+            const el = $(this).find('.card');
+            el.removeClass('border-0');
+            el.addClass('active');
+            el.children('div').addClass('shadows');
+            let getStat = $(this).attr('id');
+            getDataStatistik(getStat);
+        });
+        getDataStatistik();
+        
+        
+    </script>
+</body>
+</html>

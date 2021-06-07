@@ -866,6 +866,12 @@ body {
     border: 1px solid #3CBE55;
 }
 
+.btn-white.active{
+    background: rgb(56,187,92);
+    background: linear-gradient(34deg, rgba(56,187,92,1) 31%, rgba(18,161,148,1) 100%);
+    color: #fff;
+}
+
 .btn-white-active {
     background: #E2F5E6;
     color: #3CBE55;
@@ -2130,7 +2136,7 @@ input:checked + .slider-switch:before {
     border:0;
 }
 .card-container-seller{
-    padding: 42px 26px;
+    padding: 26px;
     width: 100%;
     min-width: calc(1366px - 230px);
     min-height: 100vh;
@@ -2148,4 +2154,18 @@ input:checked + .slider-switch:before {
 }
 .nav-tabs .nav-link{
     padding: 17px 29px 16px;
+}
+
+.dropdown-toggle:after{
+    right: 10px;
+    position: absolute;
+    top: 18px;
+}
+.dropdown-toggle{
+    min-width: 150px;
+    text-align: left;
+}
+
+input:disabled{
+    cursor: not-allowed;
 }
