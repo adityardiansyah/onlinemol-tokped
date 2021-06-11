@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlinemol Seller</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <style>
+        .panel-title::after{
+            top: 12px;
+            right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-navbar">
+        <div class="top-bar f-11">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <div class="top-bar-item f-10">
+                            <i class="fas fa-mobile-alt"></i><a href="#"> Download Onlinemol Seller App</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right f-10">
+                            <a href="#" class="top-bar-item right">Hak Kekayaan Intelektual</a>
+                            <a href="#" class="top-bar-item right">Mitra Onlinemol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar shadow-nav">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-3 nav-bar-title">
+                        <a href="">
+                            <h3><b>Onlinemol</b> <i class="logo-seller">Seller</i></h3>
+                        </a>
+                    </div>
+                    <div class="col-7 nav-bar-search">
+                        <div class="input-group border rounded">
+                            <input type="text" class="form-control rounded border-0 f-10" placeholder="Coba ketikkan ..." />
+                            <span class="input-group-text category-search-icon border-0">
+                                <img src="../../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-2 nav-bar-misc">
+                        <div class="d-flex justify-content-between mt-1 pl-5">
+                            <div class="dropdown-custom">
+                                <div class="icon-notification">4</div>
+                                <i class="fas fa-bell btn-dropdown-custom"></i>
+                                <div class="content-dropdown-custom w-300-px f-10">
+                                    <div class="shadows">
+                                        <div class="d-flex justify-content-between p-3">
+                                            <b>Notifikasi</b>
+                                            <a href="" class="p-0 m-0 rounded-full"><img src="../../assets/WEB/ICON/ICON WEB103.svg" class="w-30" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="tabbable">
+                                            <!-- Tabs navs -->
+                                            <ul class="nav nav-tabs nav-fill" id="tab-scroll" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-mdb-toggle="tab" href="#nav-tab-transaksi"
+                                                        role="tab">Transaksi</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link d-flex" data-mdb-toggle="tab" href="#nav-tab-update"
+                                                        role="tab">Update (2) <div class="dot-red ml-2"></div></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="ex1-content">
+                                            <div class="tab-pane fade show active" id="nav-tab-transaksi" role="tabpanel">
+                                                <div class="h-300 scroll-custom">
+                                                    <div class="d-flex justify-content-between p-3">
+                                                        <b>Pembelian</b>
+                                                        <a href="" class="p-0 m-0 text-success">Lihat Semua</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="drop-link">Menunggu Pembayaran</a>
+                                                    </div>
+                                                    <div class="d-flex p-2 text-center">
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB26.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB28.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Pesanan Diproses</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB29.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Sedang Dikirim</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB27.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bl-5"></div>
+                                                    <div class="text-left pl-3">
+                                                        <b>Untuk Kamu</b>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-tab-update" role="tabpanel">
+                                                <div class="text-center">
+                                                    <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between p-3 f-9">
+                                        <a href="" class="text-success">Tandai semua dibaca</a>
+                                        <a href="" class="text-success">Lihat selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bh-16 mt-2"></div>
+                            <div class="dropdown-custom">
+                                <div class="btn-dropdown-custom f-10 parent-ellipsis">
+                                    <img src="../../assets/WEB/ICON/ICON WEB57.svg" class="w-30" alt="">
+                                    <span class="ellipsis-80 ml-1 drop-caption">Toko Online Indonesia</span>
+                                </div>
+                                <div class="content-dropdown-custom-right w-400-px f-10 p-3">
+                                    <div class="d-flex">
+                                        <img src="../../assets/WEB/ICON/ICON WEB106.svg" class="w-40" alt="">
+                                        <div class="text-left ml-1">
+                                            <b>Toko Online Indonesia</b> <br>
+                                            <span class="ellipsis-100 ml-1 f-8">Regular Merchant</span> <a href="" class="text-success">Upgrade menjadi power merchant</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="text-left">
+                                        <b>OnlineMol Seller</b>
+                                        <p class="f-8">
+                                            Pantau pesanan yang masuk dan cek perkembangan tokomu secara rutin di satu tempat.
+                                        </p>
+                                        <button class="btn btn-success btn-block">Cek Onlinemol Seller</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-content-dropdown"></div>
+    </div>
+    <div class="main-container-seller">
+        <div id="sidebar-left" class="scroll-custom is-open">
+            <nav class="main-sidebar">
+                <div id="expand" class="d-flex p-3 f-9 align-items-center text-center pointer border-bottom">
+                    <img src="../../assets/WEB/ICON/ICON WEB24.svg" class="w-20 mr-2 icon-expand" alt="">
+                    <b>Sembunyikan Menu</b>
+                </div>
+    
+                <div id="sidebar-content">
+                    <ul class="sidebar-header">
+                        <li>
+                            <div class="d-flex mb-3">
+                                <img src="../../assets/WEB/ICON/ICON WEB20.svg" class="w-40 rounded-full" alt="">
+                                <div class="ml-2 tab-menu">
+                                    <b class="ellipsis-80">Fashion Store</b>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-39.svg" class="w-30" alt="">
+                                        <div class="bh-16"></div>
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-40.svg" class="w-30" alt="">
+                                        <span class="f-10 fc-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-bottom tab-menu">
+                            <div class="card mb-3">
+                                <div class="d-flex justify-content-between f-9 p-2">
+                                    <b>Regular Merchant</b>
+                                    <a href="" class="text-success">Upgrade</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="f-9 border-bottom pt-2 pb-2 tab-menu">
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Saldo</div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Kredit OnAds <a href=""><img src="../../assets/SELLER/ICON/ICON SELLER-21.svg" class="w-30" alt=""></a></div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu active">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-70.svg" class="w-30" alt="">
+                                <b>Home</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-04.svg" class="w-30" alt="">
+                                <b>Chat</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-77.svg" class="w-30" alt="">
+                                <b>Diskusi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-84.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Produk</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Tambah Produk</a></li>
+                                                <li><a href="" class="d-flex">Produk Toko</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-63.svg" class="w-30" alt="">
+                                <b>Penjualan</b>
+                            </a>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseStatistik" aria-expanded="true"
+                                        aria-controls="collapseStatistik">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-75.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Statistik</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseStatistik" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Wawasan Toko</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Produk</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Operasional</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Pembeli</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-76.svg" class="w-30" alt="">
+                                <b>Iklan dan Promosi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-81.svg" class="w-30" alt="">
+                                <b>Dekorasi Toko</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseKata" aria-expanded="true"
+                                        aria-controls="collapseKata">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-94.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Kata Pembeli</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseKata" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Ulasan</a></li>
+                                                <li><a href="" class="d-flex">Pesanan Dikomplain</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseLayanan" aria-expanded="true"
+                                        aria-controls="collapseLayanan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-03.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Layanan Tambahan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseLayanan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Kemasan Produk</a></li>
+                                                <li><a href="" class="d-flex align-items-center justify-content-between">Bayar Tagihan <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 tab-menu" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-60.svg" class="w-30" alt="">
+                                    <b class="m-0">Pusat Edukasi Seller</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-59.svg" class="w-30" alt="">
+                                    <b class="m-0">Onlinemol Care</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapsePengaturan" aria-expanded="true"
+                                        aria-controls="collapsePengaturan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-19.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Pengaturan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapsePengaturan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Pegaturan Toko</a></li>
+                                                <li><a href="" class="d-flex">Pegaturan Admin</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div class="card-container-seller">
+                <b class="f-16">Daftar Pesanan</b>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="background: rgb(254,255,254); background: linear-gradient(180deg, rgba(254,255,254,1) 0%, rgba(203,234,209,1) 100%);">
+                            <div class="shadow">
+                                <div class="card-body">
+                                    <div>
+                                        <b class="f-16">Buat Promosi</b>
+                                        <p class="m-0 f-11 fc-text">Pasang promosi untuk tingkatkan performa tokomu</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-47.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">TopAds</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Iklankan produkmu untuk menjangkau lebih banyak pembeli
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-26.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Voucher Gratis Ongkir</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Berikan voucher kepada pembeli agar menarik perhatian pembeli
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-33.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Voucher Cashback</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Tambah minat pembeli untuk berbelanja ditokomu dengan voucher cashback
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-48.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Broadcast Chat</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Tingkatkan penjualan dengan kirim pesan promosi ke pembeli
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-48.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Bebas Ongkir</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Tingkatkan penjualan dengan kirim pesan promosi ke pembeli
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-24.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Rilisan Spesial</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Promosikan produk terbarumu secara ekslusif di Onlinemol
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mt-5">
+                                            <a href="">
+                                            <div class="card h-100">
+                                                <div class="card-body text-center">
+                                                    <div class="icon-ads">
+                                                        <object data="../../assets/SELLER/ICON/ICON SELLER-25.svg"  type=""></object>
+                                                    </div>
+                                                    <b class="text-dark">Toko Member</b>
+                                                    <p class="mt-3 f-10 fc-text">
+                                                        Tingkatkan pendapatan tokomu dengan berikan keanggotaan ekslusif untuk pembeli setia
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script>
+        $('.daterange').daterangepicker();
+    </script>
+</body>
+</html>

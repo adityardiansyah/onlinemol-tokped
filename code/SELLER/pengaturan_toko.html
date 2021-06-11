@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlinemol Seller</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <style>
+        .panel-title::after{
+            top: 12px;
+            right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-navbar">
+        <div class="top-bar f-11">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <div class="top-bar-item f-10">
+                            <i class="fas fa-mobile-alt"></i><a href="#"> Download Onlinemol Seller App</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right f-10">
+                            <a href="#" class="top-bar-item right">Hak Kekayaan Intelektual</a>
+                            <a href="#" class="top-bar-item right">Mitra Onlinemol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar shadow-nav">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-3 nav-bar-title">
+                        <a href="">
+                            <h3><b>Onlinemol</b> <i class="logo-seller">Seller</i></h3>
+                        </a>
+                    </div>
+                    <div class="col-7 nav-bar-search">
+                        <div class="input-group border rounded">
+                            <input type="text" class="form-control rounded border-0 f-10" placeholder="Coba ketikkan ..." />
+                            <span class="input-group-text category-search-icon border-0">
+                                <img src="../../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-2 nav-bar-misc">
+                        <div class="d-flex justify-content-between mt-1 pl-5">
+                            <div class="dropdown-custom">
+                                <div class="icon-notification">4</div>
+                                <i class="fas fa-bell btn-dropdown-custom"></i>
+                                <div class="content-dropdown-custom w-300-px f-10">
+                                    <div class="shadows">
+                                        <div class="d-flex justify-content-between p-3">
+                                            <b>Notifikasi</b>
+                                            <a href="" class="p-0 m-0 rounded-full"><img src="../../assets/WEB/ICON/ICON WEB103.svg" class="w-30" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="tabbable">
+                                            <!-- Tabs navs -->
+                                            <ul class="nav nav-tabs nav-fill" id="tab-scroll" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-mdb-toggle="tab" href="#nav-tab-transaksi"
+                                                        role="tab">Transaksi</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link d-flex" data-mdb-toggle="tab" href="#nav-tab-update"
+                                                        role="tab">Update (2) <div class="dot-red ml-2"></div></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="ex1-content">
+                                            <div class="tab-pane fade show active" id="nav-tab-transaksi" role="tabpanel">
+                                                <div class="h-300 scroll-custom">
+                                                    <div class="d-flex justify-content-between p-3">
+                                                        <b>Pembelian</b>
+                                                        <a href="" class="p-0 m-0 text-success">Lihat Semua</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="drop-link">Menunggu Pembayaran</a>
+                                                    </div>
+                                                    <div class="d-flex p-2 text-center">
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB26.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB28.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Pesanan Diproses</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB29.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Sedang Dikirim</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB27.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bl-5"></div>
+                                                    <div class="text-left pl-3">
+                                                        <b>Untuk Kamu</b>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-tab-update" role="tabpanel">
+                                                <div class="text-center">
+                                                    <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between p-3 f-9">
+                                        <a href="" class="text-success">Tandai semua dibaca</a>
+                                        <a href="" class="text-success">Lihat selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bh-16 mt-2"></div>
+                            <div class="dropdown-custom">
+                                <div class="btn-dropdown-custom f-10 parent-ellipsis">
+                                    <img src="../../assets/WEB/ICON/ICON WEB57.svg" class="w-30" alt="">
+                                    <span class="ellipsis-80 ml-1 drop-caption">Toko Online Indonesia</span>
+                                </div>
+                                <div class="content-dropdown-custom-right w-400-px f-10 p-3">
+                                    <div class="d-flex">
+                                        <img src="../../assets/WEB/ICON/ICON WEB106.svg" class="w-40" alt="">
+                                        <div class="text-left ml-1">
+                                            <b>Toko Online Indonesia</b> <br>
+                                            <span class="ellipsis-100 ml-1 f-8">Regular Merchant</span> <a href="" class="text-success">Upgrade menjadi power merchant</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="text-left">
+                                        <b>OnlineMol Seller</b>
+                                        <p class="f-8">
+                                            Pantau pesanan yang masuk dan cek perkembangan tokomu secara rutin di satu tempat.
+                                        </p>
+                                        <button class="btn btn-success btn-block">Cek Onlinemol Seller</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-content-dropdown"></div>
+    </div>
+    <div class="main-container-seller">
+        <div id="sidebar-left" class="scroll-custom is-open">
+            <nav class="main-sidebar">
+                <div id="expand" class="d-flex p-3 f-9 align-items-center text-center pointer border-bottom">
+                    <img src="../../assets/WEB/ICON/ICON WEB24.svg" class="w-20 mr-2 icon-expand" alt="">
+                    <b>Sembunyikan Menu</b>
+                </div>
+    
+                <div id="sidebar-content">
+                    <ul class="sidebar-header">
+                        <li>
+                            <div class="d-flex mb-3">
+                                <img src="../../assets/WEB/ICON/ICON WEB20.svg" class="w-40 rounded-full" alt="">
+                                <div class="ml-2 tab-menu">
+                                    <b class="ellipsis-80">Fashion Store</b>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-39.svg" class="w-30" alt="">
+                                        <div class="bh-16"></div>
+                                        <img src="../../assets/SELLER/ICON/ICON SELLER-40.svg" class="w-30" alt="">
+                                        <span class="f-10 fc-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-bottom tab-menu">
+                            <div class="card mb-3">
+                                <div class="d-flex justify-content-between f-9 p-2">
+                                    <b>Regular Merchant</b>
+                                    <a href="" class="text-success">Upgrade</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="f-9 border-bottom pt-2 pb-2 tab-menu">
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Saldo</div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                            <div class="d-flex justify-content-between submenu-sidebar p-1">
+                                <div class="fc-text">Kredit OnAds <a href=""><img src="../../assets/SELLER/ICON/ICON SELLER-21.svg" class="w-30" alt=""></a></div>
+                                <a href="" class="text-dark fw-600">Rp 0</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu active">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-70.svg" class="w-30" alt="">
+                                <b>Home</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-04.svg" class="w-30" alt="">
+                                <b>Chat</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-77.svg" class="w-30" alt="">
+                                <b>Diskusi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-84.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Produk</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Tambah Produk</a></li>
+                                                <li><a href="" class="d-flex">Produk Toko</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-63.svg" class="w-30" alt="">
+                                <b>Penjualan</b>
+                            </a>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseStatistik" aria-expanded="true"
+                                        aria-controls="collapseStatistik">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-75.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Statistik</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseStatistik" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Wawasan Toko</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Produk</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Operasional</a></li>
+                                                <li><a href="" class="d-flex">Wawasan Pembeli</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-76.svg" class="w-30" alt="">
+                                <b>Iklan dan Promosi</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center f-10 link-menu">
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-81.svg" class="w-30" alt="">
+                                <b>Dekorasi Toko</b>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseKata" aria-expanded="true"
+                                        aria-controls="collapseKata">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-94.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Kata Pembeli</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseKata" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Ulasan</a></li>
+                                                <li><a href="" class="d-flex">Pesanan Dikomplain</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapseLayanan" aria-expanded="true"
+                                        aria-controls="collapseLayanan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-03.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Layanan Tambahan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapseLayanan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Kemasan Produk</a></li>
+                                                <li><a href="" class="d-flex align-items-center justify-content-between">Bayar Tagihan <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 tab-menu" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <hr style="border: 1px solid #f1f1f1;"> 
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-60.svg" class="w-30" alt="">
+                                    <b class="m-0">Pusat Edukasi Seller</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center justify-content-between f-10 link-menu">
+                                <div>
+                                    <img src="../../assets/SELLER/ICON/ICON SELLER-59.svg" class="w-30" alt="">
+                                    <b class="m-0">Onlinemol Care</b>
+                                </div>
+                                <img src="../../assets/SELLER/ICON/ICON SELLER-61.svg" class="w-30 icon-gj" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="panel-group pointer" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <b class="panel-title  link-menu d-flex align-items-center f-10 m-0" data-toggle="collapse"
+                                        data-target="#collapsePengaturan" aria-expanded="true"
+                                        aria-controls="collapsePengaturan">
+                                            <img src="../../assets/SELLER/ICON/ICON SELLER-19.svg" class="w-30" alt="">
+                                            <b class="icon-gj">Pengaturan</b>
+                                        </b>
+                                    </div>
+    
+                                    <div id="collapsePengaturan" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordion">
+                                        <div class="panel-body">
+                                            <ul class="dropdown-submenu-sidebar f-10">
+                                                <li><a href="" class="d-flex">Pegaturan Toko</a></li>
+                                                <li><a href="" class="d-flex">Pegaturan Admin</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div class="card-container-seller">
+                <div class="d-flex">
+                        <img src="../../assets/SELLER/ICON/ICON SELLER-82.svg" class="w-30" alt="">
+                        <b class="fc-text ml-2">Toko Online</b>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="tabbable">
+                            <!-- Tabs navs -->
+                            <ul class="nav nav-tabs nav-fill mb-3" id="tab-scroll" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="tab-bio" data-mdb-toggle="tab" href="#tab-bio-content"
+                                        role="tab">Informasi</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-alamat" data-mdb-toggle="tab" href="#tab-alamat-content"
+                                        role="tab">Etalase</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-pembayaran" data-mdb-toggle="tab"
+                                        href="#tab-pembayaran-content" role="tab">Catatan</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-bank" data-mdb-toggle="tab" href="#tab-bank-content"
+                                        role="tab">Lokasi</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-notifikasi" data-mdb-toggle="tab"
+                                        href="#tab-notifikasi-content" role="tab">Pengiriman</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-keamanan" data-mdb-toggle="tab" href="#tab-keamanan-content"
+                                        role="tab">Produk Unggulan</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-google" data-mdb-toggle="tab" href="#tab-google-content"
+                                        role="tab">Template Balasan</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-google" data-mdb-toggle="tab" href="#tab-google-content"
+                                        role="tab">Layanan</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="tab-google" data-mdb-toggle="tab" href="#tab-google-content"
+                                        role="tab">Power Merchant</a>
+                                </li>
+                            </ul>
+                            <!-- Tabs navs -->
+                        </div>
+
+                        <!-- Tabs content -->
+                        <div class="tab-content" id="ex1-content">
+                            <div class="tab-pane fade show active" id="tab-bio-content" role="tabpanel">
+                                <div class="p-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <b class="fc-text f-10">Status Keanggotaan</b><br>
+                                            <b class="text-dark">Regular Merchant</b>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <p class="text-right f-10">
+                                                    Power Merchant sekarang bebas biaya bulanan!
+                                                </p>
+                                                <div class="ml-2">
+                                                    <button class="btn btn-success f-9 p-2">Upgrade menjadi Power Merchant</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <b class="text-dark">Informasi Toko</b>
+                                    <div class="alert alert-light f-10" style="background-color: #FFFAE6;" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        Nama toko & domain hanya bisa diubah 1 kali. Pastikan semua sudah benar. Selengkapnya.
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="shadows">
+                                                    <div class="card-body">
+                                                        <div>
+                                                            <b class="f-9 text-dark">Nama Toko</b><br>
+                                                            <span class="f-10">Toko Online</span>
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <b class="f-9 text-dark">Domain Toko</b><br>
+                                                            <span class="f-10">www.onlinemol.com/<b class="text-dark">tokoonline</b></span>
+                                                        </div>
+                                                        <a href="javascript:;" class="btn btn-choose-photo mt-4 pl-5 pr-5 pt-2 pb-2">
+                                                            Ubah
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label class="m-0 f-10 fw-bold" for="">Slogan</label>
+                                                    <input type="text" class="form-control f-10 lh-2" placeholder="Tulis slogan" id="" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="m-0 f-10 fw-bold" for="">Deskripsi</label>
+                                                    <textarea name="" class="form-control f-10" id="" cols="30" rows="5"></textarea>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button class="btn btn-success f-9">Simpan</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-alamat-content" role="tabpanel">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <form action="">
+                                                <div class="input-group border rounded">
+                                                    <input type="text" class="form-control rounded border-0 f-10" placeholder="Cari alamat atau nama penerima" />
+                                                    <span class="input-group-text category-search-icon border-0">
+                                                        <img src="../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                                            alt="">
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <button class="btn btn-success" onclick="tambahAlamat()">
+                                            Tambah Alamat Baru
+                                        </button>
+                                    </div>
+                                    <div class="card mt-3 card-alamat active">
+                                        <div class="shadows">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="d-flex">
+                                                            <b class="text-dark">Rumah</b>
+                                                            <div class="item-badge ml-2">
+                                                                <span class="grey f-8">
+                                                                    Utama
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-dark mt-1">
+                                                            <h6 class="font-weight-bold m-0">LIDYA PRAMESTI</h6>
+                                                            <p class="m-0 mt-1 f-10">6238736746126</p>
+                                                            <p class="ellipsis-350 f-10 mt-1">DSN. BARAN 2 RT:001 RW:006 DESA:PANJEREJO KECAMATAN:REJOTANGAN Kabupaten Tulungagung</p>
+                                                        </div>
+                                                        <a href="#" class="text-link f-10" onclick="ubahAlamat()">Ubah Alamat</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fa fa-check f-18 text-success check-alamat"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3 card-alamat">
+                                        <div class="shadows">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="d-flex">
+                                                            <b class="text-dark">Rumah</b>
+                                                        </div>
+                                                        <div class="text-dark mt-1">
+                                                            <h6 class="font-weight-bold m-0">LIDYA PRAMESTI</h6>
+                                                            <p class="m-0 mt-1 f-10">6238736746126</p>
+                                                            <p class="ellipsis-350 f-10 mt-1">DSN. BARAN 2 RT:001 RW:006 DESA:PANJEREJO KECAMATAN:REJOTANGAN Kabupaten Tulungagung</p>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <a href="#" class="text-link f-10" onclick="ubahAlamat()">Ubah Alamat</a>
+                                                            <div class="bh-16 ml-2 mt-1"></div>
+                                                            <a href="javascript:;" class="text-link f-10" onclick="pilihAlamat()">Jadikan Alamat & Pilih</a>
+                                                            <div class="bh-16 ml-2 mt-1"></div>
+                                                            <a href="javascript:;" class="text-link f-10" onclick="hapusAlamat()">Hapus</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button class="btn btn-success check-alamat">
+                                                            Pilih
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pembayaran-content" role="tabpanel">
+                                <div class="card-body text-dark">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="p-3">
+                                                <h5>Hai Aditya, <br> selamat datang di halaman <br>
+                                                <strong>Pengaturan Pembayaran</strong>
+                                                </h5>
+                                                <p>
+                                                    Atur pembayaran Anda untuk meningkatkan keamanan dan kemudahan berbelanja Anda di Onlinemol.
+                                                </p>
+                                                <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
+                                                    <a class="nav-link active" data-toggle="pill" href="#kartu_kredit" role="tab" aria-controls="kartu_kredit" aria-selected="true">
+                                                        <div class="d-flex justify-content-between">
+                                                            <span>Kartu Kredit / Debit</span> <span>0 / 4 tersimpan</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="nav-link" data-toggle="pill" href="#kredivo" role="tab" aria-controls="kredivo" aria-selected="false">Kredivo Express</a>
+                                                    <a class="nav-link" data-toggle="pill" href="#debit" role="tab" aria-controls="debit" aria-selected="false">Debit Instan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="kartu_kredit" role="tabpanel" aria-labelledby="kartu_kredit-tab">
+                                                    <div class="card rounded-0">
+                                                        <div class="d-flex p-3 justify-content-between border-bottom f-11">
+                                                            <span>Kartu Kredit / Debit</span>
+                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
+                                                        </div>
+                                                        <div class="text-center p-4 f-10">
+                                                            <p>Untuk kemudahan pembayaran kartu kredit / debit, simpan informasi kartu kredit / debit Anda.</p>
+                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="kredivo" role="tabpanel" aria-labelledby="kredivo-tab">
+                                                    <div class="card rounded-0">
+                                                        <div class="d-flex p-3 justify-content-between border-bottom">
+                                                            <span>Kredivo</span>
+                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
+                                                        </div>
+                                                        <div class="text-center p-4">
+                                                            <p>Untuk kemudahan pembayaran Kredivo, simpan informasi kartu kredit / debit Anda.</p>
+                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="debit" role="tabpanel" aria-labelledby="kreedit-tab">
+                                                    <div class="card rounded-0">
+                                                        <div class="d-flex p-3 justify-content-between border-bottom">
+                                                            <span>debit</span>
+                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
+                                                        </div>
+                                                        <div class="text-center p-4">
+                                                            <p>Untuk kemudahan pembayaran debit, simpan informasi kartu kredit / debit Anda.</p>
+                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-bank-content" role="tabpanel">
+                                <div class="text-center">
+                                    <img src="../assets/WEB/ICON/ICON WEB75.svg" class="w-25" alt="">
+                                    <br>
+                                    <b class="text-dark">Belum ada rekening bank tersimpan</b>
+                                    <br>
+                                    <small>Yuk, tambah rekening bank kamu biar lebih mudah saat tarik Saldo Online Mol</small>
+                                    <br>
+                                    <button class="btn btn-success mt-3" onclick="tambahRekening()">
+                                        Tambah Rekening
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-notifikasi-content" role="tabpanel">
+                                <div class="card-body">
+                                    <div class="alert alert-light f-10" style="background-color: #f1f1f1;" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        Notifikasi SMS sifatnya penting karena memberimu kabar soal keamanan akun dan status transaksi. Hati-hati saat terima SMS spam yang mengatasnamakan Tokopedia, ya. Jika kamu menerima SMS tersebut, pelajari selengkapnya disini.
+                                    </div>
+                                    <h3 class="text-dark m-0"><strong>Notifikasi</strong></h3>
+                                    <p class="f-9 m-0">Atur notifikasi yang ingin kamu terima disini</p>
+
+                                    <div class="p-2 d-flex justify-content-between mt-3 bg-light rounded">
+                                        <b class="text-dark pl-2">Transaksi</b>
+                                        <b class="pr-2">Email</b>
+                                    </div>
+
+                                    <div class="mt-4 text-dark">
+                                        <div class="pt-3 pb-3">
+                                            <img src="../assets/WEB/ICON/ICON WEB39.svg" class="w-35" alt="">
+                                            <b class="ml-2">Transaksi Pembelian</b>
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Menunggu Pembayaran</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Menunggu Konfirmasi</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Diproses</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Dikirim</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pesanan Tiba</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Pengingat</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+
+                                        <div class="mt-4 pt-3 pb-3">
+                                            <img src="../assets/WEB/ICON/ICON WEB44.svg" class="w-30" alt="">
+                                            <b class="ml-2">Promo</b>
+                                        </div>
+                                        <div class="profile-card-seperator"></div>
+                                        <div class="pt-3 pb-3 d-flex justify-content-between">
+                                            <span>Newsletter Online Mol</span>
+                                            <input
+                                                class="form-check-input mr-4"
+                                                type="checkbox"
+                                                value=""
+                                                id="flexCheckChecked"
+                                                
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-keamanan-content" role="tabpanel">
+                                <div class="">
+                                    <div class="row m-0 no-gutters">
+                                        <div class="col-md-5 border-right">
+                                            <div class="p-4">
+                                                <h5>Hai Aditya, <br>
+                                                Atur <strong>Keamanan Akun</strong> Anda disini
+                                                </h5>
+                                            </div>
+                                            <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link border-bottom active" data-toggle="pill" href="#aktifitas_login" role="tab" aria-controls="aktifitas_login" aria-selected="true">
+                                                    <div class="d-flex justify-content-between pl-4 pr-4">
+                                                        <span>Akrivitas Login</span> <img src="../assets/WEB/ICON/arrow-right.svg" class="w-30" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="aktifitas_login" role="tabpanel" aria-labelledby="aktifitas_login-tab">
+                                                    <div class="p-4">
+                                                        <h5 class="text-center text-dark"><b>Aktifitas Login</b></h5>
+                                                        <div class="alert alert-light f-10 d-flex mt-3 rounded-0" style="background-color: #f2f2f2;" role="alert">
+                                                            <img src="../assets/WEB/ICON/ICON WEB82.svg" class="w-30 mr-2" alt=""> <span class="f-9">Bila terdapat aktivitas tidak dikenal, segera klik "Keluar" dan ubah kata sandi.</span>
+                                                        </div>
+                                                        <p>Aktivitas login saat ini</p>
+                                                        <div>
+                                                            <div class="d-flex pt-3 pb-3">
+                                                                <img src="../assets/WEB/ICON/ICON WEB83.svg" class="w-60" alt="">
+                                                                <div class="w-100 ml-2">
+                                                                    <b class="text-dark">Chrome di Windows 10</b> <br>
+                                                                    <small>139.228.40.167</small>
+                                                                    <div class="item-badge">
+                                                                        <span class="success">Sedang Aktif</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-card-seperator"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="d-flex pt-3 pb-3">
+                                                                <img src="../assets/WEB/ICON/ICON WEB60.svg" class="w-60" alt="">
+                                                                <div class="w-100 ml-2">
+                                                                    <b class="text-dark">Realme X</b> <br>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <small>139.228.40.167</small>
+                                                                        <small><a href="">Keluar</a></small>
+                                                                    </div>
+                                                                    <div class="item-badge">
+                                                                        <span class="success">Sedang Aktif</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-card-seperator"></div>
+                                                        </div>
+                                                        <div class="text-right mt-2">
+                                                            <a href="" >Keluar dari semua perangkat</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-google-content" role="tabpanel">
+                                <div class="card-body">
+                                    <div class="text-center text-dark w-75 m-auto">
+                                        <b>Perkuat keamanan akun dengan aplikasi Google Authenticator</b>
+                                        <br><br>
+                                        <p class="f-10">Google Authenticator adalah fitur keamanan yang mempermudah Anda menjaga akun dari risiko pencurian data atau hacking.</p>
+                                        <p class="f-10">Setiap terjadi penarikan dana dan perubahan data pribadi seperti akun bank dan email, maka Anda dapat memasukkan kode keamanan dari aplikasi Google Authenticator sebagai tahap verifikasi.</p>
+                                        <button class="btn btn-success btn-block mt-4 p-3">Aktifkan Google Authenticator</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tabs content -->
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script>
+        $('.daterange').daterangepicker();
+    </script>
+</body>
+</html>
