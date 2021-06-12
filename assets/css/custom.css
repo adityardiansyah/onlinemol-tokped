@@ -398,6 +398,9 @@ body {
 .h-60{
     height: 60px!important;
 }
+.w-20-persen{
+    width: 20%!important;
+}
 
 .h-35 {
     height: 35px;
@@ -696,7 +699,7 @@ body {
     border-radius: 30px;
     padding: 8px 13px;
     position: absolute;
-    z-index: 114;
+    z-index: 10;
     top: 50%;
 }
 
@@ -862,7 +865,7 @@ body {
 
 .btn-white:hover {
     background: #fff;
-    color: #3CBE55;
+    color: #000000;
     border: 1px solid #3CBE55;
 }
 
