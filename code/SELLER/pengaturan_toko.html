@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onlinemol Seller</title>
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/mdb.min.css">
     <link rel="stylesheet" href="../../assets/css/custom.css">
     <link rel="stylesheet" href="../../assets/css/navbar.css">
     <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
     <style>
         .panel-title::after{
             top: 12px;
@@ -418,10 +419,10 @@
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="tab-pembayaran" data-mdb-toggle="tab"
-                                        href="#tab-pembayaran-content" role="tab">Catatan</a>
+                                        href="#tab-catatan" role="tab">Catatan</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-bank" data-mdb-toggle="tab" href="#tab-bank-content"
+                                    <a class="nav-link" id="tab-lokasi" data-mdb-toggle="tab" href="#tab-lokasi-content"
                                         role="tab">Lokasi</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -429,11 +430,11 @@
                                         href="#tab-notifikasi-content" role="tab">Pengiriman</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-keamanan" data-mdb-toggle="tab" href="#tab-keamanan-content"
+                                    <a class="nav-link" id="tab-produk-unggulan" data-mdb-toggle="tab" href="#tab-produk-unggulan-content"
                                         role="tab">Produk Unggulan</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-google" data-mdb-toggle="tab" href="#tab-google-content"
+                                    <a class="nav-link" id="tab-balasan" data-mdb-toggle="tab" href="#tab-balasan-content"
                                         role="tab">Template Balasan</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -450,7 +451,7 @@
 
                         <!-- Tabs content -->
                         <div class="tab-content" id="ex1-content">
-                            <div class="tab-pane fade show active" id="tab-bio-content" role="tabpanel">
+                            <div class="tab-pane fade show active text-dark" id="tab-bio-content" role="tabpanel">
                                 <div class="p-4">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -513,7 +514,59 @@
                                             </form>
                                         </div>
                                     </div>
+
+                                    <hr>
+                                    <b>Status</b>
+
+                                    <div class="d-flex align-items-center f-10 mt-3" id="tab-toko" role="tablist">
+                                        <a class="p-2 ml-2 tab-label"  href="#tab-buka-toko" data-target="tab-buka-toko">Buka Toko</a>
+                                        <a class="p-2 ml-2 tab-label active" href="#tab-tutup-toko" data-target="tab-tutup-toko">Tutup Toko</a>
+                                    </div>
+                                    <div class="tab-content-custom" id="content">
+                                        <div class="tab-pane-custom fade show text-dark" id="tab-buka-toko" role="tabpanel">
+                                            Buka Toko
+                                        </div>
+                                        <div class="tab-pane-custom fade show active text-dark" id="tab-tutup-toko" role="tabpanel">
+                                            <div class="row mt-3">
+                                                <div class="col-md-3 f-10">
+                                                    <b>Status Toko</b>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="d-flex">
+                                                        <img src="../../assets/SELLER/ICON/ICON SELLER-83.svg" class="w-30" alt="">
+                                                        <span class="fc-text">Ditutup</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="fc-text f-10">Tutup Sampai: Invalid Date</span><br>
+                                                        <span class="fc-text f-10">Catatan</span>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn-success f-10 font-weight-normal rounded-10">Buka Operasional Toko</button>
+                                                        <button class="btn-white f-10 pointer rounded-10">Ubah Jadwal Tutup Toko</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <b>Gambar Toko</b>
+                                            <div class="d-flex w-50">
+                                                <img src="../../assets/SELLER/ICON/ICON SELLER-25.svg" class="w-100-px" alt="">
+                                                <div class="ml-3">
+                                                    <p class="fc-text f-10">Ukuran optimal 300 x 300 piksel dengan Besar file: Maksimum 10.000.000 bytes (10 Megabytes). Ekstensi file yang diperbolehkan: JPG, JPEG, PNG</p>
+                                                    <div>
+                                                        <label class="btn-white pointer pt-2 pb-2 btn-block text-center mt-1 f-10" for="browse">Pilih Foto</label>
+                                                        <input type="file" id="browse" name="browse" style="display: none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <b>Sampul Toko</b>
+                                            <div class="mt-3 w-75 f-10">
+                                                Mulai tanggal 31 Oktober 2020, sampul toko pada halaman desktop toko sudah tidak dapat digunakan lagi. Namun tidak perlu khawatir karena kamu tetap bisa mempercantik dan update info terbaru tokomu dengan menggunakan fitur <a href="" class="text-success">Dekorasi Toko</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                             <div class="tab-pane fade" id="tab-alamat-content" role="tabpanel">
                                 <div class="card-body">
@@ -523,13 +576,13 @@
                                                 <div class="input-group border rounded">
                                                     <input type="text" class="form-control rounded border-0 f-10" placeholder="Cari alamat atau nama penerima" />
                                                     <span class="input-group-text category-search-icon border-0">
-                                                        <img src="../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                                        <img src="../../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
                                                             alt="">
                                                     </span>
                                                 </div>
                                             </form>
                                         </div>
-                                        <button class="btn btn-success" onclick="tambahAlamat()">
+                                        <button class="btn btn-success">
                                             Tambah Alamat Baru
                                         </button>
                                     </div>
@@ -593,82 +646,50 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab-pembayaran-content" role="tabpanel">
+                            <div class="tab-pane fade" id="tab-catatan" role="tabpanel">
                                 <div class="card-body text-dark">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="p-3">
-                                                <h5>Hai Aditya, <br> selamat datang di halaman <br>
-                                                <strong>Pengaturan Pembayaran</strong>
-                                                </h5>
-                                                <p>
-                                                    Atur pembayaran Anda untuk meningkatkan keamanan dan kemudahan berbelanja Anda di Onlinemol.
-                                                </p>
-                                                <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
-                                                    <a class="nav-link active" data-toggle="pill" href="#kartu_kredit" role="tab" aria-controls="kartu_kredit" aria-selected="true">
-                                                        <div class="d-flex justify-content-between">
-                                                            <span>Kartu Kredit / Debit</span> <span>0 / 4 tersimpan</span>
-                                                        </div>
-                                                    </a>
-                                                    <a class="nav-link" data-toggle="pill" href="#kredivo" role="tab" aria-controls="kredivo" aria-selected="false">Kredivo Express</a>
-                                                    <a class="nav-link" data-toggle="pill" href="#debit" role="tab" aria-controls="debit" aria-selected="false">Debit Instan</a>
-                                                </div>
+                                            <b>Catatan Toko</b><br>
+                                            <span class="f-10 fc-text">Lihat Catatan Toko di </span><a href="" class="text-success">Halaman Toko</a>
+                                        </div>
+                                        <div class="col-md-6 f-10 text-right">
+                                            <div class="d-flex flex-wrap">
+                                                <button class="btn-white fw-bold rounded-10" data-toggle="modal" data-target="#modal_preview">Preview</button>
+                                                <button class="btn btn-success ml-3 f-10 rounded-10" data-toggle="modal" data-target="#modal_tambah_catatan">Tambah Catatan</button>
+                                                <button class="btn btn-success ml-3 f-10 rounded-10" data-toggle="modal" data-target="#modal_tambah_catatan">Tambah Kebijakan</button>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="tab-content" id="v-pills-tabContent">
-                                                <div class="tab-pane fade show active" id="kartu_kredit" role="tabpanel" aria-labelledby="kartu_kredit-tab">
-                                                    <div class="card rounded-0">
-                                                        <div class="d-flex p-3 justify-content-between border-bottom f-11">
-                                                            <span>Kartu Kredit / Debit</span>
-                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
-                                                        </div>
-                                                        <div class="text-center p-4 f-10">
-                                                            <p>Untuk kemudahan pembayaran kartu kredit / debit, simpan informasi kartu kredit / debit Anda.</p>
-                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="kredivo" role="tabpanel" aria-labelledby="kredivo-tab">
-                                                    <div class="card rounded-0">
-                                                        <div class="d-flex p-3 justify-content-between border-bottom">
-                                                            <span>Kredivo</span>
-                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
-                                                        </div>
-                                                        <div class="text-center p-4">
-                                                            <p>Untuk kemudahan pembayaran Kredivo, simpan informasi kartu kredit / debit Anda.</p>
-                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="debit" role="tabpanel" aria-labelledby="kreedit-tab">
-                                                    <div class="card rounded-0">
-                                                        <div class="d-flex p-3 justify-content-between border-bottom">
-                                                            <span>debit</span>
-                                                            <a href="" class="text-link">Pengaturan Verifikasi</a>
-                                                        </div>
-                                                        <div class="text-center p-4">
-                                                            <p>Untuk kemudahan pembayaran debit, simpan informasi kartu kredit / debit Anda.</p>
-                                                            <button class="btn  shadow-0 btn-choose-photo">Tambah Kartu Kredit / Debit</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <div class="border bg-light p-5 text-center fc-text">
+                                                <h5><b>Tidak ada catatan toko</b></h5>
+                                                <p class="f-9">Tambah kebijakan atau syarat & ketentuan toko. Informasi tersebut akan muncul di halaman tokomu</p>
+                                                <button class="btn btn-success f-10 rounded-10 mt-3" data-toggle="modal" data-target="#modal_tambah_catatan">Tambah Catatan</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab-bank-content" role="tabpanel">
-                                <div class="text-center">
-                                    <img src="../assets/WEB/ICON/ICON WEB75.svg" class="w-25" alt="">
-                                    <br>
-                                    <b class="text-dark">Belum ada rekening bank tersimpan</b>
-                                    <br>
-                                    <small>Yuk, tambah rekening bank kamu biar lebih mudah saat tarik Saldo Online Mol</small>
-                                    <br>
-                                    <button class="btn btn-success mt-3" onclick="tambahRekening()">
-                                        Tambah Rekening
-                                    </button>
+                            <div class="tab-pane fade" id="tab-lokasi-content" role="tabpanel">
+                                <div class="card-body text-dark">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <b>Lokasi Toko</b><br>
+                                            <span class="f-10 fc-text">Kamu bisa masukkan lokasi dan informasi toko di sini.</span>
+                                        </div>
+                                        <div class="col-md-6 f-10 text-right">
+                                                <button class="btn btn-success f-10 rounded-10" data-toggle="modal" data-target="#modal_tambah_catatan">Tambah Kebijakan</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <div class="border bg-light p-5 text-center text-dark">
+                                                <h5><b>Tidak ada lokasi</b></h5>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab-notifikasi-content" role="tabpanel">
@@ -689,7 +710,7 @@
 
                                     <div class="mt-4 text-dark">
                                         <div class="pt-3 pb-3">
-                                            <img src="../assets/WEB/ICON/ICON WEB39.svg" class="w-35" alt="">
+                                            <img src="../../assets/WEB/ICON/ICON WEB39.svg" class="w-35" alt="">
                                             <b class="ml-2">Transaksi Pembelian</b>
                                         </div>
                                         <div class="profile-card-seperator"></div>
@@ -760,7 +781,7 @@
                                         </div>
 
                                         <div class="mt-4 pt-3 pb-3">
-                                            <img src="../assets/WEB/ICON/ICON WEB44.svg" class="w-30" alt="">
+                                            <img src="../../assets/WEB/ICON/ICON WEB44.svg" class="w-30" alt="">
                                             <b class="ml-2">Promo</b>
                                         </div>
                                         <div class="profile-card-seperator"></div>
@@ -777,79 +798,73 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab-keamanan-content" role="tabpanel">
-                                <div class="">
-                                    <div class="row m-0 no-gutters">
-                                        <div class="col-md-5 border-right">
-                                            <div class="p-4">
-                                                <h5>Hai Aditya, <br>
-                                                Atur <strong>Keamanan Akun</strong> Anda disini
-                                                </h5>
-                                            </div>
-                                            <div class="nav flex-column list-menu" role="tablist" aria-orientation="vertical">
-                                                <a class="nav-link border-bottom active" data-toggle="pill" href="#aktifitas_login" role="tab" aria-controls="aktifitas_login" aria-selected="true">
-                                                    <div class="d-flex justify-content-between pl-4 pr-4">
-                                                        <span>Akrivitas Login</span> <img src="../assets/WEB/ICON/arrow-right.svg" class="w-30" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
+                            <div class="tab-pane fade" id="tab-produk-unggulan-content" role="tabpanel">
+                                <div class="card-body text-dark">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <b>Produk Unggulan</b><br>
+                                            <span class="f-10 fc-text">Lihat Produk Unggulan yang telah ditampilkan di </span> <a href="" class="text-success">Halaman Toko</a>
                                         </div>
-                                        <div class="col-md-7">
-                                            <div class="tab-content" id="v-pills-tabContent">
-                                                <div class="tab-pane fade show active" id="aktifitas_login" role="tabpanel" aria-labelledby="aktifitas_login-tab">
-                                                    <div class="p-4">
-                                                        <h5 class="text-center text-dark"><b>Aktifitas Login</b></h5>
-                                                        <div class="alert alert-light f-10 d-flex mt-3 rounded-0" style="background-color: #f2f2f2;" role="alert">
-                                                            <img src="../assets/WEB/ICON/ICON WEB82.svg" class="w-30 mr-2" alt=""> <span class="f-9">Bila terdapat aktivitas tidak dikenal, segera klik "Keluar" dan ubah kata sandi.</span>
-                                                        </div>
-                                                        <p>Aktivitas login saat ini</p>
-                                                        <div>
-                                                            <div class="d-flex pt-3 pb-3">
-                                                                <img src="../assets/WEB/ICON/ICON WEB83.svg" class="w-60" alt="">
-                                                                <div class="w-100 ml-2">
-                                                                    <b class="text-dark">Chrome di Windows 10</b> <br>
-                                                                    <small>139.228.40.167</small>
-                                                                    <div class="item-badge">
-                                                                        <span class="success">Sedang Aktif</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="profile-card-seperator"></div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="d-flex pt-3 pb-3">
-                                                                <img src="../assets/WEB/ICON/ICON WEB60.svg" class="w-60" alt="">
-                                                                <div class="w-100 ml-2">
-                                                                    <b class="text-dark">Realme X</b> <br>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <small>139.228.40.167</small>
-                                                                        <small><a href="">Keluar</a></small>
-                                                                    </div>
-                                                                    <div class="item-badge">
-                                                                        <span class="success">Sedang Aktif</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="profile-card-seperator"></div>
-                                                        </div>
-                                                        <div class="text-right mt-2">
-                                                            <a href="" >Keluar dari semua perangkat</a>
-                                                        </div>
-                                                    </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-12 border">
+                                            <div class="w-50 m-auto">
+                                                <div class="p-5 text-center text-dark">
+                                                    <img src="../../assets/SELLER/ICON/ICON SELLER-73.svg" class="w-50" alt="">
+                                                    <br>
+                                                    <b>Toko Anda belum memiliki Produk Unggulan</b>
+                                                    <br>
+                                                    <small>
+                                                        Tampilkan 5 Produk Terbaik Anda sebagai Produk Unggulan pada Halaman Toko. Dapatkan akses Produk Unggulan dengan berlangganan Power Merchant.
+                                                    </small>
+                                                    <br>
+                                                    <button class="btn btn-success mt-3">Upgrade Ke Power Merchant</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="tab-google-content" role="tabpanel">
-                                <div class="card-body">
-                                    <div class="text-center text-dark w-75 m-auto">
-                                        <b>Perkuat keamanan akun dengan aplikasi Google Authenticator</b>
-                                        <br><br>
-                                        <p class="f-10">Google Authenticator adalah fitur keamanan yang mempermudah Anda menjaga akun dari risiko pencurian data atau hacking.</p>
-                                        <p class="f-10">Setiap terjadi penarikan dana dan perubahan data pribadi seperti akun bank dan email, maka Anda dapat memasukkan kode keamanan dari aplikasi Google Authenticator sebagai tahap verifikasi.</p>
-                                        <button class="btn btn-success btn-block mt-4 p-3">Aktifkan Google Authenticator</button>
+                            <div class="tab-pane fade" id="tab-balasan-content" role="tabpanel">
+                                <div class="card-body text-dark">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <b>Daftar Template Balasan</b><br>
+                                            <span class="f-10 fc-text">Kamu bisa membuat maksimal 5 template Balasan Ulasan atau gunakan template standar.</span>
+                                        </div>
+                                        <div class="col-md-5 f-10 text-right">
+                                                <button class="btn-white f-10 rounded-10" data-toggle="modal" data-target="#modal_tampilan_template">Tampilan</button>
+                                                <button class="btn btn-success f-10 rounded-10" data-toggle="modal" data-target="#modal_tambah_template">Tambah Template</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <b class="f-11">Aktifkan Balasan Ulasan Otomatis</b> <small class="f-9">(untuk rating 4 & 5)</small>
+                                                        </div>
+                                                        <a href="" class="text-success f-10">Pilih Template</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <label class="switch mr-2">
+                                                            <input type="checkbox">
+                                                            <span class="slider-switch round"></span>
+                                                        </label>
+                                                        <b>Template Balasan Otomatis</b>
+                                                        <div class="item-badge ml-2">
+                                                            <span class="orange">Balasan Otomatis</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mt-2 f-10">
+                                                        Terima kasih telah berbelanja di Pick Me First. Bagikan link toko kami https://www.tokopedia.com/pmf-24 kepada teman-teman Anda dan favoritkan Toko kami untuk terus update mengenai stok dan produk terbaru
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -860,11 +875,114 @@
         </div>
     </div>
 
+    <div class="modal fade bd-example-modal-md" id="modal_tambah_catatan" tabindex="-1" role="dialog" aria-labelledby="modal_tambah_catatan" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Tambah Catatan Toko</h5>
+            <p class="f-9 text-center">Tulis kebijakan atau syarat & ketentuan toko kamu</p>
+            <div class="modal-body p-4">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="m-0 f-10 fw-bold" for="">Judul Catatan</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control f-10 lh-2" placeholder="Tulis label alamat" id="" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">
+                            <label class="m-0 f-10 fw-bold" for="">Isi Catatan</label><br>
+                            <small>Tulis secara singkat dan jelas.</small>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea name="" class="form-control f-10" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn shadow-0 btn-border" data-mdb-dismiss="modal">Batal</button>
+                        <button class="btn btn-success">Simpan</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-md" id="modal_preview" tabindex="-1" role="dialog" aria-labelledby="modal_tambah_catatan" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Preview Catatan Toko</h5>
+            <p class="f-9 text-center">Cek tampilan Catatan Toko di halaman toko kamu</p>
+            <div class="modal-body p-4">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-md" id="modal_tambah_template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Tambah Template</h5>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Judul Template</label>
+                                <input type="text" class="form-control f-10 lh-2"id="" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="m-0 f-10 fw-bold" for="">Isi Template</label>
+                                <textarea name="" class="form-control" id="" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" class="btn shadow-0 btn-border" data-dismiss="modal">Batal</button>
+                        <button class="btn btn-success">Simpan</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-md" id="modal_tampilan_template" tabindex="-1" role="dialog" aria-labelledby="modal_tambah_catatan" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content rounded-10">
+            <div class="modal-header border-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h5 class="font-weight-bold text-center m-0">Tampilan Template Balasan</h5>
+            <p class="f-9 text-center">Berikut tampilan template balasan di halaman ulasan.</p>
+            <div class="modal-body p-4">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../../assets/js/jquery/dist/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="../../assets/js/navbar.js"></script>
     <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/seller.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
