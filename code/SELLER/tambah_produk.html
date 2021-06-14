@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlinemol Seller</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/mdb.min.css">
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <style>
+        .panel-title::after{
+            top: 12px;
+            right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-navbar">
+        <div class="top-bar f-11">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-4">
+                        <div class="top-bar-item f-10">
+                            <i class="fas fa-mobile-alt"></i><a href="#"> Download Onlinemol Seller App</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right f-10">
+                            <a href="#" class="top-bar-item right">Hak Kekayaan Intelektual</a>
+                            <a href="#" class="top-bar-item right">Mitra Onlinemol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-bar shadow-nav">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-3 nav-bar-title">
+                        <a href="">
+                            <h3><b>Onlinemol</b> <i class="logo-seller">Seller</i></h3>
+                        </a>
+                    </div>
+                    <div class="col-7 nav-bar-search">
+                        <div class="input-group border rounded">
+                            <input type="text" class="form-control rounded border-0 f-10" placeholder="Coba ketikkan ..." />
+                            <span class="input-group-text category-search-icon border-0">
+                                <img src="../../assets/WEB/ICON/ICON WEB03.svg" class="w-20"
+                                    alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-2 nav-bar-misc">
+                        <div class="d-flex justify-content-between mt-1 pl-5">
+                            <div class="dropdown-custom">
+                                <div class="icon-notification">4</div>
+                                <i class="fas fa-bell btn-dropdown-custom"></i>
+                                <div class="content-dropdown-custom w-300-px f-10">
+                                    <div class="shadows">
+                                        <div class="d-flex justify-content-between p-3">
+                                            <b>Notifikasi</b>
+                                            <a href="" class="p-0 m-0 rounded-full"><img src="../../assets/WEB/ICON/ICON WEB103.svg" class="w-30" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="tabbable">
+                                            <!-- Tabs navs -->
+                                            <ul class="nav nav-tabs nav-fill" id="tab-scroll" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-mdb-toggle="tab" href="#nav-tab-transaksi"
+                                                        role="tab">Transaksi</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link d-flex" data-mdb-toggle="tab" href="#nav-tab-update"
+                                                        role="tab">Update (2) <div class="dot-red ml-2"></div></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="ex1-content">
+                                            <div class="tab-pane fade show active" id="nav-tab-transaksi" role="tabpanel">
+                                                <div class="h-300 scroll-custom">
+                                                    <div class="d-flex justify-content-between p-3">
+                                                        <b>Pembelian</b>
+                                                        <a href="" class="p-0 m-0 text-success">Lihat Semua</a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="drop-link">Menunggu Pembayaran</a>
+                                                    </div>
+                                                    <div class="d-flex p-2 text-center">
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB26.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB28.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Pesanan Diproses</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB29.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Sedang Dikirim</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="" class="p-0 m-0 text-center">
+                                                                <img src="../../assets/WEB/ICON/ICON WEB27.svg" class="w-35" alt="">
+                                                                <span class="f-8 text-dark">Menunggu Pembayaran</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bl-5"></div>
+                                                    <div class="text-left pl-3">
+                                                        <b>Untuk Kamu</b>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-tab-update" role="tabpanel">
+                                                <div class="text-center">
+                                                    <img src="../../assets/WEB/ICON/ICON WEB32.svg" class="w-50" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between p-3 f-9">
+                                        <a href="" class="text-success">Tandai semua dibaca</a>
+                                        <a href="" class="text-success">Lihat selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bh-16 mt-2"></div>
+                            <div class="dropdown-custom">
+                                <div class="btn-dropdown-custom f-10 parent-ellipsis">
+                                    <img src="../../assets/WEB/ICON/ICON WEB57.svg" class="w-30" alt="">
+                                    <span class="ellipsis-80 ml-1 drop-caption">Toko Online Indonesia</span>
+                                </div>
+                                <div class="content-dropdown-custom-right w-400-px f-10 p-3">
+                                    <div class="d-flex">
+                                        <img src="../../assets/WEB/ICON/ICON WEB106.svg" class="w-40" alt="">
+                                        <div class="text-left ml-1">
+                                            <b>Toko Online Indonesia</b> <br>
+                                            <span class="ellipsis-100 ml-1 f-8">Regular Merchant</span> <a href="" class="text-success">Upgrade menjadi power merchant</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="text-left">
+                                        <b>OnlineMol Seller</b>
+                                        <p class="f-8">
+                                            Pantau pesanan yang masuk dan cek perkembangan tokomu secara rutin di satu tempat.
+                                        </p>
+                                        <button class="btn btn-success btn-block">Cek Onlinemol Seller</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-content-dropdown"></div>
+    </div>
+    <div class="main-container-seller p-0">
+        <div class="content-container p-4">
+            <div class="card-container-seller p-5" style="background-color: #fff;">
+                <h5><b>Tambah Produk</b></h5>
+                <div class="alert alert-light f-10 mt-4" style="background-color: #EBF6F6;" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    Pastikan produk Anda sudah sesuai dengan <a href="" class="text-success">syarat dan ketentuan Onlinemol</a> . Onlinemol menghimbau seller untuk menjual produk dengan harga yang wajar atau produk <br>
+                    Anda dapat diturunkan ole Onlinemol sesuai S&K yang berlaku.
+                </div>
+                <div class="card">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Upload Produk</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Foto Produk</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px (Untuk gambar optimal gunakan ukuran minimum 700 x 700 px).
+                                        <br><br>
+                                        Pilih foto produk atau tarik dan letakkan hingga 5 foto sekaligus di sini.
+                                    </p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-2 offset-1">
+                                            <div>
+                                                <label class="btn-upload-product text-center pointer p-4 mt-1 f-14" for="browse">
+                                                    <i class="fa fa-images"></i>
+                                                    <small>Utama</small>
+                                                </label>
+                                                <input type="file" id="browse" name="browse" style="display: none">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div>
+                                                <label class="btn-upload-product text-center pointer p-4 mt-1 f-14" for="browse">
+                                                    <i class="fa fa-images"></i>
+                                                    <small>Depan</small>
+                                                </label>
+                                                <input type="file" id="browse" name="browse" style="display: none">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div>
+                                                <label class="btn-upload-product text-center pointer p-4 mt-1 f-14" for="browse">
+                                                    <i class="fa fa-images"></i>
+                                                    <small>Samping</small>
+                                                </label>
+                                                <input type="file" id="browse" name="browse" style="display: none">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div>
+                                                <label class="btn-upload-product text-center pointer p-4 mt-1 f-14" for="browse">
+                                                    <i class="fa fa-images"></i>
+                                                    <small>Atas</small>
+                                                </label>
+                                                <input type="file" id="browse" name="browse" style="display: none">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div>
+                                                <label class="btn-upload-product text-center pointer p-4 mt-1 f-14" for="browse">
+                                                    <i class="fa fa-images"></i>
+                                                    <small>Detail</small>
+                                                </label>
+                                                <input type="file" id="browse" name="browse" style="display: none">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Informasi Produk</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Nama Produk</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Nama min. 5 kata, terdiri dari jenis produk, merek, dan keterangan seperti warna, bahan, atau tipe.
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="text" class="form-control f-10 lh-32" placeholder="Contoh: Sepatu pria (jenis/kategori produk)">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Kategori</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <select name="" class="custom-select rounded-10 f-10" id="">
+                                        <option value="">Pilih Kategori</option>
+                                        <option value="">Baju</option>
+                                        <option value="">Celana</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Etalase</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Kamu dapat menambah etalase baru atau memilih dari daftar etalase yang ada
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <select name="" class="custom-select w-50 rounded-10 f-10" id="">
+                                        <option value="">Pilih Etalase</option>
+                                        <option value="">Semua Etalase</option>
+                                        <option value="">Baju</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Detail Produk</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Kondisi</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <div class="d-flex">
+                                        <div class="form-check pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                                Baru
+                                            </label>
+                                        </div>
+                                        <div class="form-check ml-5 pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">
+                                                Bekas
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Deskripsi Produk</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Pastikan deskripsi produk memuat spesifikasi, ukuran, bahan, masa berlaku, dan lainnya. Semakin detail, semakin berguna bagi pembeli.
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <textarea name="" class="form-control w-75" id="" cols="30" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Video Produk</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Tambah video agar pembeli semakin tertarik dengan produkmu
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <div class="d-flex w-75">
+                                        <input type="text" class="form-control f-10" placeholder="Masukkan URL Youtube">
+                                        <button class="btn btn-success ml-2">Simpan</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <div class="row mt-4">
+                                <div class="col-md-7">
+                                    <div class="d-flex">
+                                        <b class="f-11">Video Produk</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Tambahkan varian seperti warna, ukuran, atau lainnya. Pilih maksimum 2 tipe varian.
+                                    </p>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="text-right">
+                                        <button class="btn btn-success ml-2" disabled><i class="fa fa-plus"></i> Tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Harga</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Minimum Pemesanan</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Atur jumlah minimum yang harus dibeli untuk produk ini.
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="number" class="form-control f-10 lh-32" value="1">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Harga Satuan</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <div class="input-group mb-3 rounded-10">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text f-10" id="basic-addon1"><b>Rp</b></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Pengelolaan Produk</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Status Produk</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Jika status aktif, produkmu dapat dicari oleh calon pembeli.
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <label class="switch">
+                                        <input type="checkbox" name="" class="switch-check">
+                                        <span class="slider-switch round"></span>
+                                    </label>
+                                    <div class="switch-on-off">
+                                        <span class="on">Aktif</span>
+                                        <span class="off">Tidak Aktif</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Stok Produk</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="number" class="form-control f-10 lh-32" placeholder="Masukkan Jumlah Stok">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">SKU (Stock Keeping Unit)</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Gunakan kode unik SKU jika kamu ingin menandai produkmu
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="text" class="form-control f-10 lh-32" placeholder="Masukkan SKU">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="shadows">
+                        <div class="card-body p-4">
+                            <b>Berat & Pengiriman</b>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Berat Produk</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Masukkan berat dengan menimbang produk <b>setelah dikemas.</b>
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Stok Produk</b>
+                                        <div class="item-badge ml-2">
+                                            <span class="grey">Wajib</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="number" class="form-control f-10 lh-32" placeholder="Masukkan Jumlah Stok">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">SKU (Stock Keeping Unit)</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Gunakan kode unik SKU jika kamu ingin menandai produkmu
+                                    </p>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <input type="text" class="form-control f-10 lh-32" placeholder="Masukkan SKU">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery/dist/jquery.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/seller.js"></script>
+</body>
+</html>

@@ -311,6 +311,9 @@ body {
 .lh-2{
     line-height: 2!important;
 }
+.lh-32{
+    line-height: 32px;
+}
 
 .lh-43 {
     line-height: 43px;
@@ -1766,6 +1769,10 @@ color: #868686;
 }
 
 /* The slider */
+.switch-on-off .on, .switch-on-off .off{
+    display: none;
+}
+
 .slider-switch {
   position: absolute;
   cursor: pointer;
@@ -2202,4 +2209,30 @@ input:disabled{
 }
 .tab-pane-custom.active{
     display: block;
+}
+
+.btn-upload-product{
+    border:2px dashed #f1f1f1;
+    border-radius: 4px;
+    transition: .2s ease;
+    color: #a3a3a3;
+}
+
+.btn-upload-product:hover{
+    border-color: #03AC0E;
+    color:#03AC0E;
+}
+.btn-upload-product i{
+    font-size: 25pt;
+}
+.btn-upload-product small{
+    font-size: 11pt;
+}
+
+.form-check-input:checked{
+    border-color: #00b74a;
+}
+.form-check-input[type=radio]:checked:after{
+    border-color: #00b74a;
+    background-color: #00b74a;
 }
