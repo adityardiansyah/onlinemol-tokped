@@ -449,12 +449,12 @@
                                         Jika status aktif, produkmu dapat dicari oleh calon pembeli.
                                     </p>
                                 </div>
-                                <div class="col-md-8 offset-1">
+                                <div class="col-md-8 offset-1 d-flex ">
                                     <label class="switch">
                                         <input type="checkbox" name="" class="switch-check">
                                         <span class="slider-switch round"></span>
                                     </label>
-                                    <div class="switch-on-off">
+                                    <div class="switch-on-off ml-3 f-10">
                                         <span class="on">Aktif</span>
                                         <span class="off">Tidak Aktif</span>
                                     </div>
@@ -504,37 +504,139 @@
                                     </p>
                                 </div>
                                 <div class="col-md-8 offset-1">
-                                    
+                                    <div class=" d-flex align-items-start">
+                                        <select name="" class="custom-select w-25" id="">
+                                            <option value="">Gram (g)</option>
+                                            <option value="">KiloGram (kg)</option>
+                                        </select>
+                                        <input type="number" class="form-control ml-3 w-50 f-10 lh-32" placeholder="Masukkan Berat">
+                                    </div>
+
+                                    <div class="alert alert-light f-10 mt-4" style="background-color: #FFFAE6;" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        Perhatikan dengan baik berat produk agar tidak terjadi selisih data dengan pihak kurir. <a href="" class="text-success">Pelajari Selengkapnya</a> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-3">
                                     <div class="d-flex">
-                                        <b class="f-11">Stok Produk</b>
-                                        <div class="item-badge ml-2">
-                                            <span class="grey">Wajib</span>
+                                        <b class="f-11">Ukuran Produk</b>
+                                        <p class="fc-text f-9">
+                                            Masukkan ukuran produk setelah dikemas untuk menghitung berat volume <a href="" class="text-success">Pelajari Berat Volume</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1">
+                                    <div class="d-flex">
+                                        <div class="input-group w-25 mb-3">
+                                            <input type="text" class="form-control" placeholder="Panjang" aria-label="Panjang" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text f-10" id="basic-addon2"><b>cm</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group w-25 mb-3 ml-2">
+                                            <input type="text" class="form-control" placeholder="Lebar" aria-label="Lebar" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text f-10" id="basic-addon2"><b>cm</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group w-25 mb-3 ml-2">
+                                            <input type="text" class="form-control" placeholder="Tinggi" aria-label="Tinggi" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text f-10" id="basic-addon2"><b>cm</b></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Asuransi Pengiriman</b>
+                                    </div>
+                                    <p class="fc-text f-9">
+                                        Menanggung pengembalian dana produk & ongkir untuk penjual maupun pembeli jika terjadi kerusakan / kehilangan saat pengiriman.
+                                    </p>
+                                </div>
                                 <div class="col-md-8 offset-1">
-                                    <input type="number" class="form-control f-10 lh-32" placeholder="Masukkan Jumlah Stok">
+                                    <div class="d-flex">
+                                        <div class="form-check pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="asuransi" id="asuransi1" value="option1" checked>
+                                            <label class="form-check-label f-10" for="asuransi1">
+                                                Wajib
+                                            </label>
+                                            <p class="f-10 mt-2">
+                                                Kamu <b>mewajibkan</b> pembeli untuk mengaktifkan asuransi pengiriman
+                                            </p>
+                                        </div>
+                                        <div class="form-check ml-5 pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="asuransi" id="asuransi2" value="option2">
+                                            <label class="form-check-label f-10" for="asuransi2">
+                                                Optional
+                                            </label>
+                                            <p class="f-10 mt-2">
+                                                Kamu <b>memberikan opsi</b> kepada pembeli untuk mengaktifkan asuransi pengiriman
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-3">
                                     <div class="d-flex">
-                                        <b class="f-11">SKU (Stock Keeping Unit)</b>
+                                        <b class="f-11">Layanan Pengiriman</b>
                                     </div>
                                     <p class="fc-text f-9">
-                                        Gunakan kode unik SKU jika kamu ingin menandai produkmu
+                                        Atur layanan pengiriman sesuai jenis produkmu.
                                     </p>
                                 </div>
                                 <div class="col-md-8 offset-1">
-                                    <input type="text" class="form-control f-10 lh-32" placeholder="Masukkan SKU">
+                                    <div class="d-flex">
+                                        <div class="form-check pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="asuransi" id="asuransi1" value="option1" checked>
+                                            <label class="form-check-label f-10" for="asuransi1">
+                                                Standar
+                                            </label>
+                                        </div>
+                                        <div class="form-check ml-5 pl-0">
+                                            <input class="form-check-input ml-0" type="radio" name="asuransi" id="asuransi2" value="option2">
+                                            <label class="form-check-label f-10" for="asuransi2">
+                                                Custom
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="f-10">
+                                        Layanan pengiriman untuk produk ini akan sama dengan yang ada di <a href="" class="text-success">Pengaturan Pengiriman.</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="d-flex">
+                                        <b class="f-11">Pre Order</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-1 d-flex ">
+                                    <label class="switch">
+                                        <input type="checkbox" name="" class="switch-check-preorder">
+                                        <span class="slider-switch round"></span>
+                                    </label>
+                                    <div class="ml-3 f-10">
+                                        <span>Aktifkan PreOrder jika kamu butuh waktu proses pengiriman lebih lama. <a href="" class="text-success">Selengkapnya</a></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="mt-3 text-right f-10 w-75 ml-auto">
+                    <button class="btn btn-choose-photo m-0 shadow-0 w-25"><b>Batal</b></button>
+                    <button class="btn btn-choose-photo ml-2 mb-0 shadow-0 w-25"><b>Simpan & Tambah Baru</b></button>
+                    <button class="btn btn-success ml-2 w-25">Simpan</button>
                 </div>
             </div>
         </div>
@@ -547,5 +649,19 @@
     <script src="../../assets/js/navbar.js"></script>
     <script src="../../assets/js/sidebar.js"></script>
     <script src="../../assets/js/seller.js"></script>
+
+    <script>
+        $('.off').show();
+        $('.switch-check').change(function(){
+            if($('.switch-check').is(':checked')){
+                $('.on').show();
+                $('.off').hide();
+            }else{
+                $('.on').hide();
+                $('.off').show();
+            }
+            
+        })
+    </script>
 </body>
 </html>

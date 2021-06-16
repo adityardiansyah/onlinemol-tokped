@@ -2236,3 +2236,7 @@ input:disabled{
     border-color: #00b74a;
     background-color: #00b74a;
 }
+
+.input-group-text{
+    background-color: #ededed;
+}
