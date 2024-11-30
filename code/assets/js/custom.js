@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#owl-one').owlCarousel({
         rtl:false,
         nav:true,
-        navText: ["<div class='nav-button owl-prev'><img src='../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../assets/WEB/ICON/ICON WEB14.svg'></div>"],
+        navText: ["<div class='nav-button owl-prev'><img src='assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='assets/WEB/ICON/ICON WEB14.svg'></div>"],
         dots: false,
         autoWidth:true,
         responsive:{
@@ -20,7 +20,7 @@ $(document).ready(function(){
     $('#owl-two').owlCarousel({
         rtl:false,
         nav:true,
-        navText: ["<div class='nav-button owl-prev'><img src='../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../assets/WEB/ICON/ICON WEB14.svg'></div>"],
+        navText: ["<div class='nav-button owl-prev'><img src='assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='assets/WEB/ICON/ICON WEB14.svg'></div>"],
         dots: false,
         autoWidth:true,
         responsive:{
@@ -38,7 +38,7 @@ $(document).ready(function(){
     $('#owl-seller').owlCarousel({
         rtl:false,
         nav:true,
-        navText: ["<div class='nav-button owl-prev'><img src='../../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../../assets/WEB/ICON/ICON WEB14.svg'></div>"],
+        navText: ["<div class='nav-button owl-prev'><img src='../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../assets/WEB/ICON/ICON WEB14.svg'></div>"],
         dots: false,
         autoWidth:true,
         responsive:{
@@ -56,7 +56,7 @@ $(document).ready(function(){
     $('#owl-wish').owlCarousel({
         rtl:false,
         nav:true,
-        navText: ["<div class='nav-button owl-prev'><img src='../assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='../assets/WEB/ICON/ICON WEB14.svg'></div>"],
+        navText: ["<div class='nav-button owl-prev'><img src='assets/WEB/ICON/ICON WEB24.svg'></div>", "<div class='nav-button owl-next'><img src='assets/WEB/ICON/ICON WEB14.svg'></div>"],
         dots: false,
         autoWidth:true,
         responsive:{

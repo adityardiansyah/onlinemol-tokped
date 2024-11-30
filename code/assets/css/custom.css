@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Muli';
-    src: url('../../assets/fonts/Muli-Regular.ttf') format('truetype')
+    src: url('../assets/fonts/Muli-Regular.ttf') format('truetype')
 }
 
 @font-face {
@@ -14,8 +14,8 @@
     font-style: normal;
     font-weight: 900;
     font-display: auto;
-    src: url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot');
-    src: url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix') format("embedded-opentype"), url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2') format("woff2"), url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff') format("woff"), url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf') format("truetype"), url('../../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome') format("svg")
+    src: url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot');
+    src: url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot?#iefix') format("embedded-opentype"), url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2') format("woff2"), url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff') format("woff"), url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf') format("truetype"), url('../assets/plugins/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome') format("svg")
 } */
 
 body {
@@ -1645,8 +1645,6 @@ textarea:focus {
     padding: 0;
     margin: 0;
 }
-
-wwwwww  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 
 .preview {
     display: -webkit-box;
